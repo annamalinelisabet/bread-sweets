@@ -1,0 +1,74 @@
+.Categories .dflex {
+    display: flex;
+}
+/* -- WHEATS -- */
+.Categories .wheats {
+    animation-duration: 3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Categories .wheat {
+    width: 10rem;
+    height: 10rem;
+    color: var(--primary-clr);
+    animation: wheatAnimRight 3s infinite;
+}
+
+.Categories .hideAndShow {
+    display: none;
+}
+
+/* -- WHEATS END -- */
+
+/* -- CATEGORIES -- */
+
+.Categories .category {
+    width: 100%;
+    height: 200px;
+    background-color: #fff;
+    border: 3px solid var(--primary-clr);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.Categories .btn-category {
+    background: #000;
+    color: #fff;
+}
+
+.Categories .cake {
+    background-image: url();
+}
+
+/* -- CATEGORIES END -- */
+
+/* -- SORTIMENT -- */
+/* -- SORTIMENT END -- */
+
+@keyframes wheatAnimRight {
+    0% {
+        transform: skew(0);
+    }
+    50%{
+        transform: skew(-5deg);
+    }
+    100%{
+        transform: skew(0);
+    }
+
+}
+
+@media only screen and (min-width: 992px)  {
+
+    .Categories .hideAndShow {
+        display: flex;
+    }
+
+    .Categories .wheat {
+        width: 15rem;
+        height: 15rem;
+    }
+
+}
