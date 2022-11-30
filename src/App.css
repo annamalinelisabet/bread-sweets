@@ -1,6 +1,63 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Montserrat:wght@300&display=swap');
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    :root {
+        --primary-clr: #856C48;
+        --secondary-clr: #D2C6B7;
+        --black-clr: #0E0E0E;
+        --background-clr: #F3EEE7;
+        --header-font: 'Dancing Script', cursive;
+    }
+
+    html, body {
+        background: var(--background-clr);
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .App {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    .main {
+        flex-grow: 1;
+    }
+
+    .frame {
+        border-right: 11px solid var(--secondary-clr);
+        border-left: 11px solid var(--secondary-clr);
+        height: 100vh;
+        /* CALC bort med navbar och footer */
+    }
+
+    .container {
+        width: min(90%, 1350px);
+        margin: 0 auto;
+    }
+
+    .btn {
+        padding: .8em;
+        padding-inline: max(1.8em, 2px);
+        cursor: pointer;
+        border: 2px solid transparent;
+        background: transparent;
+        text-transform: uppercase;
+    }
+
+   /* ÄNDRA DET HÄR HOVER GREJSET  */
+    .btn:hover {
+        border: 2px solid var(--background-clr);
+    }
+
+    .btn:active {
+        opacity: 90%;
+    }
+
+
 

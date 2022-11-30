@@ -1,8 +1,9 @@
 import React from 'react'
+import './HomeView.css'
 
 const HomeView = () => {
   return (
-    <div>HomeView</div>
+    <div className='Home frame'></div>
   )
 }
 

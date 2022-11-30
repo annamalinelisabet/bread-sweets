@@ -1,0 +1,85 @@
+.Navbar {
+    border-right: 11px solid var(--secondary-clr);
+    border-left: 11px solid var(--secondary-clr);
+    background: var(--background-clr);
+    position: relative;
+    /* position: fixed;
+    top: 0;
+    left: 0; */
+    padding-block: max(2vh, 1rem);
+}
+
+.Navbar img {
+    border: 10px solid var(--background-clr);
+    border-radius: 50%;
+    height: 80px;
+}
+
+.Navbar .bars {
+    color: var(--primary-clr);
+    font-size: 2rem;
+}
+
+.Navbar .right-nav-div {
+    display: flex;
+    align-items: center;
+}
+
+.Navbar .nav-content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Navbar .left-nav-div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-bottom: 1.5rem;
+}
+
+.Navbar .open-hours {
+    color: var(--black-clr);
+    font-weight: bold;
+    font-size: .7rem;
+    margin-bottom: .3rem;
+}
+
+.Navbar .btn-order {
+    background: var(--primary-clr);
+    color: var(--background-clr);
+    font-size: .7rem;
+}
+
+@media (min-width: 668px) {
+    
+    .Navbar img {
+        position: absolute;
+        height: 200px;
+        top: 1rem;
+        left: calc(50% - 100px);
+    }
+
+    .Navbar .nav-content-wrapper {
+        align-items: flex-end;
+    }
+
+    .Navbar .left-nav-div {
+        margin-bottom: 0;
+    }
+
+    .Navbar .bars {
+        font-size: 2.5rem;
+    }
+    
+    .Navbar .btn-order {
+        font-size: .8rem;
+    }
+}
+
+@media (max-width: 300px) {    
+    .Navbar img {
+        display: none;
+    }
+
+}
