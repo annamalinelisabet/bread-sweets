@@ -21,6 +21,7 @@ const About = () => {
                     <button className='about-btn'>Läs mer om vår Jennie</button>
                 </Link>
             </div>
+            <div></div>
         </div>
             <div className='img-wrapper'>
                 <img src={doug} alt="Picture of a stand with pastries" className='img'/>
