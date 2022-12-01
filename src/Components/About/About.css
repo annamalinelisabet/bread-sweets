@@ -1,0 +1,109 @@
+.About a {
+    text-decoration: none;
+}
+.About .dblock {
+    display: block;
+}
+.About .mb {
+    margin-bottom: 2rem;
+}
+.About .mt {
+    margin-top: 2rem;
+}
+.About .mt-4 {
+    margin-top: 2rem;
+}
+.About .about-wrapper {
+    height: 100vh;
+    display: flex;
+    margin-top: 1rem;
+}
+
+.About .bg-color {
+    width: 100%;
+    height: 100%; 
+    background-color: var(--primary-clr);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* -- TEXT -- */
+.About .text-wrapper {
+    color: #fff;
+}
+.About .text-wrapper h1 {
+    font-family: var(--yeseva-header-font);
+    font-size: 48px;
+}
+.About .text-wrapper p {
+    font-size: 17px;
+}
+
+/* -- TEXT END -- */
+
+/* -- IMG -- */
+.About .img-wrapper {
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+.About .img-wrapper img {
+    width: 100%;
+    height: 100%;
+
+}
+/* -- IMG END -- */
+
+/* -- BUTTON -- */
+.About .about-btn {
+    background:transparent;
+    padding:1rem;
+    transition:all .5s ease;
+    color:#fff;
+    font-size:1rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    outline:none;
+    font-weight: bold;
+    border: solid #fff;
+    box-shadow: 20px 38px 34px -26px hsla(0,0%,0%,.2);
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+}
+.About .about-btn:hover {
+    box-shadow:2px 8px 4px -6px hsla(0,0%,0%,.3);
+    border:solid 2px #ffffff;
+}
+.About .about-btn:active {
+    background: #fff;
+    color: var(--primary-clr);
+}
+
+
+@media only screen and (min-width: 992px) {
+
+    .About .img-wrapper {
+        display: flex;
+    }
+
+    .About .container {
+        width: 70%;
+    }
+
+    .About .text-wrapper h1 {
+        font-size: 60px;
+        margin-bottom: 2rem;
+    }
+
+    .About .text-wrapper p {
+        font-size: 20px;
+    }
+
+    .About .mb {
+        margin-bottom: 2rem;
+    }
+
+    .About .mt {
+        margin-top: 2rem;
+    }
+}
