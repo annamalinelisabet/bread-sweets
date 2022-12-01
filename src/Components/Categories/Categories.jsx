@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import './Categories.css'
 import { CiWheat } from 'react-icons/ci'
 import { BsArrowRight } from 'react-icons/bs'
@@ -6,7 +7,7 @@ import 'animate.css';
 
 const Categories = () => {
   return (
-    <div className='Categories'>
+    <div className='Categories container'>
         <div className='wheats animate__animated animate__fadeIn'>
             <CiWheat className='wheat'/>
             <CiWheat className='wheat hideAndShow'/>
@@ -14,20 +15,34 @@ const Categories = () => {
         </div>
 
         <div className='categories-wrapper'>
-            <div className='category cake'>
-                <button className='btn btn-category'>Tårtor</button>
-            </div>
-            <div className='category pastry'>
-                <button className='btn btn-category'>Kaffebröd</button>
-            </div>
-            <div className='category bread'>
-                <button className='btn btn-category'>Bröd</button>
-            </div>
-            <div className='dflex'>
-                <h3>Till hela vårt sortiment</h3>
-                <BsArrowRight className='arrow' />
-            </div>
+            <Link to="/">
+                <div className='category cake'>
+                        <div className='main-btn dflex center'>
+                            <h2>Tårtor</h2>
+                        </div>
+                </div>
+            </Link>
+            <Link to="/">
+                <div className='category bread'>
+                        <div className='main-btn dflex center'>
+                            <h2>Bröd</h2>
+                        </div>
+                </div>
+            </Link>
+            <Link to="/">
+                <div className='category pastry'>
+                        <div className='main-btn dflex center'>
+                            <h2>Kaffebröd</h2>
+                        </div>
+                </div>
+            </Link>
         </div>
+            <Link to="/" className='sortiment-link'>
+                <div className='dflex center text-wrapper'>
+                        <h3>Till hela vårt sortiment</h3>
+                        <BsArrowRight className='arrow' />
+                </div>
+            </Link>
     </div>
   )
 }
