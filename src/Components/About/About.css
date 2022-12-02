@@ -14,7 +14,7 @@
     margin-top: 2rem;
 }
 .About .about-wrapper {
-    height: 100vh;
+    height: 100%;
     display: flex;
     margin-top: 1rem;
 }
@@ -115,5 +115,9 @@
     .About .about-btn:active {
         background: transparent;
         color: #fff;
+    }
+
+    .About .about-wrapper {
+        height: 100vh;
     }
 }

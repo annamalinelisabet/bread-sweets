@@ -13,7 +13,7 @@ const About = () => {
                 <div className='mb'>
                     <h1>Om oss</h1>
                     <p className='mt mb'>Vi är ett modernt bageri och konditori med stort fokus på hantverket. Här hittar du allt från klassiskt fika till innovativa desserter och bröd.
-                    <span className='mb mt dblock'>Alla våra bröd bakas med surdeg i stenugn. Degarna jäser minst ett dygn vilket gör bröden saftigare, mer smakrika och bibehåller mer näring. Vi använder ekologiskt mjöl som kommer från Labans Kvarn på Gotland.</span>
+                    <span className='mb mt dblock'>Alla våra bröd bakas med surdeg i stenugn. Degarna jäser minst ett dygn vilket gör bröden saftigare, mer smakrika och bibehåller mer näring.</span>
                     <span className='mb dblock'>Vår filosofi är att tillverka allt själva från grunden med naturliga råvaror av hög kvalité och utan tillsatser.</span>
                     Välkomna till oss på Öster Mälarstrands Allé 18!</p>
                 <Link to="/">

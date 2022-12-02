@@ -1,0 +1,96 @@
+.Online .dflex {
+    display: flex;
+}
+.Online .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 40vh;
+}
+.Online .btn-online {
+    background: var(--primary-clr);
+    border-radius: 3px;
+    color: #fff;
+    margin-top: 2rem;
+    font-weight: bold;
+    animation-duration: 1s;
+}
+
+/* -- CUP --- */
+.Online .cup {
+    height: 70px;
+    width: 70px;
+    color: var(--primary-clr);
+}
+
+.Online .line {
+    border: 2px solid var(--primary-clr);
+    height: 17px;
+    width: 2px;
+    background-color: var(--primary-clr);
+    margin-left: .5rem;
+    border-radius: 2px;
+    margin-bottom: .2rem;
+}
+.Online .line1{
+    animation: upAndDown 3s infinite;
+    margin-left: 1rem;
+}
+
+.Online .line2{
+    animation: upAndDown 3s infinite;
+    animation-delay: 1s;
+}
+
+.Online .line3{
+    animation: upAndDown 3s infinite;
+    animation-delay: 2s;
+}
+
+
+@keyframes upAndDown {
+    0% {
+        transform: translate(0);
+    }
+    50% {
+        transform: translateY(50%);
+    }
+}
+
+/* -- CUP END --- */
+
+/* -- TEXT -- */
+.Online .wrapper h1 {
+    text-align: center;
+    font-size: 25px;
+    margin-top: 1rem;
+    color: var(--primary-clr);
+    font-family: var( --yeseva-header-font);
+}
+.Online .wrapper p {
+    text-align: center;
+    margin-top: 1rem;
+}
+/* -- TEXT END -- */
+
+@media only screen and (min-width: 992px) {
+    .Online .cup {
+        width: 100px;
+        height: 100px;
+    }
+    .Online .wrapper h1 {
+        font-size: 30px;
+    }
+    .Online .line {
+        border: 3px solid var(--primary-clr);
+        height: 23px;
+        width: 2px;
+        background-color: var(--primary-clr);
+        margin-left: .8rem;
+    }
+
+    .Online .line1{
+        margin-left: 1.4rem; 
+    }
+}

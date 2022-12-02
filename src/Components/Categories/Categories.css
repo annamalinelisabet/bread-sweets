@@ -50,6 +50,19 @@
     display: none;
 }
 
+@keyframes wheatAnimRight {
+    0% {
+        transform: skew(0);
+    }
+    50%{
+        transform: skew(-5deg);
+    }
+    100%{
+        transform: skew(0);
+    }
+
+}
+
 /* -- WHEATS END -- */
 
 /* -- CATEGORIES -- */
@@ -132,19 +145,6 @@
         transform: scaleX(1);
     }
 /* -- SORTIMENT END -- */
-
-@keyframes wheatAnimRight {
-    0% {
-        transform: skew(0);
-    }
-    50%{
-        transform: skew(-5deg);
-    }
-    100%{
-        transform: skew(0);
-    }
-
-}
 
 @media only screen and (min-width: 602px) {
     .Categories .categories-wrapper {
