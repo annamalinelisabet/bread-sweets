@@ -40,7 +40,6 @@ const Categories = () => {
             <Link to="/" className='sortiment-link'>
                 <div className='dflex center text-wrapper'>
                         <h3>Till hela vårt sortiment</h3>
-                        <BsArrowRight className='arrow' />
                 </div>
             </Link>
     </div>

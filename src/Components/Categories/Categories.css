@@ -35,6 +35,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 3rem;
+    margin-top: 2rem;
 }
 
 .Categories .wheat {
@@ -98,32 +100,35 @@
         justify-content: center;
         align-items: center;
         display: flex;
+        margin-bottom: 5rem;
+        margin-top: 1rem;
     }
     .Categories .arrow {
         margin-left: .5rem;
     }
     .Categories .text-wrapper {
-        color: #000;
+        color: var(--primary-clr);
         position: relative;
-    }
-    .Categories .text-wrapper:hover {
-        color: #000;
+        font-size: 20px;
     }
 
     .Categories .text-wrapper::before {
         content: '';
         position: absolute;
         display: block;
-        width: 14.5rem;
+        width: 16.3rem;
         height: 2px;
         bottom: 0;
         left: 0;
-        background-color: #000;
+        background-color: var(--primary-clr);
         transform: scaleX(0);
         transition: transform 0.3s ease;
     }
 
     .Categories .text-wrapper:hover::before{
+        transform: scaleX(1);
+    }
+    .Categories .text-wrapper:active::before{
         transform: scaleX(1);
     }
 /* -- SORTIMENT END -- */

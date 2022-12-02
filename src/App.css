@@ -36,7 +36,7 @@
     .frame {
         border-right: 11px solid var(--secondary-clr);
         border-left: 11px solid var(--secondary-clr);
-        height: 100vh;
+        height: 100%;
         /* CALC bort med navbar och footer */
     }
 

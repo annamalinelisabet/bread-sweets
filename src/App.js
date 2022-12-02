@@ -10,7 +10,7 @@ function App() {
       <div className="main">
         <Views />
       </div>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }
