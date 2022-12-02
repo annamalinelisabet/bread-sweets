@@ -19,6 +19,10 @@
         font-family: 'Montserrat', sans-serif;
     }
 
+    a {
+        text-decoration: none;
+    }
+
     .App {
         display: flex;
         flex-direction: column;
@@ -33,7 +37,7 @@
         border-right: 11px solid var(--secondary-clr);
         border-left: 11px solid var(--secondary-clr);
         height: 100vh;
-        /* CALC bort med navbar och footer */
+        /* ! CALC - bort med navbar och footer */
     }
 
     .container {
@@ -48,11 +52,12 @@
         border: 2px solid transparent;
         background: transparent;
         text-transform: uppercase;
+        border-radius: 3px;
     }
 
-   /* ÄNDRA DET HÄR HOVER GREJSET  */
+   /* ! ÄNDRA DET HÄR HOVER GREJSET  */
     .btn:hover {
-        border: 2px solid var(--background-clr);
+        border: 2px solid var(--secondary-clr);
     }
 
     .btn:active {
