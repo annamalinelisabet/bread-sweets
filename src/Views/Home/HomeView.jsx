@@ -3,6 +3,9 @@ import Categories from '../../Components/Categories/Categories'
 import About from '../../Components/About/About'
 import './HomeView.css'
 import Online from '../../Components/Online/Online'
+import Instagram from '../../Components/Instagram/Instagram'
+import Gift from '../../Components/Gift/Gift'
+import Video from '../../Components/Video/Video'
 
 const HomeView = () => {
   return (
@@ -10,6 +13,9 @@ const HomeView = () => {
       <Categories />
       <About />
       <Online />
+      <Instagram />
+      <Gift />
+      <Video />
     </div>
   )
 }
