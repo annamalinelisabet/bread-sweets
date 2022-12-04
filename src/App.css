@@ -32,12 +32,16 @@
     .main {
         flex-grow: 1;
     }
-
+    
     .frame {
         border-right: 11px solid var(--secondary-clr);
         border-left: 11px solid var(--secondary-clr);
         height: 100vh;
-        /* ! CALC - bort med navbar och footer */
+        /* ! använd till views med scroll, lägg på frame-s till små */
+    }
+    .frame-s {
+        /* ! CALC - footer */
+        height: calc(100vh - 200px);
     }
 
     .container {

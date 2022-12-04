@@ -16,10 +16,6 @@ const Hero = () => {
           <div className={`calendar ${showCalendar ? `show` : ``}`}>
             <div className="calendar-wrapper">
               <div className="calendar-container">
-                <div className="header-div">
-                  <h3 className='calendar-header'>Fira mumsiga fikadagar med oss</h3>
-                  <p className='week'>vecka 49</p>
-                </div>
                 <div className="flex-div">
                   <ul className='days-list'>
                     <li className='day'>måndag</li>
@@ -32,32 +28,28 @@ const Hero = () => {
                   </ul>
                   <ul className='info-list'>
                     <li className='info'></li>
-                    <li className='info'><a className='info' href="https://www.instagram.com/p/Ckq2rJkDB4t/">Tisdagsmunken - Äpple</a></li>
+                    <li className='info'><a className='info' href="https://www.instagram.com/p/Ckq2rJkDB4t/" target="_blank" rel="noopener noreferrer">Tisdagsmunken - Äpple</a></li>
                     <li className='info'></li>
                     <li className='info'></li>
-                    <li className='info'><a className='info' href="https://www.instagram.com/p/ClZIoqEjsq2/">Pepparkakans dag</a></li>
+                    <li className='info'><a className='info' href="https://www.instagram.com/p/ClZIoqEjsq2/" target="_blank" rel="noopener noreferrer">Pepparkakans dag</a></li>
                     <li className='info'></li>
-                    <li className='info'><a className='info' href="https://www.instagram.com/p/CWva1ChrP4I/">Tredje advent</a></li>
+                    <li className='info'><a className='info' href="https://www.instagram.com/p/CWva1ChrP4I/" target="_blank" rel="noopener noreferrer">Tredje advent</a></li>
                   </ul>
 
                 </div>
               </div>
 
-
-
-
+              <p className='week'>vecka 49</p>
               <GiWheat className='wheat'/>
-              <div className={`open-close ${showCalendar ? `` : `animate__animated animate__heartBeat animate__repeat-3 animate__ slower animate__delay-2s`}`} onClick={() => setShowCalendar(state => !state)}>
+              <div className={`open-close ${showCalendar ? `light-clr` : `animate__animated animate__heartBeat animate__repeat-3 animate__ slower animate__delay-2s`}`} onClick={() => setShowCalendar(state => !state)}>
                 { showCalendar 
                   ? <FaAngleLeft className='arrow'/>
                   : <FaAngleRight className='arrow'/>
                 }
               </div>
-
             </div>
           </div>
         </div>
-
     </div>
   )
 }
