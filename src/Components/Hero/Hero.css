@@ -1,0 +1,154 @@
+.Hero .hero-bg {
+    height: 100vh;
+    background-image: url('../../Images/hero-img2.jpg');
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    z-index: 1;
+}
+
+.Hero .calendar {
+    position: fixed;
+    top: 16rem;
+    left: 0;
+    height: max(50vh, 200px);
+    width: min(85%, 550px);
+    background: var(--background-clr);
+    border-left: 10px solid var(--secondary-clr);
+    border-radius: 0 3px 3px 0;
+    animation: 3s 3s 2 horizontal-shaking;
+    
+    transition: 1s ease-out;
+    transform: translateX(-100%);
+}
+
+.calendar.show {
+    transform: none;
+    animation: none;
+}
+
+.Hero .calendar-wrapper {
+    position: relative;
+    padding: 3rem;
+    width: 100%;
+    height: 100%;
+}
+
+.Hero .calendar-container {
+    width: 100%;
+    height: 100%;
+}
+
+.Hero .flex-div {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.Hero .days-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    list-style: none;
+    /* height: 100%; */
+    margin-right: 3rem;
+}
+
+.Hero .info-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    list-style: none;
+    /* height: 100%; */
+    z-index: 5;
+}
+
+.Hero .open-close {
+    height: 80px;
+    width: 40px;
+    border-radius: 0 40px 40px 0;
+    background: var(--secondary-clr);
+    position: absolute;
+    top: 0;
+    top: calc(50% - 40px);
+    right: -39px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    cursor: pointer;
+
+    transition: background ease-in .7s;
+}
+
+.Hero .open-close.light-clr {
+    background: var(--background-clr);
+}
+
+.Hero .arrow {
+    color: var(--primary-clr);
+    font-size: 3rem;
+}
+
+.Hero .wheat {
+    position: absolute;
+    bottom: -6px;
+    right: 1rem;
+    font-size: 10rem;
+    color: #e8e0d5;
+    z-index: -1;
+    transform: scaleX(-1);
+}
+
+.Hero .week {
+    font-size: .8rem;
+    font-weight: bold;
+    color: var(--primary-clr);
+    text-align: end;
+}
+
+.Hero .day {
+    color: var(--primary-clr);
+    text-transform: uppercase;
+    font-size: 0;
+    font-weight: bold;
+    display: inline-block;
+    z-index: 5;
+}
+
+.Hero .info {
+    font-size: .8rem;
+    font-weight: bold;
+    height: 1rem;
+    color: var(--black-clr);
+}
+
+.Hero .day::first-letter {
+    font-size: 1rem;
+}
+
+@keyframes horizontal-shaking {
+    0% { transform: translateX(-100%) }
+    25% { transform: translateX(-97%) }
+    50% { transform: translateX(-100%) }
+    75% { transform: translateX(-97%) }
+    100% { transform: translateX(-100%) }
+   }
+
+
+
+
+
+@media (min-width: 668px ) {
+    .Hero .day {
+        font-size: 1rem;
+        text-align: center;
+    }
+}
+
+
+@media (max-width: 350px) {
+    .Hero .calendar {
+        display: none;
+    }
+}
