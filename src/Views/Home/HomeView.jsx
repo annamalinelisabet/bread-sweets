@@ -1,4 +1,4 @@
-import React from 'react
+import React from 'react'
 import './HomeView.css'
 import Categories from '../../Components/Categories/Categories'
 import About from '../../Components/About/About'

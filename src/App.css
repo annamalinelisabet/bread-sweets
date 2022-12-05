@@ -40,7 +40,7 @@
     .frame {
         border-right: 11px solid var(--secondary-clr);
         border-left: 11px solid var(--secondary-clr);
-        height: 100vh;
+        height: 100%;
         /* ! använd till views med scroll, lägg på frame-s till små */
     }
     .frame-s {
