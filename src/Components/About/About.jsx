@@ -17,7 +17,7 @@ const About = () => {
                     <span className='mb dblock'>Vår filosofi är att tillverka allt själva från grunden med naturliga råvaror av hög kvalité och utan tillsatser.</span>
                     Välkomna till oss på Öster Mälarstrands Allé 18!</p>
                 <Link to="/">
-                    <button className='about-btn'>Läs mer om vår Jennie</button>
+                    <div className='about-btn'>Läs mer om vår Jennie</div>
                 </Link>
                 </div>
             </div>

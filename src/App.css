@@ -20,8 +20,7 @@
 
     html, body {
         background: var(--background-clr);
-        /* font-family: 'Montserrat', sans-serif; */
-        font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-family: 'Montserrat', sans-serif;
     }
 
     .App {

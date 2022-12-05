@@ -13,9 +13,9 @@ const HomeView = () => {
       <Categories />
       <About />
       <Online />
-      <Instagram />
-      <Gift />
       <Video />
+      <Gift />
+      <Instagram />
     </div>
   )
 }

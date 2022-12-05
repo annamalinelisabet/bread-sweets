@@ -51,7 +51,27 @@
     color: var(--primary-clr);
     font-size: 20px;
     text-transform: uppercase;
-    text-decoration: underline;
+    position: relative;
+}
+.Gift .link::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 14.9rem;
+    height: 2.5px;
+    bottom: 0;
+    left: 0;
+    top: 1.5rem;
+    background-color: var(--primary-clr);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.Gift .link:hover::before{
+    transform: scaleX(1);
+}
+.GIft .link:active::before{
+    transform: scaleX(1);
 }
 .Gift .link-wrapper {
     display: block;

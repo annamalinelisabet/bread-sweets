@@ -59,28 +59,38 @@
 
 /* -- BUTTON -- */
 .About .about-btn {
-    background:transparent;
-    padding:1rem;
-    transition:all .5s ease;
     color:#fff;
-    font-size:1rem;
+    font-size:20px;
     cursor: pointer;
     text-transform: uppercase;
     outline:none;
-    font-weight: bold;
-    border: solid #fff;
-    box-shadow: 20px 38px 34px -26px hsla(0,0%,0%,.2);
+    font-weight: 700;
+    border: none;
     border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
-}
-.About .about-btn:hover {
-    box-shadow:2px 8px 4px -6px hsla(0,0%,0%,.3);
-    border:solid 2px #ffffff;
-}
-.About .about-btn:active {
-    background: #fff;
-    color: var(--primary-clr);
+    position: relative;
+    background: transparent;
 }
 
+.About .about-btn::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 16.1rem;
+    height: 2.5px;
+    bottom: 0;
+    left: 0;
+    top: 1.5rem;
+    background-color: #fff;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.About .about-btn:hover::before{
+    transform: scaleX(1);
+}
+.About .about-btn:active::before{
+    transform: scaleX(1);
+}
 
 @media only screen and (min-width: 992px) {
 
