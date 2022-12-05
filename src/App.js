@@ -6,7 +6,7 @@ import Views from './Views/Views';
 function App() {
   return (
     <div className="App">
-      <Navbar />
+      {/* <Navbar /> */}
       <div className="main">
         <Views />
       </div>

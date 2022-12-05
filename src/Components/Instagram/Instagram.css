@@ -1,0 +1,73 @@
+.Instagram .wrapper {
+    display: grid;
+    margin: 0 auto;
+}
+.Instagram .wrapper {
+    position: relative;
+}
+.Instagram .img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* -- CARD --- */
+.Instagram .card {
+    width: 100%;
+    height: 250px;
+}
+/* -- CARD END --- */
+
+/* -- BTN --- */
+.Instagram .btn-instagram-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.Instagram .hideAndShow {
+    display: none;
+}
+/* -- BTN END --- */
+
+/* -- LINK -- */
+.Instagram .btn-insta {
+    text-transform: inherit;
+}
+.Instagram .btn-instagram-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    background-color: #000;
+    box-shadow: 20px 38px 34px -26px hsla(0,0%,0%,.2);
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+    transition:all .5s ease;
+}
+.Instagram .btn-instagram-wrapper button{
+    color: #fff;
+    font-size:1rem;
+}
+
+.Instagram .btn-instagram-wrapper:hover{
+    box-shadow:2px 8px 4px -6px hsla(0,0%,0%,.3);
+    background-color: #000;
+}
+/* -- LINK END -- */
+
+@media only screen and (min-width: 602px) {
+    .Instagram .wrapper {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .Instagram .hideAndShow {
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .Instagram .wrapper {
+        grid-template-columns: repeat(6, 1fr);
+    }
+    .Instagram .btn-instagram-wrapper{
+        width: inherit;
+    }
+}

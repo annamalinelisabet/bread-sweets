@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
 
     * {
         margin: 0;
@@ -12,6 +14,8 @@
         --black-clr: #0E0E0E;
         --background-clr: #F3EEE7;
         --header-font: 'Dancing Script', cursive;
+        --secondary-header-font: 'Permanent Marker', cursive;
+        --yeseva-header-font: 'Yeseva One', cursive;
     }
 
     html, body {
@@ -42,6 +46,7 @@
     .frame-s {
         /* ! CALC - footer */
         height: calc(100vh - 200px);
+
     }
 
     .container {
@@ -61,7 +66,10 @@
 
    /* ! ÄNDRA DET HÄR HOVER GREJSET  */
     .btn:hover {
+        /* border: 2px solid var(--background-clr); */
+
         border: 2px solid var(--secondary-clr);
+
     }
 
     .btn:active {

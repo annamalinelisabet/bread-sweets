@@ -1,0 +1,176 @@
+.Categories .mb-1 {
+    margin-bottom: 1rem;
+}
+.Categories .m1 {
+    margin: 1rem;
+}
+.Categories .dflex {
+    display: flex;
+}
+.Categories .center {
+    justify-content: center;
+    align-items: center;
+}
+.Categories a {
+    text-decoration: none;
+    cursor: pointer;
+}
+/* -- BTN --- */
+.Categories .main-btn {
+    width: 11rem;
+    height: 3rem;
+    background-color: #000;
+    border-radius: 3px;
+}
+.Categories .main-btn h2 {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+/* -- BTN END -- */
+
+/* -- WHEATS -- */
+.Categories .wheats {
+    animation-duration: 3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+    margin-top: 2rem;
+}
+
+.Categories .wheat {
+    width: 8rem;
+    height: 8rem;
+    color: var(--primary-clr);
+    animation: wheatAnimRight 3s infinite;
+}
+
+.Categories .hideAndShow {
+    display: none;
+}
+
+@keyframes wheatAnimRight {
+    0% {
+        transform: skew(0);
+    }
+    50%{
+        transform: skew(-5deg);
+    }
+    100%{
+        transform: skew(0);
+    }
+
+}
+
+/* -- WHEATS END -- */
+
+/* -- CATEGORIES -- */
+
+.Categories .categories-wrapper {
+    display: grid;
+    margin: 0 auto;
+    /* width: 100; */
+}
+
+.Categories .category {
+    width: 100%;
+    height: 200px;
+    background-color: #fff;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-bottom: .5rem;
+}
+
+.Categories .cake {
+    background: url('../../Images/cake.jpg') rgba(255, 255, 255, 0.2);
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 90%;
+}
+
+.Categories .pastry {
+    background: url('../../Images/pastry.jpg') rgba(255, 255, 255, 0.2);
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.Categories .bread {
+    background: url('../../Images/bread.png') rgba(255, 255, 255, 0.2);
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+}
+/* -- CATEGORIES END -- */
+
+/* -- SORTIMENT -- */
+    .Categories .sortiment-link {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        margin-bottom: 5rem;
+        margin-top: 1rem;
+    }
+    .Categories .arrow {
+        margin-left: .5rem;
+    }
+    .Categories .text-wrapper {
+        color: var(--primary-clr);
+        position: relative;
+        font-size: 20px;
+        font-family: var(--yeseva-header-font);
+    }
+
+    .Categories .text-wrapper::before {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 17.2rem;
+        height: 2.5px;
+        bottom: 0;
+        left: 0;
+        background-color: var(--primary-clr);
+        transform: scaleX(0);
+        transition: transform 0.3s ease;
+    }
+
+    .Categories .text-wrapper:hover::before{
+        transform: scaleX(1);
+    }
+    .Categories .text-wrapper:active::before{
+        transform: scaleX(1);
+    }
+/* -- SORTIMENT END -- */
+
+@media only screen and (min-width: 602px) {
+    .Categories .categories-wrapper {
+        grid-template-columns: repeat(1,1fr);
+     }
+
+}
+
+@media only screen and (min-width: 992px)  {
+
+    .Categories .hideAndShow {
+        display: flex;
+    }
+
+    .Categories .wheat {
+        width: 15rem;
+        height: 15rem;
+    }
+
+    .Categories .categories-wrapper {
+       grid-template-columns: repeat(3,1fr);
+    }
+    .Categories .category {
+        width: 100%;
+        height: 500px;
+        border: 5px solid var(--background-clr);
+    }
+
+}

@@ -1,0 +1,133 @@
+.About a {
+    text-decoration: none;
+}
+.About .dblock {
+    display: block;
+}
+.About .mb {
+    margin-bottom: 2rem;
+}
+.About .mt {
+    margin-top: 2rem;
+}
+.About .mt-4 {
+    margin-top: 2rem;
+}
+.About .about-wrapper {
+    height: 100%;
+    display: flex;
+    margin-top: 1rem;
+}
+
+.About .bg-color {
+    width: 100%;
+    height: 80vh; 
+    background-color: var(--primary-clr);
+}
+
+/* -- TEXT -- */
+.About .text-wrapper {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+.About .text-wrapper h1 {
+    font-family: var(--yeseva-header-font);
+    font-size: 48px;
+}
+.About .text-wrapper p {
+    font-size: 17px;
+}
+
+/* -- TEXT END -- */
+
+/* -- IMG -- */
+.About .img-wrapper {
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+.About .img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* -- IMG END -- */
+
+/* -- BUTTON -- */
+.About .about-btn {
+    color:#fff;
+    font-size:20px;
+    cursor: pointer;
+    text-transform: uppercase;
+    outline:none;
+    font-weight: 700;
+    border: none;
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+    position: relative;
+    background: transparent;
+}
+
+.About .about-btn::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 16.1rem;
+    height: 2.5px;
+    bottom: 0;
+    left: 0;
+    top: 1.5rem;
+    background-color: #fff;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.About .about-btn:hover::before{
+    transform: scaleX(1);
+}
+.About .about-btn:active::before{
+    transform: scaleX(1);
+}
+
+@media only screen and (min-width: 992px) {
+
+    .About .bg-color {
+        height: 100%;
+    }
+    .About .img-wrapper {
+        display: flex;
+    }
+
+    .About .container {
+        width: 70%;
+    }
+
+    .About .text-wrapper h1 {
+        font-size: 60px;
+        margin-bottom: 2rem;
+    }
+
+    .About .text-wrapper p {
+        font-size: 20px;
+    }
+
+    .About .mb {
+        margin-bottom: 2rem;
+    }
+
+    .About .mt {
+        margin-top: 2rem;
+    }
+
+    .About .about-btn:active {
+        background: transparent;
+        color: #fff;
+    }
+
+    .About .about-wrapper {
+        height: 100vh;
+    }
+}
