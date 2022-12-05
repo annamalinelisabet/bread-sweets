@@ -16,7 +16,7 @@
     background: var(--background-clr);
     border-left: 10px solid var(--secondary-clr);
     border-radius: 0 3px 3px 0;
-    /* ! GÖR OM UPPMÄRKSAMHETSANIMERINGEN */
+    animation: 3s 3s 2 horizontal-shaking;
     
     transition: 1s ease-out;
     transform: translateX(-100%);
@@ -24,6 +24,7 @@
 
 .calendar.show {
     transform: none;
+    animation: none;
 }
 
 .Hero .calendar-wrapper {
@@ -122,10 +123,20 @@
     color: var(--black-clr);
 }
 
-
 .Hero .day::first-letter {
     font-size: 1rem;
 }
+
+@keyframes horizontal-shaking {
+    0% { transform: translateX(-100%) }
+    25% { transform: translateX(-97%) }
+    50% { transform: translateX(-100%) }
+    75% { transform: translateX(-97%) }
+    100% { transform: translateX(-100%) }
+   }
+
+
+
 
 
 @media (min-width: 668px ) {

@@ -41,7 +41,8 @@ const Hero = () => {
 
               <p className='week'>vecka 49</p>
               <GiWheat className='wheat'/>
-              <div className={`open-close ${showCalendar ? `light-clr` : `animate__animated animate__heartBeat animate__repeat-3 animate__ slower animate__delay-2s`}`} onClick={() => setShowCalendar(state => !state)}>
+              <div className={`open-close ${showCalendar ? `light-clr` : ``}`} onClick={() => setShowCalendar(state => !state)}>
+              {/* <div className={`open-close ${showCalendar ? `light-clr` : `animate__animated animate__heartBeat animate__repeat-3 animate__ slower animate__delay-2s`}`} onClick={() => setShowCalendar(state => !state)}> */}
                 { showCalendar 
                   ? <FaAngleLeft className='arrow'/>
                   : <FaAngleRight className='arrow'/>
