@@ -81,6 +81,11 @@
     align-items: center;
     display: flex;
     margin-bottom: .5rem;
+
+}
+
+.Categories .category:hover {
+    background-blend-mode: inherit;
 }
 
 .Categories .cake {

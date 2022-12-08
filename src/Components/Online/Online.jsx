@@ -19,7 +19,7 @@ const Online = () => {
             </div>
             <h1>Din tur att bjuda kollegorna på fika?</h1>
             <p>Beställ bullar, bakelser eller något annat gott direkt via din telefon eller dator.</p>
-            <Link>
+            <Link to='/order'>
                 <button className='btn btn-online animate__animated animate__pulse'>Beställ online</button>
             </Link>
         </div>

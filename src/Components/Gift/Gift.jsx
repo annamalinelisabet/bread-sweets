@@ -12,11 +12,11 @@ const Gift = () => {
                 <div className='small-wrapper'>
                     <p>Beställ våra omtyckta praliner i presentförpackning. Kan köpas i förpackningar om 6, 12 eller 18 st.</p>
                 </div>
-                <Link to="/" className='link-wrapper'>
+                <Link to="/assortment" className='link-wrapper'>
                     <h3 className='link'>Se vårt pralinutbud</h3>
                 </Link>
             </div>
-            <Link to="/">
+            <Link to="/assortment">
                 <div className='img-wrapper'>
                     <img src={pralines} alt="pralines" className='img'/>
                 </div>

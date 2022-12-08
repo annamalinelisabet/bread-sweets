@@ -5,6 +5,11 @@
     padding-block: .5rem;
 }
 
+.Navbar.shadow {
+    /* ! ÄNDRA box-shadow?!?!? */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px;
+}
+
 .fixed {
     position: fixed;
     top: 0;
@@ -20,6 +25,13 @@
     height: 140px;
     left: calc(50% - 70px);
     user-select: none;
+    opacity: 100;
+
+    transition: opacity 250ms ease-in;
+}
+
+.Navbar img.small-logo {
+    opacity: 0;
 }
 
 .Navbar .bars,
@@ -131,13 +143,18 @@
     margin-bottom: 1rem;
     padding: .5rem;
     position: relative;
+    width: 135px;
 }
 
-.NavMenu .link.active::before {
+.NavMenu .link p {
+    display: inline;
+}
+
+.NavMenu .link.active p::before {
     content: url('../../Images/menu-wheat.png');
     position: absolute;
-    left: -2rem;
     bottom: 0;
+    left: -1rem;
 }
 
 .NavMenu .nav-links:hover .link:not(:hover) {
@@ -165,8 +182,18 @@
         border: 10px solid var(--background-clr);  
         top: 1rem;
         height: 220px;
-        left: calc(50% - 110px);
+        left: 50%;
+        transform: translate(-50%);
         z-index: 5;
+
+        transition: all 500ms ease-out;
+    }
+
+    .Navbar img.small-logo {
+        opacity: 100;
+        top: 1.5rem;
+        height: 120px;
+        border: 5px solid var(--background-clr);  
     }
     
     .Navbar .menu-margin {
@@ -183,6 +210,7 @@
         height: 250px;
         display: flex;
         align-items: flex-end;
+        /* box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px; */
     }
 
     .overflow-hidden {
@@ -190,13 +218,17 @@
     }
  
     .NavMenu .menu-container {
-        width: min(90%, 1350px);
+        width: min(90%, 1200px);
     }
 
     .NavMenu .nav-links {
         display: flex;
         justify-content: space-between;
         align-items: center;
+    }
+
+    .NavMenu .link {
+        text-align: center;
     }
     
 

@@ -1,4 +1,5 @@
 .Footer {
     background: var(--secondary-clr);
     height: 200px;
+    z-index: 400;
 }
