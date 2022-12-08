@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import './Footer.css'
 import logo from '../../Images/logo.png'
 import { AiOutlineMail, AiOutlineInstagram } from 'react-icons/ai'
@@ -17,26 +18,34 @@ const Footer = () => {
           <div className='dflex nav-wrap'>
 
             <div className='nav-link'>
-              <h4>Sortiment</h4>
+              <Link to="/assortment">
+                <h4>Sortiment</h4>
+              </Link>
             </div>
 
               <div className='vertical'></div>
 
             <div className='nav-link'>
-              <h4>Beställ</h4>
+              <Link to="/order">
+                <h4>Beställ</h4>
+              </Link>
             </div>
 
               <div className='vertical'></div>
-
-            <div className='nav-link'>
-              <h4>Omdöme</h4>
-            </div>
+            
+              <div className='nav-link'>
+                <Link to="/reviews">
+                  <h4>Omdöme</h4>
+                </Link>
+              </div>
 
             <div className='vertical hide'></div>
 
-            <div className='nav-link hide'>
-              <h4>Jennie</h4>
-            </div>
+              <div className='nav-link hide'>
+                <Link to="/about">
+                  <h4>Jennie</h4>
+                </Link>
+              </div>
 
           </div>
         </div>
