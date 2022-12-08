@@ -6,7 +6,6 @@ import chocolate from '../../Images/chocolate.png'
 import praliner from '../../Images/praliner.png'
 import pinkCake from '../../Images/pinkCake.png'
 import buns from '../../Images/buns.png'
-import { AiOutlineInstagram } from 'react-icons/ai'
 
 const Instagram = () => {
     const openInNewTab = url => {

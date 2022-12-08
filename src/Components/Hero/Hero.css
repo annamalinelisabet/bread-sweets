@@ -8,18 +8,18 @@
 }
 
 .Hero .calendar {
-    position: fixed;
+    position: absolute;
     top: 16rem;
     left: 0;
     height: max(50vh, 200px);
     width: min(85%, 550px);
-    background: var(--background-clr);
-    border-left: 10px solid var(--secondary-clr);
+    background: var(--secondary-clr);
     border-radius: 0 3px 3px 0;
     animation: 3s 3s 2 horizontal-shaking;
     
     transition: 1s ease-out;
     transform: translateX(-100%);
+    z-index: 999;
 }
 
 .calendar.show {
@@ -77,12 +77,6 @@
     justify-content: flex-end;
     align-items: center;
     cursor: pointer;
-
-    transition: background ease-in .7s;
-}
-
-.Hero .open-close.light-clr {
-    background: var(--background-clr);
 }
 
 .Hero .arrow {
@@ -95,7 +89,7 @@
     bottom: -6px;
     right: 1rem;
     font-size: 10rem;
-    color: #e8e0d5;
+    color: #ccbead;
     z-index: -1;
     transform: scaleX(-1);
 }
@@ -129,9 +123,10 @@
 
 @keyframes horizontal-shaking {
     0% { transform: translateX(-100%) }
-    25% { transform: translateX(-97%) }
-    50% { transform: translateX(-100%) }
-    75% { transform: translateX(-97%) }
+    25% { transform: translateX(-96%) }
+    40% { transform: translateX(-100%) }
+    50% { transform: translateX(-96%) }
+    75% { transform: translateX(-100%) }
     100% { transform: translateX(-100%) }
    }
 

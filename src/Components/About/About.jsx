@@ -16,14 +16,14 @@ const About = () => {
                     <span className='mb mt dblock'>Alla våra bröd bakas med surdeg i stenugn. Degarna jäser minst ett dygn vilket gör bröden saftigare, mer smakrika och bibehåller mer näring.</span>
                     <span className='mb dblock'>Vår filosofi är att tillverka allt själva från grunden med naturliga råvaror av hög kvalité och utan tillsatser.</span>
                     Välkomna till oss på Öster Mälarstrands Allé 18!</p>
-                <Link to="/">
+                <Link to="/about">
                     <div className='about-btn'>Läs mer om vår Jennie</div>
                 </Link>
                 </div>
             </div>
         </div>
             <div className='img-wrapper'>
-                <img src={ girlBaking } alt="Picture of a stand with pastries" className='img'/>
+                <img src={ girlBaking } alt="Stand with pastries" className='img'/>
             </div>
        </div>
     </div>

@@ -2,7 +2,6 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import './Categories.css'
 import { CiWheat } from 'react-icons/ci'
-import { BsArrowRight } from 'react-icons/bs'
 import 'animate.css';
 
 const Categories = () => {
@@ -37,7 +36,7 @@ const Categories = () => {
                 </div>
             </Link>
         </div>
-            <Link to="/" className='sortiment-link'>
+            <Link to="/assortment" className='sortiment-link'>
                 <div className='dflex center text-wrapper'>
                         <h3>Till hela vårt sortiment</h3>
                 </div>

@@ -1,10 +1,13 @@
+.Instagram {
+    padding-bottom: 8rem;
+}
+
 .Instagram .wrapper {
     display: grid;
     margin: 0 auto;
-}
-.Instagram .wrapper {
     position: relative;
 }
+
 .Instagram .img {
     width: 100%;
     height: 100%;
