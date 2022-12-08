@@ -52,6 +52,11 @@
     font-weight: bold;
 }
 
+.OrderView .p {
+    font-size: .8rem;
+
+}
+
 .OrderView .small {
     font-size: .8rem;
     text-align: center;

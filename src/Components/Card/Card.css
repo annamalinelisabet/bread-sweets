@@ -1,0 +1,43 @@
+.Card {
+    background: var(--secondary-clr);
+    height: 280px;
+}
+
+.Card .img-wrapper {
+    width: 90%;
+    margin: auto;
+    height: 60%;
+    margin-top: 12px;
+}
+.Card .img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+.Card .text-div {
+    width: 90%;
+    margin: 10px auto;
+
+}
+
+.Card .top-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: .3rem;
+}
+
+.Card .title {
+    text-transform: uppercase;
+    font-size: .8rem;
+}
+
+.Card .price {
+    font-size: .7rem;
+}
+
+.Card .desc {
+    font-size: .8rem;
+}

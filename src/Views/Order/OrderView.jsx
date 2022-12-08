@@ -19,9 +19,10 @@ const OrderView = () => {
         </div>
         <div className="text-div container">
           <p>Här kan du beställa direkt från vår meny. Betala enkelt via swish eller kort.</p>
+          <p className='p'> Vid större beställningar kan vi leverera inom Västerås utan extra kostnad.</p>
           <button className='btn btn-online'>öppna beställningsvy i nytt fönster</button>
         </div>
-        <p className='small container'>Vill du göra en större beställning eller har andra funderingar, <Link to='/contact'><span className='link'>hör av dig.</span></Link></p>
+        <p className='small container'>Har du en beställningsförfrågan eller andra funderingar, <Link to='/contact'><span className='link'>hör av dig.</span></Link></p>
     </div>
   )
 }

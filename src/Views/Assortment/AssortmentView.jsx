@@ -1,26 +1,26 @@
-import {useEffect} from 'react'
+import {useEffect, useRef} from 'react'
 import './AssortmentView.css'
 import Photo from '../../Images/assortment.jpg'
+import Card from '../../Components/Card/Card'
 
 const AssortmentView = () => {
 
   useEffect(() => {
     window.scrollTo({top: 0, left: 0, behavior: 'instant'}); 
-
   }, [])
+
+  const pralineRef = useRef();
   
 
   return (
     <div className='AssortmentView frame'>
         <div className="img-div">
           <img src={Photo} alt="Cinnamon buns" />
-          <div className="img-text">
-            <h1>SORTIMENT</h1>
-          </div>
         </div>
+        <h1 className='top-header'>sortiment</h1>
       <div className="wrapper container">
         <ul className='list'>
-            <li>Praliner</li>
+            <li onClick={() => pralineRef.current.scrollIntoView()}>Praliner</li>
             <li>Bröd</li>
             <li>kaffebröd</li>
             <li>bitar</li>
@@ -31,139 +31,43 @@ const AssortmentView = () => {
             <li>smörgåsar</li>
             <li>förpackat</li>
           </ul>
-          <div className='sortiment'>
-            <p>hejhejhej</p>
-            <p>hejhejhej</p>
-            <p>hejhejhej</p>
-            <p>hejhejhej</p>
-            <p>hejhejhej</p>
-            <p>hejhejhej</p>
-            <p>hejhejhej</p>
-            <p>hejhejhej</p>
-            <p>hejhejhej</p>
-            <p>hejhejhej</p>
-            <p>hejhejhej</p>
-            <p>hejhejhej</p>
-            <p>hejhejhej</p>
-            <p>hejhejhej</p>
-            <p>hejhejhej</p>
-            <p>hejhejhej</p>
-            <p>hejhejhej</p>
-            <p>hejhejhej</p>
-            <p>hejhejhej</p>
-            <p>hejhejhej</p>
-            <p>hejhejhej</p>
-            <p>hejhejhej</p>
-            <p>hejhejhej</p>
-            <p>hejhejhej</p>
-            <p>hejhejhej</p>
-            <p>hejhejhej</p>
-            <p>hejhejhej</p>
-            <p>hejhejhej</p>
-            <p>hejhejhej</p>
-            <p>hejhejhej</p>
-            <p>hejhejhej</p>
-            <p>hejhejhej</p>
-            <p>hejhejhej</p>
-            <p>hejhejhej</p>
-            <p>hejhejhej</p>
-            <p>hejhejhej</p>
-            <p>hejhejhej</p>
-            <p>hejhejhej</p>
-            <p>hejhejhej</p>
-            <p>hejhejhej</p>
-            <p>hejhejhej</p>
-            <p>hejhejhej</p>
-            <p>hejhejhej</p>
-            <p>hejhejhej</p>
-            <p>hejhejhej</p>
-            <p>hejhejhej</p>
-            <p>hejhejhej</p>
-            <p>hejhejhej</p>
-            <p>hejhejhej</p>
-            <p>hejhejhej</p>
-            <p>hejhejhej</p>
-            <p>hejhejhej</p>
-            <p>hejhejhej</p>
-            <p>hejhejhej</p>
-            <p>hejhejhej</p>
-            <p>hejhejhej</p>
-            <p>hejhejhej</p>
-            <p>hejhejhej</p>
-            <p>hejhejhej</p>
-            <p>hejhejhej</p>
-            <p>hejhejhej</p>
-            <p>hejhejhej</p>
-            <p>hejhejhej</p>
-            <p>hejhejhej</p>
-            <p>hejhejhej</p>
-            <p>hejhejhej</p>
-            <p>hejhejhej</p>
-            <p>hejhejhej</p>
-            <p>hejhejhej</p>
-            <p>hejhejhej</p>
-            <p>hejhejhej</p>
-            <p>hejhejhej</p>
-            <p>hejhejhej</p>
-            <p>hejhejhej</p>
-            <p>hejhejhej</p>
-            <p>hejhejhej</p>
-            <p>hejhejhej</p>
-            <p>hejhejhej</p>
-            <p>hejhejhej</p>
-            <p>hejhejhej</p>
-            <p>hejhejhej</p>
-            <p>hejhejhej</p>
-            <p>hejhejhej</p>
-            <p>hejhejhej</p>
-            <p>hejhejhej</p>
-            <p>hejhejhej</p>
-            <p>hejhejhej</p>
-            <p>hejhejhej</p>
-            <p>hejhejhej</p>
-            <p>hejhejhej</p>
-            <p>hejhejhej</p>
-            <p>hejhejhej</p>
-            <p>hejhejhej</p>
-            <p>hejhejhej</p>
-            <p>hejhejhej</p>
-            <p>hejhejhej</p>
-            <p>hejhejhej</p>
-            <p>hejhejhej</p>
-            <p>hejhejhej</p>
-            <p>hejhejhej</p>
-            <p>hejhejhej</p>
-            <p>hejhejhej</p>
-            <p>hejhejhej</p>
-            <p>hejhejhej</p>
-            <p>hejhejhej</p>
-            <p>hejhejhej</p>
-            <p>hejhejhej</p>
-            <p>hejhejhej</p>
-            <p>hejhejhej</p>
-            <p>hejhejhej</p>
-            <p>hejhejhej</p>
-            <p>hejhejhej</p>
-            <p>hejhejhej</p>
-            <p>hejhejhej</p>
-            <p>hejhejhej</p>
-            <p>hejhejhej</p>
-            <p>hejhejhej</p>
-            <p>hejhejhej</p>
-            <p>hejhejhej</p>
-            <p>hejhejhej</p>
-            <p>hejhejhej</p>
-            <p>hejhejhej</p>
-            <p>hejhejhej</p>
-            <p>hejhejhej</p>
-            <p>hejhejhej</p>
-            <p>hejhejhej</p>
-            <p>hejhejhej</p>
-            <p>hejhejhej</p>
-            <p>hejhejhej</p>
-            <p>hejhejhej</p>
-            <p>hejhejhej</p>
-            <p>hejhejhej</p>
+          <div className="grid-wrapper">
+            <h1 className='header' ref={pralineRef} >Praliner</h1>
+            <div className='sortiment'>
+              <Card title={'espresso'} desc={'Mörk pralin med espressotryffel'} img={'https://gastrogate.com/thumbs2/1000/files/32894/eQswplzQcobXTFWtunLZXmAKLC0Ji1fVtT3uSG0a8HPAjlCy8y2EP8j3RPKGevVV/original.jpg?ext=https://locousercontent.com/eQswplzQcobXTFWtunLZXmAKLC0Ji1fVtT3uSG0a8HPAjlCy8y2EP8j3RPKGevVV/original.jpg'} price={'22'}/>
+              <Card title={'saltlakrits'} desc={'Ljus chokladtryffel, lakrits och salmiak'} img={'https://gastrogate.com/thumbs2/1000/files/32894/RLGbhpBFHcIaXqvIU0npEnoeApKH745pe6hjDZwQYF-19R6E2eIWZq0UEu2AMq9-/original.jpg?ext=https://locousercontent.com/RLGbhpBFHcIaXqvIU0npEnoeApKH745pe6hjDZwQYF-19R6E2eIWZq0UEu2AMq9-/original.jpg'} price={'19'}/>
+              <Card title={'Citroncheesecake'} desc={'Citronmarmelad, cream cheese-tryffel och digestivekrisp'} img={'https://gastrogate.com/thumbs2/1000/files/32894/w6k6TAg1FuR98aSYBgu0HORCt0cKBPrckfwWtTmEASG4V3_EvOSvH-STqsmzrZEv/original.jpg?ext=https://locousercontent.com/w6k6TAg1FuR98aSYBgu0HORCt0cKBPrckfwWtTmEASG4V3_EvOSvH-STqsmzrZEv/original.jpg'} price={'22'}/>
+              <Card title={'rom'} desc={'Mandelpraliné, Don Papa rom'} img={'https://gastrogate.com/thumbs2/1000/files/32894/_RGBZQeVuKleYUC1t-gSohIb5nquCZFOt_zqpVDtjybuWqVpXvAMqzGAYpi8RNvS/original.jpg?ext=https://locousercontent.com/_RGBZQeVuKleYUC1t-gSohIb5nquCZFOt_zqpVDtjybuWqVpXvAMqzGAYpi8RNvS/original.jpg'} price={'22'}/>
+              <Card title={'present 6 st'} desc={'6 st mixade praliner i presentförpackning'} img={'https://gastrogate.com/thumbs2/1000/files/32894/tM0xXI0wHlRqFuhHMZPJu4kMQ0cOgAjvqkUo2YeJWMyBGAAEt3e_uRc5lqtSdS3B/original.jpg?ext=https://locousercontent.com/tM0xXI0wHlRqFuhHMZPJu4kMQ0cOgAjvqkUo2YeJWMyBGAAEt3e_uRc5lqtSdS3B/original.jpg'} price={'139'}/>
+              <Card title={'present 12 st'} desc={'12 st mixade praliner i presentförpackning'} img={'https://gastrogate.com/thumbs2/1000/files/32894/Leq09j4GzCIZBsJo1hx-9dTV1zl6kyLygR1cvqAKVa5ANUWWPWrgVLiFunKAD5Gr/original.jpg?ext=https://locousercontent.com/Leq09j4GzCIZBsJo1hx-9dTV1zl6kyLygR1cvqAKVa5ANUWWPWrgVLiFunKAD5Gr/original.jpg'} price={'265'}/>
+              <Card title={'present 18 st'} desc={'18 st mixade praliner i presentförpackning'} img={'https://gastrogate.com/thumbs2/1000/files/32894/2asZ-tyMs3ZppneQtVqZvN_fhmTZX0EXGuy4PPmzsznSDMEsscMqZrPONGPHeWhT/original.jpg?ext=https://locousercontent.com/2asZ-tyMs3ZppneQtVqZvN_fhmTZX0EXGuy4PPmzsznSDMEsscMqZrPONGPHeWhT/original.jpg'} price={'375'}/>
+            </div>
+            <h1 className='header'>BRÖD</h1>
+            <div className='sortiment'>
+              <Card title={'surdeg ljus'} desc={'Råg, vetemjöl, surdeg, salt'} img={'https://gastrogate.com/thumbs2/1000/files/32894/sMGCGc2SUaWyX-iM0_oDfQHPDlptvgMWp-IiIenWlbAHOK89abUrmULjs5YKqvbN/original.jpg?ext=https://locousercontent.com/sMGCGc2SUaWyX-iM0_oDfQHPDlptvgMWp-IiIenWlbAHOK89abUrmULjs5YKqvbN/original.jpg'} price={'58'}/>
+              <Card title={'minibrytbröd'} desc={'Surdegsbröd för två, penslat med olivolja, toppad med flingsalt och frön'} img={'https://gastrogate.com/thumbs2/1000/files/32894/OUESuGISD9WpWS0YIWRUt-KLegKS2t7gfzZDBxLjB-EFu267p09j0C2v8HYBOWZZ/original.jpg?ext=https://locousercontent.com/OUESuGISD9WpWS0YIWRUt-KLegKS2t7gfzZDBxLjB-EFu267p09j0C2v8HYBOWZZ/original.jpg'} price={'21'}/>
+              <Card title={'Sesambagel'} desc={'Bagels, vete, olivolja, salt, jäst, maltsirap, sesamfrön'} img={'https://gastrogate.com/thumbs2/1000/files/32894/vMI-PgK55XrlbYxvgRnCF4sU-tMEKoe3bnvjx-AbZxbFUx3XYhsqA_PSijk9ZOmF/original.jpg?ext=https://locousercontent.com/vMI-PgK55XrlbYxvgRnCF4sU-tMEKoe3bnvjx-AbZxbFUx3XYhsqA_PSijk9ZOmF/original.jpg'} price={'21'}/>
+              <Card title={'fikonråg'} desc={'Råg, surdeg, fikon, russin, solrosfrön, linfrön, maltsirap'} img={'https://gastrogate.com/thumbs2/1000/files/32894/l3YNk3FE4YWZGNTvceXlNKxEP08JrMMdkpKUMmerijVdiFem2sIRjmTqRf3c_7So/original.jpg?ext=https://locousercontent.com/l3YNk3FE4YWZGNTvceXlNKxEP08JrMMdkpKUMmerijVdiFem2sIRjmTqRf3c_7So/original.jpg'} price={'63'}/>
+              <Card title={'tunnbrödsknäcke'} desc={'4-pack med flingsalt'} img={'https://gastrogate.com/thumbs2/1000/files/32894/cK6FQDm4Ik3nU3Fz4PlMS-dTaw-JFrmKjvgKmyFRmTpdeHHTbOIikW_aTb0_5myW/original.jpg?ext=https://locousercontent.com/cK6FQDm4Ik3nU3Fz4PlMS-dTaw-JFrmKjvgKmyFRmTpdeHHTbOIikW_aTb0_5myW/original.jpg'} price={'98'}/>
+              <Card title={'surdegsfralla'} desc={'Råg, vetemjöl, surdeg, salt'} img={'https://gastrogate.com/thumbs2/1000/files/32894/Ff6zTzpCLksOzBgAvYhhTxDs1HO3fgb8XH9cRPja_yA3hKL-o6ReUklD7s9WvKXu/original.jpg?ext=https://locousercontent.com/Ff6zTzpCLksOzBgAvYhhTxDs1HO3fgb8XH9cRPja_yA3hKL-o6ReUklD7s9WvKXu/original.jpg'} price={'15'}/>
+            </div>
+            <h1 className='header'>KAFFEBRÖD</h1>
+            <div className='sortiment'>
+              <Card title={'Croissant'} desc={''} img={'https://gastrogate.com/thumbs2/1000/files/32894/d_h9h7_iGlfAoxAhWXqeH_hIyoZMMhh1j26xwEesraxqy9xfcn-SU8Oa_9MMbMzg/original.jpg?ext=https://locousercontent.com/d_h9h7_iGlfAoxAhWXqeH_hIyoZMMhh1j26xwEesraxqy9xfcn-SU8Oa_9MMbMzg/original.jpg'} price={'32'}/>
+              <Card title={'Valnötscroissant'} desc={''} img={'https://gastrogate.com/thumbs2/1000/files/32894/C9hzomWpgjajgWazfamxXRnNQqqUya_QZ_dx4SWZuz2q5jJQRbJIDVxyDDTPSuo2/original.jpg?ext=https://locousercontent.com/C9hzomWpgjajgWazfamxXRnNQqqUya_QZ_dx4SWZuz2q5jJQRbJIDVxyDDTPSuo2/original.jpg'} price={'21'}/>
+              <Card title={'kanelbulle'} desc={''} img={'https://gastrogate.com/thumbs2/1000/files/32894/9jhiyIa-vguz0hzeplKHQWF6ZZMuSkNRvLI_ZQ1OrD26DEdhX_-KukbKJiKMkkun/original.jpg?ext=https://locousercontent.com/9jhiyIa-vguz0hzeplKHQWF6ZZMuSkNRvLI_ZQ1OrD26DEdhX_-KukbKJiKMkkun/original.jpg'} price={'32'}/>
+              <Card title={'kardemummabulle'} desc={''} img={'https://gastrogate.com/thumbs2/1000/files/32894/BK4z5dvMjrn53z9vYZauwwKBPsDlpGeZVDjBVz2Ip_pVtgZwmLHl39sOrv4JxucB/original.jpg?ext=https://locousercontent.com/BK4z5dvMjrn53z9vYZauwwKBPsDlpGeZVDjBVz2Ip_pVtgZwmLHl39sOrv4JxucB/original.jpg'} price={'32'}/>
+            </div>
+            <h1 className='header'>BITAR</h1>
+            <div className='sortiment'>
+              <Card title={'saltkolabrownie'} desc={''} img={'https://gastrogate.com/thumbs2/1000/files/32894/UrJMkZhCtZaGHSv5xe2togHsssqQf-cYJZ-91zLTZO3gjLm_Yn_X9ADgoIy1h3RA/original.jpg?ext=https://locousercontent.com/UrJMkZhCtZaGHSv5xe2togHsssqQf-cYJZ-91zLTZO3gjLm_Yn_X9ADgoIy1h3RA/original.jpg'} price={'30'}/>
+              <Card title={'chokladbiskvi'} desc={''} img={'https://gastrogate.com/thumbs2/1000/files/32894/M2H6CRJNUWqVPjf_Boh7ZbKJqzCHzFpVJxSjqAygrdA01imSZHY3h0ljcsHY5QOA/original.jpg?ext=https://locousercontent.com/M2H6CRJNUWqVPjf_Boh7ZbKJqzCHzFpVJxSjqAygrdA01imSZHY3h0ljcsHY5QOA/original.jpg'} price={'30'}/>
+              <Card title={'macadamiabrownie'} desc={'Brownie, med chokladkräm & en nypa salt, macadamianötter'} img={'https://gastrogate.com/thumbs2/1000/files/32894/NO2YgyV7I79PHcy6Rqwu2880nWXQ6szmx9MLOPMDsgDXzpQAB2qOyIboKH9pzUV8/original.jpg?ext=https://locousercontent.com/NO2YgyV7I79PHcy6Rqwu2880nWXQ6szmx9MLOPMDsgDXzpQAB2qOyIboKH9pzUV8/original.jpg'} price={'35'}/>
+              <Card title={'tosca'} desc={''} img={'https://gastrogate.com/thumbs2/1000/files/32894/8pBimCg24H4stNLxf2BN1m-abJQ0xF3w7x0a-X3LjPSy8zV21QC26zlFJD9ezDLW/original.jpg?ext=https://locousercontent.com/8pBimCg24H4stNLxf2BN1m-abJQ0xF3w7x0a-X3LjPSy8zV21QC26zlFJD9ezDLW/original.jpg'} price={'36'}/>
+              <Card title={'chokladboll'} desc={'Laktosfri med pärlsocker'} img={'https://gastrogate.com/thumbs2/1000/files/32894/t2aVBVZH9M3dVuNpS1FIc-fnhHgfWB9fEOnb2F6xZLU69m5ue6T0S1A8D3nDXF1e/original.jpg?ext=https://locousercontent.com/t2aVBVZH9M3dVuNpS1FIc-fnhHgfWB9fEOnb2F6xZLU69m5ue6T0S1A8D3nDXF1e/original.jpg'} price={'27'}/>
+              <Card title={'chokladboll'} desc={'Laktosfri med rostad kokos'} img={'https://gastrogate.com/thumbs2/1000/files/32894/4jSr0FDQ351-PlcNBRS_JPqvasEeUEMDn52vCmOUj1EASHZZ2Mk1eN5vv-QaaFJm/original.jpg?ext=https://locousercontent.com/4jSr0FDQ351-PlcNBRS_JPqvasEeUEMDn52vCmOUj1EASHZZ2Mk1eN5vv-QaaFJm/original.jpg'} price={'27'}/>
+              <Card title={'punchrulle'} desc={''} img={'https://gastrogate.com/thumbs2/1000/files/32894/sjVuyKFUDJ8p6thVnbN8FbuofTRABATsjH0wWX2EsVcQADPaXNv7ZxmUFejPh5MW/original.jpg?ext=https://locousercontent.com/sjVuyKFUDJ8p6thVnbN8FbuofTRABATsjH0wWX2EsVcQADPaXNv7ZxmUFejPh5MW/original.jpg'} price={'30'}/>
+            </div>
           </div>
 
       </div>
