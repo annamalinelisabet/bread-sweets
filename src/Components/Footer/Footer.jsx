@@ -1,8 +1,8 @@
 import React from 'react'
 import './Footer.css'
 import logo from '../../Images/logo.png'
-import { HiOutlineMail } from 'react-icons/hi'
-import { AiOutlineMail } from 'react-icons/ai'
+import { AiOutlineMail, AiOutlineInstagram } from 'react-icons/ai'
+import { FaFacebookSquare } from 'react-icons/fa'
 
 const Footer = () => {
   return (
@@ -41,23 +41,6 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* <div className='info-title-wrapper'>
-          <div className='dflex info-wrap'>
-
-            <div className='info-link'>
-              <h3 className='link-title'>Kontakt</h3>
-            </div>
-
-            <div className='info-link'>
-              <h3 className='link-title'>Hitta hit</h3>
-            </div>
-
-            <div className='info-link'>
-              <h3 className='link-title'>Öppetider</h3>
-            </div>
-          </div>
-        </div> */}
-
           <div className='info-wrapper'>
             <div className='dflex wrap'>
 
@@ -72,7 +55,7 @@ const Footer = () => {
               <div className='link find'>
                 <h3 className='link-title'>Hitta hit</h3>
               <div className='vertical-lg left hide'></div>
-                <h4 className='hide'>Bread & sweets by Jennie</h4>
+                <p className='hide'>Bread & sweets by Jennie</p>
                 <p>Öster Mälarstrands Allé 18 723 57 Västerås</p>
               <div className='vertical-lg right hide'></div>
               </div>
@@ -81,9 +64,11 @@ const Footer = () => {
               <div className='link open-hours'>
                   <div className='dflex time'>
                     <h3 className='link-title'>Öppetider</h3>
-                    <p className='open-title hide'>Tisdagar - fredag</p>
-                    <p className='open-title show'>Tis - fre</p>
-                    <p>08:00 - 18:00</p>
+                    <div>
+                      <p className='open-title hide'>Tisdagar - fredag</p>
+                      <p className='open-title show'>Tis - fre</p>
+                      <p>08:00 - 18:00</p>
+                    </div>
                   </div>
 
                   <div className='dflex time'>
@@ -96,8 +81,8 @@ const Footer = () => {
           </div>
 
         <div className='social-links'>
-          <div className='icon'></div>
-          <div className='icon'></div>
+          <AiOutlineInstagram className='icon'/>
+          <FaFacebookSquare className='icon fb'/>
         </div>
       </div>
     </div>

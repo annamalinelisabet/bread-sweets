@@ -1,6 +1,6 @@
 .Footer {
     background: var(--secondary-clr);
-    height: 600px;
+    height: 100%;
     z-index: 400;
     position: relative;
 }
@@ -55,6 +55,7 @@
 .Footer .nav-link h4 {
     text-transform: uppercase;
     font-weight: 600;
+    color: var(--primary-clr);
 }
 
 .Footer .vertical {
@@ -78,12 +79,12 @@
 
 .Footer .left {
     bottom: .5rem;
-    left: -5rem;
+    left: 0rem;
 }
 
 .Footer .right {
     bottom: .5rem;
-    right: -2rem;
+    right: 0rem;
 }
 
 .Footer .info-wrapper {
@@ -97,23 +98,12 @@
     margin-bottom: 1rem;
     font-size: 15px;
     font-weight: bold;
+    color: var(--primary-clr);
 }
-
-/* .Footer .info-wrap {
-    justify-content: center;
-    align-items: center;
-} */
 
 .Footer .find h4, .Footer .find p {
     text-align: center;
 }
-
-/* .Footer .info-link {
-   width: 100%;
-   justify-content: center;
-   align-items: center;
-   display: flex;
-} */
 
 .Footer .wrap {
     display: flex;
@@ -131,16 +121,6 @@
     font-size: 14px;
 }
 
-/* .Footer .info-title-wrapper {
-    padding: 1rem;
-}
-
-.Footer .info-title-wrapper h3 {
-    text-transform: uppercase;
-    font-weight: 600;
-    font-size: 16px;
-} */
-
 .Footer .time {
     flex-direction: column;
     text-align: center;
@@ -155,8 +135,8 @@
 }
 
 .Footer .email {
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     color: #000;
     margin-top: .2rem;
 }
@@ -176,6 +156,22 @@
 
 .Footer .time p {
     margin-bottom: .2rem;
+}
+
+.Footer .social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Footer .icon {
+    width: 30px;
+    height: 30px;
+    margin: .5rem;
+}
+
+.Footer .fb {
+    width: 26px;
+    height: 26px;
 }
 
 
