@@ -14,21 +14,21 @@ const Categories = () => {
         </div>
 
         <div className='categories-wrapper'>
-            <Link to="/">
+            <Link to="/assortment" state={{ from: 'cake'}}>
                 <div className='category cake'>
                         <div className='main-btn dflex center'>
                             <h2>Tårtor</h2>
                         </div>
                 </div>
             </Link>
-            <Link to="/">
+            <Link to="/assortment" state={{ from: 'bread'}}>
                 <div className='category bread'>
                         <div className='main-btn dflex center'>
                             <h2>Bröd</h2>
                         </div>
                 </div>
             </Link>
-            <Link to="/">
+            <Link to="/assortment" state={{ from: 'buns'}}>
                 <div className='category pastry'>
                         <div className='main-btn dflex center'>
                             <h2>Kaffebröd</h2>

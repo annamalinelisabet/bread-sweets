@@ -33,14 +33,13 @@
     border-radius: 3px;
 }
 
-.AssortmentView .top-header {
+.top-header {
     font-family: var(--yeseva-header-font);
     text-align: center;
     text-transform: uppercase;
     padding-top: 4rem;
-    font-size: 3.5rem;
+    font-size: 3rem;
     color: var(--secondary-clr);
-
 }
 
 .AssortmentView .wrapper {
@@ -53,7 +52,7 @@
     list-style: none;
     padding-bottom: 200px;
     position: sticky;
-    top: 90px;
+    top: 105px;
     align-self: flex-start;
     height: 500px;
     display: flex;

@@ -10,9 +10,9 @@ const Card = ({ title, price, desc, img }) => {
         <div className="text-div">
           <div className="top-text">
             <h3 className='title'>{title}</h3>
-            <p className='price'>{price} kr</p>
+            <p className='desc'>{desc}</p>
           </div>
-          <p className='desc'>{desc}</p>
+          <p className='price'>{price} kr</p>
         </div>
     </div>
   )

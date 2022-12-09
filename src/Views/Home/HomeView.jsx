@@ -1,4 +1,4 @@
-import React from 'react'
+import { useEffect } from 'react'
 import './HomeView.css'
 import Categories from '../../Components/Categories/Categories'
 import About from '../../Components/About/About'
@@ -9,6 +9,11 @@ import Gift from '../../Components/Gift/Gift'
 import Video from '../../Components/Video/Video'
 
 const HomeView = () => {
+
+  useEffect(() => {
+    window.scrollTo({top: 0, left: 0, behavior: 'instant'}); 
+  }, [])
+
   return (
     <div className='Home frame'>
       <Hero />

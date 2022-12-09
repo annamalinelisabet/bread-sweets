@@ -15,7 +15,7 @@
     width: min(85%, 550px);
     background: var(--secondary-clr);
     border-radius: 0 3px 3px 0;
-    animation: 3s 3s 2 horizontal-shaking;
+    animation: 2s 1s horizontal-shaking;
     
     transition: 1s ease-out;
     transform: translateX(-100%);
@@ -23,7 +23,8 @@
 }
 
 .calendar.show {
-    transform: none;
+    transform: translateX(-1%);
+    /* transform: none; */
     animation: none;
 }
 
@@ -124,9 +125,8 @@
 @keyframes horizontal-shaking {
     0% { transform: translateX(-100%) }
     25% { transform: translateX(-96%) }
-    40% { transform: translateX(-100%) }
-    50% { transform: translateX(-96%) }
-    75% { transform: translateX(-100%) }
+    50% { transform: translateX(-100%) }
+    75% { transform: translateX(-96%) }
     100% { transform: translateX(-100%) }
    }
 

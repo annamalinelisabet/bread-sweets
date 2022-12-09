@@ -1,6 +1,6 @@
 .Card {
     background: var(--secondary-clr);
-    height: 280px;
+    height: 285px;
 }
 
 .Card .img-wrapper {
@@ -18,26 +18,32 @@
 
 .Card .text-div {
     width: 90%;
-    margin: 10px auto;
-
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 32%;
 }
 
 .Card .top-text {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-bottom: .3rem;
+    margin-top: .5rem;
 }
 
 .Card .title {
     text-transform: uppercase;
-    font-size: .8rem;
+    font-size: .9rem;
+    font-weight: bold;
+    color: var(--main-dark);
 }
 
 .Card .price {
-    font-size: .7rem;
+    font-size: .8rem;
 }
 
 .Card .desc {
+    color: var(--primary-clr);
     font-size: .8rem;
 }

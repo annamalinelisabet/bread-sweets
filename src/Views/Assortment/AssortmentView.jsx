@@ -1,15 +1,28 @@
 import {useEffect, useRef} from 'react'
+// import { useLocation } from 'react-router-dom'
 import './AssortmentView.css'
 import Photo from '../../Images/assortment.jpg'
 import Card from '../../Components/Card/Card'
 
 const AssortmentView = () => {
 
+  // const location = useLocation()
+  // const { from } = location.state
+
   useEffect(() => {
     window.scrollTo({top: 0, left: 0, behavior: 'instant'}); 
   }, [])
 
   const pralineRef = useRef();
+  const breadRef = useRef();
+  const bunsRef = useRef();
+  const smallRef = useRef();
+  const pastryRef = useRef();
+  const cakesRef = useRef();
+  const cookieRef = useRef();
+  // const drinkRef = useRef();
+  const sandwichRef = useRef();
+  const packedRef = useRef();
   
 
   return (
@@ -20,16 +33,16 @@ const AssortmentView = () => {
         <h1 className='top-header'>sortiment</h1>
       <div className="wrapper container">
         <ul className='list'>
-            <li onClick={() => pralineRef.current.scrollIntoView()}>Praliner</li>
-            <li>Bröd</li>
-            <li>kaffebröd</li>
-            <li>bitar</li>
-            <li>bakelser</li>
-            <li>tårtor</li>
-            <li>kakor</li>
-            <li>dryck</li>
-            <li>smörgåsar</li>
-            <li>förpackat</li>
+            <li onClick={() => pralineRef.current.scrollIntoView({behavior: "smooth", block: "center"})}>Praliner</li>
+            <li onClick={() => breadRef.current.scrollIntoView({behavior: "smooth", block: "center"})}>Bröd</li>
+            <li onClick={() => bunsRef.current.scrollIntoView({behavior: "smooth", block: "center"})}>kaffebröd</li>
+            <li onClick={() => smallRef.current.scrollIntoView({behavior: "smooth", block: "center"})}>bitar</li>
+            <li onClick={() => pastryRef.current.scrollIntoView({behavior: "smooth", block: "center"})}>bakelser</li>
+            <li onClick={() => cakesRef.current.scrollIntoView({behavior: "smooth", block: "center"})}>tårtor</li>
+            <li onClick={() => cookieRef.current.scrollIntoView({behavior: "smooth", block: "center"})}>kakor</li>
+            {/* <li onClick={() => drinkRef.current.scrollIntoView({behavior: "smooth", block: "center"})}>dryck</li> */}
+            <li onClick={() => sandwichRef.current.scrollIntoView({behavior: "smooth", block: "center"})}>smörgåsar</li>
+            <li onClick={() => packedRef.current.scrollIntoView({behavior: "smooth", block: "center"})}>förpackat</li>
           </ul>
           <div className="grid-wrapper">
             <h1 className='header' ref={pralineRef} >Praliner</h1>
@@ -42,7 +55,7 @@ const AssortmentView = () => {
               <Card title={'present 12 st'} desc={'12 st mixade praliner i presentförpackning'} img={'https://gastrogate.com/thumbs2/1000/files/32894/Leq09j4GzCIZBsJo1hx-9dTV1zl6kyLygR1cvqAKVa5ANUWWPWrgVLiFunKAD5Gr/original.jpg?ext=https://locousercontent.com/Leq09j4GzCIZBsJo1hx-9dTV1zl6kyLygR1cvqAKVa5ANUWWPWrgVLiFunKAD5Gr/original.jpg'} price={'265'}/>
               <Card title={'present 18 st'} desc={'18 st mixade praliner i presentförpackning'} img={'https://gastrogate.com/thumbs2/1000/files/32894/2asZ-tyMs3ZppneQtVqZvN_fhmTZX0EXGuy4PPmzsznSDMEsscMqZrPONGPHeWhT/original.jpg?ext=https://locousercontent.com/2asZ-tyMs3ZppneQtVqZvN_fhmTZX0EXGuy4PPmzsznSDMEsscMqZrPONGPHeWhT/original.jpg'} price={'375'}/>
             </div>
-            <h1 className='header'>BRÖD</h1>
+            <h1 className='header' ref={breadRef}>BRÖD</h1>
             <div className='sortiment'>
               <Card title={'surdeg ljus'} desc={'Råg, vetemjöl, surdeg, salt'} img={'https://gastrogate.com/thumbs2/1000/files/32894/sMGCGc2SUaWyX-iM0_oDfQHPDlptvgMWp-IiIenWlbAHOK89abUrmULjs5YKqvbN/original.jpg?ext=https://locousercontent.com/sMGCGc2SUaWyX-iM0_oDfQHPDlptvgMWp-IiIenWlbAHOK89abUrmULjs5YKqvbN/original.jpg'} price={'58'}/>
               <Card title={'minibrytbröd'} desc={'Surdegsbröd för två, penslat med olivolja, toppad med flingsalt och frön'} img={'https://gastrogate.com/thumbs2/1000/files/32894/OUESuGISD9WpWS0YIWRUt-KLegKS2t7gfzZDBxLjB-EFu267p09j0C2v8HYBOWZZ/original.jpg?ext=https://locousercontent.com/OUESuGISD9WpWS0YIWRUt-KLegKS2t7gfzZDBxLjB-EFu267p09j0C2v8HYBOWZZ/original.jpg'} price={'21'}/>
@@ -51,14 +64,14 @@ const AssortmentView = () => {
               <Card title={'tunnbrödsknäcke'} desc={'4-pack med flingsalt'} img={'https://gastrogate.com/thumbs2/1000/files/32894/cK6FQDm4Ik3nU3Fz4PlMS-dTaw-JFrmKjvgKmyFRmTpdeHHTbOIikW_aTb0_5myW/original.jpg?ext=https://locousercontent.com/cK6FQDm4Ik3nU3Fz4PlMS-dTaw-JFrmKjvgKmyFRmTpdeHHTbOIikW_aTb0_5myW/original.jpg'} price={'98'}/>
               <Card title={'surdegsfralla'} desc={'Råg, vetemjöl, surdeg, salt'} img={'https://gastrogate.com/thumbs2/1000/files/32894/Ff6zTzpCLksOzBgAvYhhTxDs1HO3fgb8XH9cRPja_yA3hKL-o6ReUklD7s9WvKXu/original.jpg?ext=https://locousercontent.com/Ff6zTzpCLksOzBgAvYhhTxDs1HO3fgb8XH9cRPja_yA3hKL-o6ReUklD7s9WvKXu/original.jpg'} price={'15'}/>
             </div>
-            <h1 className='header'>KAFFEBRÖD</h1>
+            <h1 className='header' ref={bunsRef}>KAFFEBRÖD</h1>
             <div className='sortiment'>
               <Card title={'Croissant'} desc={''} img={'https://gastrogate.com/thumbs2/1000/files/32894/d_h9h7_iGlfAoxAhWXqeH_hIyoZMMhh1j26xwEesraxqy9xfcn-SU8Oa_9MMbMzg/original.jpg?ext=https://locousercontent.com/d_h9h7_iGlfAoxAhWXqeH_hIyoZMMhh1j26xwEesraxqy9xfcn-SU8Oa_9MMbMzg/original.jpg'} price={'32'}/>
               <Card title={'Valnötscroissant'} desc={''} img={'https://gastrogate.com/thumbs2/1000/files/32894/C9hzomWpgjajgWazfamxXRnNQqqUya_QZ_dx4SWZuz2q5jJQRbJIDVxyDDTPSuo2/original.jpg?ext=https://locousercontent.com/C9hzomWpgjajgWazfamxXRnNQqqUya_QZ_dx4SWZuz2q5jJQRbJIDVxyDDTPSuo2/original.jpg'} price={'21'}/>
               <Card title={'kanelbulle'} desc={''} img={'https://gastrogate.com/thumbs2/1000/files/32894/9jhiyIa-vguz0hzeplKHQWF6ZZMuSkNRvLI_ZQ1OrD26DEdhX_-KukbKJiKMkkun/original.jpg?ext=https://locousercontent.com/9jhiyIa-vguz0hzeplKHQWF6ZZMuSkNRvLI_ZQ1OrD26DEdhX_-KukbKJiKMkkun/original.jpg'} price={'32'}/>
               <Card title={'kardemummabulle'} desc={''} img={'https://gastrogate.com/thumbs2/1000/files/32894/BK4z5dvMjrn53z9vYZauwwKBPsDlpGeZVDjBVz2Ip_pVtgZwmLHl39sOrv4JxucB/original.jpg?ext=https://locousercontent.com/BK4z5dvMjrn53z9vYZauwwKBPsDlpGeZVDjBVz2Ip_pVtgZwmLHl39sOrv4JxucB/original.jpg'} price={'32'}/>
             </div>
-            <h1 className='header'>BITAR</h1>
+            <h1 className='header' ref={smallRef}>BITAR</h1>
             <div className='sortiment'>
               <Card title={'saltkolabrownie'} desc={''} img={'https://gastrogate.com/thumbs2/1000/files/32894/UrJMkZhCtZaGHSv5xe2togHsssqQf-cYJZ-91zLTZO3gjLm_Yn_X9ADgoIy1h3RA/original.jpg?ext=https://locousercontent.com/UrJMkZhCtZaGHSv5xe2togHsssqQf-cYJZ-91zLTZO3gjLm_Yn_X9ADgoIy1h3RA/original.jpg'} price={'30'}/>
               <Card title={'chokladbiskvi'} desc={''} img={'https://gastrogate.com/thumbs2/1000/files/32894/M2H6CRJNUWqVPjf_Boh7ZbKJqzCHzFpVJxSjqAygrdA01imSZHY3h0ljcsHY5QOA/original.jpg?ext=https://locousercontent.com/M2H6CRJNUWqVPjf_Boh7ZbKJqzCHzFpVJxSjqAygrdA01imSZHY3h0ljcsHY5QOA/original.jpg'} price={'30'}/>
@@ -67,6 +80,52 @@ const AssortmentView = () => {
               <Card title={'chokladboll'} desc={'Laktosfri med pärlsocker'} img={'https://gastrogate.com/thumbs2/1000/files/32894/t2aVBVZH9M3dVuNpS1FIc-fnhHgfWB9fEOnb2F6xZLU69m5ue6T0S1A8D3nDXF1e/original.jpg?ext=https://locousercontent.com/t2aVBVZH9M3dVuNpS1FIc-fnhHgfWB9fEOnb2F6xZLU69m5ue6T0S1A8D3nDXF1e/original.jpg'} price={'27'}/>
               <Card title={'chokladboll'} desc={'Laktosfri med rostad kokos'} img={'https://gastrogate.com/thumbs2/1000/files/32894/4jSr0FDQ351-PlcNBRS_JPqvasEeUEMDn52vCmOUj1EASHZZ2Mk1eN5vv-QaaFJm/original.jpg?ext=https://locousercontent.com/4jSr0FDQ351-PlcNBRS_JPqvasEeUEMDn52vCmOUj1EASHZZ2Mk1eN5vv-QaaFJm/original.jpg'} price={'27'}/>
               <Card title={'punchrulle'} desc={''} img={'https://gastrogate.com/thumbs2/1000/files/32894/sjVuyKFUDJ8p6thVnbN8FbuofTRABATsjH0wWX2EsVcQADPaXNv7ZxmUFejPh5MW/original.jpg?ext=https://locousercontent.com/sjVuyKFUDJ8p6thVnbN8FbuofTRABATsjH0wWX2EsVcQADPaXNv7ZxmUFejPh5MW/original.jpg'} price={'30'}/>
+            </div>
+            <h1 className='header' ref={pastryRef}>BAKELSER</h1>
+            <div className='sortiment'>
+              <Card title={'prinsessbakelse'} desc={'Sockerkaka, hallonsylt, vaniljkräm, grädde och marsipan'} img={'https://gastrogate.com/thumbs2/1000/files/32894/6AR2j4dEt_nitzGNQIX8RF8FbLjt6pAXoMjui5btxh1b2UUCPYAoygsfClBhjwHj/original.jpg?ext=https://locousercontent.com/6AR2j4dEt_nitzGNQIX8RF8FbLjt6pAXoMjui5btxh1b2UUCPYAoygsfClBhjwHj/original.jpg'} price={'59'}/>
+              <Card title={'Citrontartelette'} desc={'Citrontartelette med italiensk maräng (nötfri)'} img={'https://gastrogate.com/thumbs2/1000/files/32894/1wAnJ3VBhojXD5_wPZmCS0ugeOQN2sKvfgrDLz_OO_byTuUfSxnTozH5tkLwJCBP/original.jpg?ext=https://locousercontent.com/1wAnJ3VBhojXD5_wPZmCS0ugeOQN2sKvfgrDLz_OO_byTuUfSxnTozH5tkLwJCBP/original.jpg'} price={'42'}/>
+              <Card title={'Vegansk bakelse'} desc={'Hallonmousse, passionskräm och krispig kokosbotten (nöt- och glutenfri)'} img={'https://gastrogate.com/thumbs2/1000/files/32894/XZ8rozCfGF1iTke9E8KgjAzQynkiTgnDk0m9mzmA-lcUhpUdCdAJVyWevdAcQ0h5/original.jpg?ext=https://locousercontent.com/XZ8rozCfGF1iTke9E8KgjAzQynkiTgnDk0m9mzmA-lcUhpUdCdAJVyWevdAcQ0h5/original.jpg'} price={'62'}/>
+              <Card title={'Jennies vinnarbakelse'} desc={'Vit chokladmousse, jordgubb- och rabarberkompott och mandelbotten (glutenfri)'} img={'https://gastrogate.com/thumbs2/1000/files/32894/0_00VBOTSf1DMvtVR5FcuUdyuj3_5lVol7vi5v-l1_nisogXGYzBw8uXI10gOzqh/original.jpg?ext=https://locousercontent.com/0_00VBOTSf1DMvtVR5FcuUdyuj3_5lVol7vi5v-l1_nisogXGYzBw8uXI10gOzqh/original.jpg'} price={'62'}/>
+              <Card title={'Créme brulée'} desc={'Chokladmousse, crème brûlée och browniebotten (nöt-, gluten- och laktosfri)'} img={'https://gastrogate.com/thumbs2/1000/files/32894/3lJUCYmyMbaO6l8bneT5xoktajKSanLBCCUJw6asfEVPe63TSPyGv2qnDDNEQQPE/original.jpg?ext=https://locousercontent.com/3lJUCYmyMbaO6l8bneT5xoktajKSanLBCCUJw6asfEVPe63TSPyGv2qnDDNEQQPE/original.jpg'} price={'62'}/>
+              <Card title={'morotskaka'} desc={'Morotskaka med cream cheese frosting (nöt- och laktosfri)'} img={'https://gastrogate.com/thumbs2/1000/files/32894/ToXfD2PJiUiT2lf17BGJc12naTDfPQUyDd-paxbwUrG_WoAu_4mobqcDB0FEiHoz/original.jpg?ext=https://locousercontent.com/ToXfD2PJiUiT2lf17BGJc12naTDfPQUyDd-paxbwUrG_WoAu_4mobqcDB0FEiHoz/original.jpg'} price={'46'}/>
+              <Card title={'Pecankolapaj portion'} desc={'Pecankolapaj med vispad vaniljpannacotta'} img={'https://gastrogate.com/thumbs2/1000/files/32894/dKoen3nL6KCj_faADgaPfQ4rZraeT5pr6fSx0g0t5xAxEQ3GeEHtsrWf299lcG03/original.jpg?ext=https://locousercontent.com/dKoen3nL6KCj_faADgaPfQ4rZraeT5pr6fSx0g0t5xAxEQ3GeEHtsrWf299lcG03/original.jpg'} price={'59'}/>
+            </div>
+            <h1 className='header' ref={cakesRef}>TÅRTOR</h1>
+            <div className="sortiment">
+              <Card title={''} desc={''} img={''} price={''} />
+              <Card title={''} desc={''} img={''} price={''} />
+              <Card title={''} desc={''} img={''} price={''} />
+              <Card title={''} desc={''} img={''} price={''} />
+              <Card title={''} desc={''} img={''} price={''} />
+              <Card title={''} desc={''} img={''} price={''} />
+            </div>
+            <h1 className='header' ref={cookieRef}>KAKOR</h1>
+            <div className="sortiment">
+              <Card title={''} desc={''} img={''} price={''} />
+              <Card title={''} desc={''} img={''} price={''} />
+              <Card title={''} desc={''} img={''} price={''} />
+              <Card title={''} desc={''} img={''} price={''} />
+              <Card title={''} desc={''} img={''} price={''} />
+              <Card title={''} desc={''} img={''} price={''} />
+            </div>
+            <h1 className='header' ref={sandwichRef}>SMÖRGÅSAR</h1>
+            <div className="sortiment">
+              <Card title={''} desc={''} img={''} price={''} />
+              <Card title={''} desc={''} img={''} price={''} />
+              <Card title={''} desc={''} img={''} price={''} />
+              <Card title={''} desc={''} img={''} price={''} />
+              <Card title={''} desc={''} img={''} price={''} />
+              <Card title={''} desc={''} img={''} price={''} />
+            </div>
+            <h1 className='header' ref={packedRef}>FÖRPACKAT</h1>
+            <div className="sortiment">
+              <Card title={''} desc={''} img={''} price={''} />
+              <Card title={''} desc={''} img={''} price={''} />
+              <Card title={''} desc={''} img={''} price={''} />
+              <Card title={''} desc={''} img={''} price={''} />
+              <Card title={''} desc={''} img={''} price={''} />
+              <Card title={''} desc={''} img={''} price={''} />
             </div>
           </div>
 

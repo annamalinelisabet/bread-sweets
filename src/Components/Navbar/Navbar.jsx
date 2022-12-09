@@ -17,16 +17,23 @@ const Navbar = () => {
   }
 
   const logoSize = () => {
-    if (window.scrollY >= 200) {
+    if (window.scrollY >= 150) {
       logoRef.current.classList.add('small-logo')
-      // navRef.current.classList.add('shadow')
+      navRef.current.classList.add('shadow')
     } else {
       logoRef.current.classList.remove('small-logo')
-      // navRef.current.classList.remove('shadow')
+      navRef.current.classList.remove('shadow')
     }
   };
 
+  const closeMenu = () => {
+    if (window.scrollY >= 5) {
+      setShowMenu(false)
+    } 
+  };
+
   window.addEventListener("scroll", logoSize);
+  window.addEventListener("scroll", closeMenu);
 
   return (
       <div className='fixed'>
