@@ -35,7 +35,7 @@ const Footer = () => {
             
               <div className='nav-link'>
                 <Link to="/reviews">
-                  <h4>Omdöme</h4>
+                  <h4>Recension</h4>
                 </Link>
               </div>
 
@@ -82,8 +82,10 @@ const Footer = () => {
               <div className='link find'>
                 <h3 className='link-title'>Hitta hit</h3>
                 <p className='hide'>Bread & sweets by Jennie</p>
-                <p>Öster Mälarstrands Allé 18</p>
-                <p>723 57 Västerås</p>
+                <a href='https://www.google.com/maps/dir/59.6149426,16.5635034/breadandsweets/@59.6112866,16.5595587,15z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x465e61c2bafcaffd:0xa4a2aa1e3463a834!2m2!1d16.573777!2d59.605625' target="_blank" rel='noopener noreferrer'>
+                  <p className='ul'>Öster Mälarstrands Allé 18</p>
+                  <p className='ul'>723 57 Västerås</p>
+                </a>
               </div>
 
 

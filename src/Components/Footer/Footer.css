@@ -3,9 +3,13 @@
     height: 100%;
     position: relative;
 }
+.Footer .ul {
+    text-decoration: underline;
+    cursor: pointer;
+}
 .Footer a {
-    text-decoration: none;
     margin: 0;
+    color: #000;
 }
 
 .Footer .container {

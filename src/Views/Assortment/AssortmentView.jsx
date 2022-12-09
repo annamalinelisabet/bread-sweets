@@ -1,27 +1,16 @@
 import {useEffect, useRef} from 'react'
-import { useLocation } from 'react-router-dom'
+// import { useLocation } from 'react-router-dom'
 import './AssortmentView.css'
 import Photo from '../../Images/assortment.jpg'
 import ProductCard from '../../Components/ProductCard/ProductCard'
 
 const AssortmentView = () => {
 
-  const location = useLocation()
-  const { from } = location.state
-
-  const scrollToCake = (ref) => {
-    if(from === 'cake'){
-      window.scrollTo({cakesRef})
-    }
-  }
+  // const location = useLocation()
+  // const { from } = location.state
 
   useEffect(() => {
-    if(from === 'cake'){
-
-      
-    }else {
       window.scrollTo({top: 0, left: 0, behavior: 'instant'}); 
-    }
   }, [])
 
 
