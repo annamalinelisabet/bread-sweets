@@ -1,7 +1,6 @@
 .Footer {
     background: var(--secondary-clr);
     height: 100%;
-    z-index: 400;
     position: relative;
 }
 .Footer a {

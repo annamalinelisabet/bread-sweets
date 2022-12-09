@@ -1,7 +1,9 @@
 import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import './OrderView.css'
-import Photo from '../../Images/order-buns.jpg'
+import App from '../../Images/appflyer.png'
+import Google from '../../Images/badge-app-store.svg'
+import AppStore from '../../Images/badge-google-play.svg'
 
 const OrderView = () => {
 
@@ -11,20 +13,31 @@ const OrderView = () => {
 
   return (
     <div className='OrderView frame'>
-        <div className="img-div">
-          <img src={Photo} alt="Cinnamon buns" />
 
-          {/* <div className="img-text">
-            <h1>BESTÄLL ONLINE</h1>
-          </div> */}
-        </div>
         <h1 className='top-header'>beställ online</h1>
-        <div className="text-div container">
-          <p>Här kan du beställa direkt från vår meny. Betala enkelt via swish eller kort.</p>
-          <p className='p'> Vid större beställningar kan vi leverera inom Västerås utan extra kostnad.</p>
-          <a href="https://order.thelocoapp.com/restaurants/2lUtPS0dfQ?menuType=TakeAway" target="_blank" rel="noopener noreferrer"><button className='btn btn-online'>öppna beställningsvy i nytt fönster</button></a>
-        </div>
-        <p className='small container'>Har du en beställningsförfrågan eller andra funderingar, <Link to='/contact'><span className='link'>hör av dig.</span></Link></p>
+          <div className="text-div">
+            <p className='info'>Här kan du smidigt beställa direkt från vår meny. Betalt och klart när du kommer till butiken!</p>
+            <a href="https://order.thelocoapp.com/restaurants/2lUtPS0dfQ?menuType=TakeAway" target="_blank" rel="noopener noreferrer"><button className='btn btn-online'>öppna beställningsvy i nytt fönster</button></a>
+            <p className='p'> Vid större beställningar kan vi även leverera inom Västerås utan extra kostnad.</p>
+            <p className='small'>Har du en bokningsförfrågan eller andra funderingar, <Link to='/contact'><span className='link'>hör av dig.</span></Link></p>
+          </div>
+          <div className="line"></div>
+          <div className='app'> 
+            <img className='app-img' src={App} alt="" />
+            <div className="download">
+              <h2 className='download-header'>LADDA HEM IDAG</h2>
+              <p className='info'>Beställ enkelt våra aktuella produkter direkt från vår app.</p>
+              <p className='p'>Observera att bröd och bakelser kan variera beroende på helg och vardagar.</p>
+              <div className="banner-div">
+                <div className='img-div'>
+                  <img src={Google} alt="" />
+                </div>
+                <div className="img-div">
+                  <img src={AppStore} alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
     </div>
   )
 }

@@ -1,72 +1,124 @@
-.OrderView .img-div {
-    height: 70vh;
-    width: 100%;
-    position: relative;
-    margin-top: 3rem;
+.OrderView {
+    padding: 12rem 0 6rem 0;
 }
-
-.OrderView .img-div img {
-    object-fit: cover;
-    object-position: bottom 20px;
-    width: 100%;
-    height: 100%;
-}
-
-.OrderView .img-div:before {
-    content: '';
-    background-image: linear-gradient(to top, rgba(239,239,239,255), rgba(239, 239, 239, 0.082));
-    position: absolute;
-    height: 100px;
-    right: 0;
-    bottom: 0;
-    left: 0;
-  }
 
 .OrderView h1 {
     text-align: center;
-    font-family: var(  --yeseva-header-font);
+    font-family: var(--yeseva-header-font);
     color: var(--secondary-clr);
     margin-top: 1rem;
 }
 
 .OrderView .text-div {
+    width: min(90%, 600px);
     margin: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
-    padding: 2.2rem 0 2rem 0;
+    padding: 2.2rem 0 0 0;
 
 }
 
-.OrderView .text-div p {
+.OrderView .info {
     text-align: center;
     color: var(--primary-clr);
     font-weight: bold;
-    font-size: 1.1rem;
+    font-size: .95rem;
     line-height: 1.1rem;
 }
 
-.OrderView p.p {
-    font-size: .8rem;
-    margin-top: .6rem;
+.OrderView .p {
+    text-align: center;
+    color: var(--primary-clr);
+    font-size: .65rem;
+    margin-top: .5rem;
 }
 
 .OrderView .small {
     font-size: .8rem;
+    font-weight: bold;
     text-align: center;
-    padding-bottom: 4rem;
+    margin-top: 5rem;
+    color: var(--black-clr);
 }
 
 .OrderView .link {
-    color: black;
     text-decoration: underline;
+    color: var(--black-clr);
 }
 
 .OrderView .btn-online {
     margin-top: 1rem;
-    width: min(100%, 500px);
+    width: 100%;
+    font-size: .9rem;
+}
+
+.OrderView .line {
+    height: 2px;
+    background: var(--secondary-clr);
+    width: min(80%, 1000px);
+    margin: 2rem auto;
+}
+
+.OrderView .app {
+    width: min(90%, 600px);
+    margin: auto;
+}
+
+.OrderView .app-img {
+    width: 100%;
+    display: none;
+}
+
+.OrderView .download {
+    background: white;
+    padding: 2rem;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.OrderView .banner-div {
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+}
+
+.OrderView .img-div {
+    height: 40px;
+}
+
+.OrderView .banner-div img {
+    width: 100%;
+    height: 100%;
+}
+
+.OrderView .download-header {
+    font-family: var(--yeseva-header-font);
+    color: var(--primary-clr);
+}
+
+.OrderView .download .info {
+    text-align: start;
+    margin-top: .5rem;
+}
+
+.OrderView .download .p {
+    text-align: start;
+    margin-bottom: 1rem;
+}
+
+@media (min-width: 992px) {
+    .OrderView .app-img {
+        display: block;
+    }
+
+    .OrderView .download {
+        display: none;
+    }
 }
 
 

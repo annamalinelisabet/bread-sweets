@@ -45,7 +45,7 @@
 .AssortmentView .wrapper {
     display: flex;
     gap: 2rem;
-    padding-bottom: 4rem;
+    padding-bottom: 6rem;
 }
 
 .AssortmentView .list {
