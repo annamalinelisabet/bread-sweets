@@ -31,7 +31,7 @@
     width: 100%;
 }
 .Gift .text-wrapper h1 {
-    font-size: 60px;
+    font-size: 40px;
     color: var(--primary-clr);
     font-family: var(  --yeseva-header-font);
 }
@@ -79,8 +79,15 @@
 }
 /* -- LINK END -- */
 
+@media only screen and (min-width: 662px) {
+    .Gift .text-wrapper h1 {
+        font-size: 60px; 
+    }
+
+}
+
 @media only screen and (min-width: 992px) {
-    
+
 .Gift .img-wrapper {
     width: 500px;
     height: 500px;

@@ -13,10 +13,8 @@ const OrderView = () => {
     <div className='OrderView frame'>
         <div className="img-div">
           <img src={Photo} alt="Cinnamon buns" />
-          <div className="img-text">
-            <h1>BESTÄLL ONLINE</h1>
-          </div>
         </div>
+          <h1>BESTÄLL ONLINE</h1>
         <div className="text-div container">
           <p>Här kan du beställa direkt från vår meny. Betala enkelt via swish eller kort.</p>
           <button className='btn btn-online'>öppna beställningsvy i nytt fönster</button>

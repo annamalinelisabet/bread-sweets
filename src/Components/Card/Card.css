@@ -1,0 +1,19 @@
+.Card .stars {
+    display: flex;
+  }
+
+  .Card .star {
+    color: var(--primary-clr);
+    margin-left: .3rem;
+  }
+
+  .Card .review {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 2rem;
+    width: min(100%, 900px);
+    background-color: #fff;
+  }
+
+  .Card .review p {
+    margin-top: 1rem;
+  }
