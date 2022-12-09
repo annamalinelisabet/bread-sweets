@@ -13,6 +13,9 @@
 .About .mt-4 {
     margin-top: 2rem;
 }
+.About .padding {
+    padding: 2rem;
+}
 .About .about-wrapper {
     height: 100%;
     display: flex;
@@ -33,6 +36,7 @@
     align-items: center;
     flex-direction: column;
     height: 100%;
+    width: 100%;
 }
 .About .text-wrapper h1 {
     font-family: var(--yeseva-header-font);

@@ -1,13 +1,20 @@
-import { useEffect } from 'react'
+import React, {useEffect} from 'react'
 import Card from '../../Components/Card/Card'
 import heart from '../../Images/flour-heart.jpg'
 import './ReviewsView.css'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 const ReviewsView = () => {
 
+
   useEffect(() => {
     window.scrollTo({top: 0, left: 0, behavior: 'instant'}); 
+  }, [])
+
+  useEffect(() => {
+    AOS.init();
   }, [])
 
   return (
@@ -21,7 +28,7 @@ const ReviewsView = () => {
         </div>
       <div className='container'>
 
-        <div className='card-wrapper'>
+        <div className='card-wrapper' data-aos="fade-up" data-aos-duration="1000" data-aos-once="true" >
 
           <Card />
           <Card />
