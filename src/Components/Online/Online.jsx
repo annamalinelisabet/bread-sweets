@@ -1,14 +1,20 @@
 import './Online.css'
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { FaCoffee } from 'react-icons/fa'
 import 'animate.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 const Online = () => {
+    useEffect(() => {
+        AOS.init();
+      }, [])
+
   return (
     <div className='Online'>
-        <div className='wrapper container'>
+        <div className='wrapper container' data-aos="fade-up" data-aos-duration="2000" data-aos-once="true">
             <div className='cup-wrappper'>
                 <div className='dflex'>
                     <div className='line line1'></div>

@@ -23,6 +23,8 @@
     border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
     margin-top: 2rem;
     background-color: var(--primary-clr);
+    animation-duration: 3s;
+    animation-delay: 3s;
 }
 .btn-online:hover {
     box-shadow:2px 8px 4px -6px hsla(0,0%,0%,.3);

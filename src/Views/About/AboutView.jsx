@@ -3,8 +3,13 @@ import './AboutView.css'
 import Photo from '../../Images/jennie-cake.jpg'
 import Jennie from '../../Images/jenniecolor.jpg'
 import wheat from '../../Images/wheat.png'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const AboutView = () => {
+    useEffect(() => {
+    AOS.init();
+  }, [])
 
   useEffect(() => {
     window.scrollTo({top: 0, left: 0, behavior: 'instant'}); 
@@ -13,10 +18,10 @@ const AboutView = () => {
   return (
     <div className='AboutView frame'>
       <div className='wrapper container'>
-        <div className='img-container'>
+        <div className='img-container'  data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-in-sine">
           <img src={Jennie} alt="Jennie" />
         </div>
-        <div className="text-div">
+        <div className="text-div" data-aos="fade-up" data-aos-duration="700" data-aos-easing="ease-in-sine" data-aos-once="true">
           <div className='container'>
             <p><span className='title'>Jennie Elmerfors</span> blev 2007 Årets Konditor som första kvinna någonsin.</p>
             <p className='mt1'> Hon har genom åren gått en mängd kurser i bland annat bröd, choklad, desserter, glass och tårtor - både i Sverige och utomlands. Även haft i egna kurser i konditori.</p>
@@ -27,7 +32,7 @@ const AboutView = () => {
 
         <div className='dflex container'>
 
-            <div className='fact'>
+            <div className='fact' data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-sine" data-aos-once="true">
               
               <h4 className='fact-title'>Rolig fakta om Jennie</h4>
               <div>
@@ -44,7 +49,7 @@ const AboutView = () => {
               </div>
             </div>
 
-            <div className='img-wrap'>
+            <div className='img-wrap' data-aos="fade-left" data-aos-duration="1000" data-aos-easing="ease-in-sine" data-aos-once="true">
               <img src={Photo} alt="Jennie with friends" className='img'/>
             </div>
         </div>
