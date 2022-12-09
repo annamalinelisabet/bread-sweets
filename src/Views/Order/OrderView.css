@@ -22,19 +22,11 @@
     left: 0;
   }
 
-.OrderView .img-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: var(--background-clr);
-    padding: 1rem;
-    opacity: 80%;
-    border-radius: 3px;
-}
-
 .OrderView h1 {
     text-align: center;
+    font-family: var(  --yeseva-header-font);
+    color: var(--secondary-clr);
+    margin-top: 1rem;
 }
 
 .OrderView .text-div {
@@ -43,7 +35,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
     padding: 2.2rem 0 2rem 0;
+
 }
 
 .OrderView .text-div p {

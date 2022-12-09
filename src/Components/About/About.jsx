@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import './About.css'
 import 'animate.css';
 import girlBaking from '../../Images/girlbake.jpg'
+import photo from '../../Images/pastry-making.jpg'
 
 const About = () => {
   return (
@@ -10,7 +11,7 @@ const About = () => {
        <div className='about-wrapper'>
         <div className='bg-color'>
             <div className='text-wrapper container'>
-                <div className='mb'>
+                <div className='mb mt'>
                     <h1>Om oss</h1>
                     <p className='mt mb'>Vi är ett modernt bageri och konditori med stort fokus på hantverket. Här hittar du allt från klassiskt fika till innovativa desserter och bröd.
                     <span className='mb mt dblock'>Alla våra bröd bakas med surdeg i stenugn. Degarna jäser minst ett dygn vilket gör bröden saftigare, mer smakrika och bibehåller mer näring.</span>
@@ -23,7 +24,7 @@ const About = () => {
             </div>
         </div>
             <div className='img-wrapper'>
-                <img src={ girlBaking } alt="Stand with pastries" className='img'/>
+                <img src={ photo } alt="Stand with pastries" className='img'/>
             </div>
        </div>
     </div>

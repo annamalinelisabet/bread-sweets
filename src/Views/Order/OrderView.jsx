@@ -13,6 +13,7 @@ const OrderView = () => {
     <div className='OrderView frame'>
         <div className="img-div">
           <img src={Photo} alt="Cinnamon buns" />
+
           {/* <div className="img-text">
             <h1>BESTÄLL ONLINE</h1>
           </div> */}

@@ -1,0 +1,104 @@
+.Reviews {
+    height: 100%;
+    margin-bottom: 5rem;
+}
+.Reviews .container {
+    width: 90%;
+}
+.Reviews .dflex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* --- BTN --- */
+
+.btn-review{
+    background:transparent;
+    padding:1rem;
+    transition:all .5s ease;
+    color: #fff;
+    font-size:1rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    outline:none;
+    font-weight: bold;
+    border: 3px solid var(--primary-clr);
+    box-shadow: 20px 38px 34px -26px hsla(0,0%,0%,.2);
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+    margin-block: 1rem 3rem;
+    background-color: var(--primary-clr);
+}
+.btn-review:hover {
+    box-shadow:2px 8px 4px -6px hsla(0,0%,0%,.3);
+}
+.btn-review:active {
+    background: #fff;
+    color: var(--primary-clr);
+}
+
+/* --- BTN END --- */
+
+
+
+.Reviews .img-div {
+    height: 70vh;
+    width: 100%;
+    position: relative;
+    margin-top: 3rem;
+}
+
+.Reviews .img-div img {
+    object-fit: cover;
+    object-position: bottom 10px;
+    object-position: right;
+    width: 100%;
+    height: 100%;
+}
+
+.Reviews .img-div:before {
+    content: '';
+    background-image: linear-gradient(to top, rgba(239,239,239,255), rgba(239, 239, 239, 0.082));
+    position: absolute;
+    height: 100px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+
+  .Reviews .title {
+    font-family: var(--yeseva-header-font);
+    color: var(--secondary-clr);
+    font-size: 25px;
+    text-transform: uppercase;
+    margin-block: 2rem .5rem;
+  }
+
+  .Reviews .card-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    gap: 1rem;
+  }
+
+
+  @media (min-width: 662px) {
+    .Reviews .card-wrapper { 
+        grid-template-columns: repeat(2, 1fr); 
+    }
+
+  }
+
+@media (min-width: 992px) {
+    
+    .Reviews .card-wrapper { 
+        grid-template-columns: repeat(3, 1fr); 
+    }
+    .Reviews .title {
+        font-size: 30px;
+    }
+    .Reviews .container {
+        width: 80%;
+    }
+}

@@ -64,7 +64,7 @@ const Navbar = () => {
                 <li><NavLink to='/' className='link'><p>Hem</p></NavLink></li>
                 <li><NavLink to='/assortment' className='link'><p>sortiment</p></NavLink></li>
                 <li><NavLink to='/order' className='link'><p>beställ</p></NavLink></li>
-                <li><NavLink to='/reviews' className='link'><p>omdömen</p></NavLink></li>
+                <li><NavLink to='/reviews' className='link'><p>Recension</p></NavLink></li>
                 <li><NavLink to='/contact' className='link'><p>kontakt</p></NavLink></li>
               </ul>
             </div>
