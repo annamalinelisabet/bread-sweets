@@ -19,9 +19,21 @@
 
 .AboutView .img-div img {
     object-fit: cover;
-    object-position: 50% 2%;
+    object-position: top;
     width: 100%;
     height: 100%;
+}
+
+/* -- IMG SECONDARY -- */
+
+.AboutView .img-container {
+    width:  700px;
+    height: 350px;
+    margin-top: 4rem;
+}
+
+.AboutView .img-container img {
+    width: 100%;
 }
 
 .AboutView .img-div:before {

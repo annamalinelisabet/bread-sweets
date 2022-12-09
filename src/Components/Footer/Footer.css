@@ -134,6 +134,10 @@
     font-weight: bold;
 }
 
+.Footer .open-hours {
+    position: relative;
+}
+
 .Footer .email-txt {
     display: none;
 }
@@ -150,7 +154,6 @@
 }
 
 .Footer .find {
-    position: relative;
     margin-right: 1.5rem;
 }
 
@@ -221,8 +224,4 @@
     .Footer .container {
         width: 80%;
     }
-
-    /* .Footer .info-title-wrapper h3 {
-        font-size: 20px;
-    } */
 }

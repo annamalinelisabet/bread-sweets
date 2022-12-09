@@ -61,30 +61,32 @@ const Footer = () => {
               </div>
 
 
-              <div className='link find'>
-                <h3 className='link-title'>Hitta hit</h3>
-              <div className='vertical-lg left hide'></div>
-                <p className='hide'>Bread & sweets by Jennie</p>
-                <p>Öster Mälarstrands Allé 18 723 57 Västerås</p>
-              <div className='vertical-lg right hide'></div>
-              </div>
-
-
               <div className='link open-hours'>
                   <div className='dflex time'>
-                    <h3 className='link-title'>Öppetider</h3>
-                    <div>
-                      <p className='open-title hide'>Tisdagar - fredag</p>
-                      <p className='open-title show'>Tis - fre</p>
-                      <p>08:00 - 18:00</p>
+                    <div className='vertical-lg left hide'></div>
+                    <h3 className='link-title'>Öppettider</h3>
+                      <div>
+                        <p className='open-title hide'>Tisdagar - fredag</p>
+                        <p className='open-title show'>Tis - fre</p>
+                        <p>08:00 - 18:00</p>
+                      </div>
                     </div>
-                  </div>
 
-                  <div className='dflex time'>
-                    <p className='open-title'>Helg</p>
-                    <p>08:00 - 16:00</p>
-                  </div>
+                    <div className='dflex time'>
+                      <p className='open-title'>Helg</p>
+                      <p>08:00 - 16:00</p>
+                    </div>
+                  <div className='vertical-lg right hide'></div>
               </div>
+
+              <div className='link find'>
+                <h3 className='link-title'>Hitta hit</h3>
+                <p className='hide'>Bread & sweets by Jennie</p>
+                <p>Öster Mälarstrands Allé 18</p>
+                <p>723 57 Västerås</p>
+              </div>
+
+
 
             </div>
           </div>
