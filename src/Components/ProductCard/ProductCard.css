@@ -1,22 +1,22 @@
-.Card {
+.ProductCard {
     background: var(--secondary-clr);
     height: 285px;
 }
 
-.Card .img-wrapper {
+.ProductCard .img-wrapper {
     width: 90%;
     margin: auto;
     height: 60%;
     margin-top: 12px;
 }
-.Card .img-wrapper img {
+.ProductCard .img-wrapper img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: top;
 }
 
-.Card .text-div {
+.ProductCard .text-div {
     width: 90%;
     margin: auto;
     display: flex;
@@ -25,25 +25,25 @@
     height: 32%;
 }
 
-.Card .top-text {
+.ProductCard .top-text {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     margin-top: .5rem;
 }
 
-.Card .title {
+.ProductCard .title {
     text-transform: uppercase;
     font-size: .9rem;
     font-weight: bold;
     color: var(--main-dark);
 }
 
-.Card .price {
+.ProductCard .price {
     font-size: .8rem;
 }
 
-.Card .desc {
+.ProductCard .desc {
     color: var(--primary-clr);
     font-size: .8rem;
 }
