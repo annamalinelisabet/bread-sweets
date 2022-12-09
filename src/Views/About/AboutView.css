@@ -1,61 +1,43 @@
 .AboutView .container {
     width: 90%;
 }
-
 .AboutView .dflex {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+.AboutView .wrapper {
+    display: flex;
+    padding-top: 15rem;
+    flex-direction: column;
+}
 .AboutView .mt1 {
     margin-top: 1rem;
-}
-.AboutView .img-div {
-    height: 70vh;
-    width: 100%;
-    position: relative;
-    margin-top: 3rem;
-}
-
-.AboutView .img-div img {
-    object-fit: cover;
-    object-position: top;
-    width: 100%;
-    height: 100%;
 }
 
 /* -- IMG SECONDARY -- */
 
 .AboutView .img-container {
-    width:  700px;
-    height: 350px;
-    margin-top: 4rem;
+    width:  100%;
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    margin-bottom: 1rem;
 }
 
 .AboutView .img-container img {
     width: 100%;
 }
 
-.AboutView .img-div:before {
-    content: '';
-    background-image: linear-gradient(to top, rgba(239,239,239,255), rgba(239,239,239,0));
-    position: absolute;
-    height: 100px;
-    right: 0;
-    bottom: 0;
-    left: 0;
-  }
-
 .AboutView .text-div {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 2rem;
 }
 .AboutView .text-div p {
-    text-align: center;
     font-weight: bold;
+    /* color: var(--primary-clr); */
 }
 .AboutView .title {    font-weight: bold;
     font-size: 25px;
@@ -63,14 +45,16 @@
 }
 
 .AboutView .fact {
-    width: 90%;
+    width: 100%;
     background-color: #fff;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
     padding: 1rem;
     margin-block: 6rem 8rem;
     position: relative;
+    display: flex;
+    justify-content: space-between;
 }
-.AboutView .fact .fact-title {
+.AboutView .fact-title {
     text-align: center;
     font-size: 20px;
     position: absolute;
@@ -79,21 +63,80 @@
     color: var(--primary-clr);
     text-transform: uppercase;
     font-weight: bold;
+    font-family: var(--yeseva-header-font);
 }
 
 .AboutView .fact p {
     margin-top: 1rem;
+    color: var(--primary-clr);
+}
+
+.AboutView .img {
+    width: 100%;
+    padding-bottom: 1.5rem;
+
+}
+
+.AboutView .img-wrap {
+    width: 50%;
+    height: 100%;
+    display: none;
+}
+
+.AboutView .wheat-wrap {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.AboutView .wheat {
+    opacity: 10%;
+}
+
+@media (min-width: 662px) {
+    .AboutView .wheat {
+        opacity: 15%;
+    }
 }
 
 @media (min-width: 992px) {
+
+
     .AboutView .container {
-        width: 50%;
+        width: 80%;
     }    
+    .AboutView .wrapper {
+        flex-direction: row;
+        padding-top: 20rem;
+    }
+
     .AboutView .fact {
-        width: 50%;
+        width: 100%;
         padding: 1.5rem;
     }
 
+    .AboutView .fact .fact-title {
+        left: 10%;
+        font-size: 25px;
+    }
+}
+
+@media (min-width: 1122px) {
+
+    .AboutView .fact {
+        width: 50%;
+    }
+    .AboutView .wheat-wrap {
+        display: none;
+    }
+
+    .AboutView .img-wrap {
+        display: block;
+    }
+}
+
+@media (min-width: 1522px) {
+    
     .AboutView .fact .fact-title {
         left: 27%;
         font-size: 25px;
