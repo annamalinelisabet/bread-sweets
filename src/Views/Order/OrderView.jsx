@@ -17,8 +17,9 @@ const OrderView = () => {
             <h1>BESTÄLL ONLINE</h1>
           </div> */}
         </div>
+        <h1 className='top-header'>beställ online</h1>
         <div className="text-div container">
-          <p>Här kan du beställa online direkt från vår meny. Betala enkelt via swish eller kort.</p>
+          <p>Här kan du beställa direkt från vår meny. Betala enkelt via swish eller kort.</p>
           <p className='p'> Vid större beställningar kan vi leverera inom Västerås utan extra kostnad.</p>
           <a href="https://order.thelocoapp.com/restaurants/2lUtPS0dfQ?menuType=TakeAway" target="_blank" rel="noopener noreferrer"><button className='btn btn-online'>öppna beställningsvy i nytt fönster</button></a>
         </div>
