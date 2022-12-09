@@ -12,7 +12,7 @@
     height: 100%;
 }
 
-.img-div:before {
+.OrderView .img-div:before {
     content: '';
     background-image: linear-gradient(to top, rgba(239,239,239,255), rgba(239, 239, 239, 0.082));
     position: absolute;
@@ -35,13 +35,22 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 1rem 0 2rem 0;
+
+    padding: 2.2rem 0 2rem 0;
+
 }
 
 .OrderView .text-div p {
     text-align: center;
     color: var(--primary-clr);
     font-weight: bold;
+    font-size: 1.1rem;
+    line-height: 1.1rem;
+}
+
+.OrderView p.p {
+    font-size: .8rem;
+    margin-top: .6rem;
 }
 
 .OrderView .small {

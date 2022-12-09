@@ -13,13 +13,18 @@ const OrderView = () => {
     <div className='OrderView frame'>
         <div className="img-div">
           <img src={Photo} alt="Cinnamon buns" />
+
+          {/* <div className="img-text">
+            <h1>BESTÄLL ONLINE</h1>
+          </div> */}
         </div>
-          <h1>BESTÄLL ONLINE</h1>
+        <h1 className='top-header'>beställ online</h1>
         <div className="text-div container">
           <p>Här kan du beställa direkt från vår meny. Betala enkelt via swish eller kort.</p>
-          <button className='btn btn-online'>öppna beställningsvy i nytt fönster</button>
+          <p className='p'> Vid större beställningar kan vi leverera inom Västerås utan extra kostnad.</p>
+          <a href="https://order.thelocoapp.com/restaurants/2lUtPS0dfQ?menuType=TakeAway" target="_blank" rel="noopener noreferrer"><button className='btn btn-online'>öppna beställningsvy i nytt fönster</button></a>
         </div>
-        <p className='small container'>Vill du göra en större beställning eller har andra funderingar, <Link to='/contact'><span className='link'>hör av dig.</span></Link></p>
+        <p className='small container'>Har du en beställningsförfrågan eller andra funderingar, <Link to='/contact'><span className='link'>hör av dig.</span></Link></p>
     </div>
   )
 }

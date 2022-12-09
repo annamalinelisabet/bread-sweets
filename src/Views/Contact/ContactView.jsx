@@ -1,6 +1,5 @@
 import { useEffect } from 'react'
 import './ContactView.css'
-import Photo from '../../Images/hero-img.jpg'
 
 const ContactView = () => {
 
@@ -10,16 +9,43 @@ const ContactView = () => {
 
   return (
     <div className='ContactView frame'>
-        <div className="img-div">
-            <img src={Photo} alt="Cinnamon buns" />
-            <div className="img-text">
-              <h1>KONTAKT</h1>
-            </div>
-        </div>
-        <div className="text-div">
-            <p>Här ska det vara ett kontaktformulär</p>
-            <p>och kanske övriga kontaktuppgifter???</p>
-        </div>
+          <h1 className='top-header'>kontakta oss</h1>
+          <div className="wrapper">
+            <form>
+                <div>
+                  <label>Typ av meddelande</label>
+                  <select>
+                    <option selected>  -- VÄLJ --</option>
+                    <option>Synpunkt</option>
+                    <option>Bokningsförfrågan</option>
+                    <option>Jobbansökan</option>
+                  </select>
+                </div>
+                <div>
+                  <label>Ditt meddelande</label>
+                  <textarea rows="10"></textarea>
+                </div>
+                <div>
+                  <label>Ditt namn</label>
+                  <input type="text" />
+                </div>
+                <div>
+                  <label>Ditt telefonnummer</label>
+                  <input type="text" />
+                </div>
+                <div>
+                  <label>Din e-postadress</label>
+                  <input type="text" />
+                </div>
+                <button className='btn btn-online'>skicka</button>
+            </form>
+            {/* <div className="text-div">
+              <h4>Eller konta</h4>
+                <p>Här ska det vara ett kontaktformulär</p>
+                <p>och kanske övriga kontaktuppgifter???</p>
+            </div> */}
+
+          </div>
     </div>
   )
 }

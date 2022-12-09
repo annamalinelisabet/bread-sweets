@@ -47,7 +47,7 @@
     flex-direction: column;
     justify-content: space-between;
     width: 50px;
-    height: 50px;
+    height: 45px;
     padding: 10px;
     cursor: pointer;
     overflow: hidden;
@@ -62,7 +62,8 @@
 }
 
 .burger.open span:nth-child(1) {
-    transform: translateY(22px) rotate(45deg);
+    transform: translateY(13px) rotate(45deg);
+    width: 2.2rem;
 }
 
 .burger.open span:nth-child(2) {
@@ -70,7 +71,8 @@
 }
 
 .burger.open span:nth-child(3) {
-    transform: translateY(-4px) rotate(-45deg);
+    transform: translateY(-9px) rotate(-45deg);
+    width: 2.2rem;
 }
 
 .Navbar .nav-content-wrapper {
@@ -154,7 +156,7 @@
     content: url('../../Images/menu-wheat.png');
     position: absolute;
     bottom: 0;
-    left: -1rem;
+    left: -1.5rem;
 }
 
 .NavMenu .nav-links:hover .link:not(:hover) {
@@ -210,7 +212,7 @@
         height: 250px;
         display: flex;
         align-items: flex-end;
-        /* box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px; */
+        box-shadow: 0px 15px 10px -15px rgba(17, 17, 17, 0.285); 
     }
 
     .overflow-hidden {
@@ -231,6 +233,10 @@
         text-align: center;
     }
     
+
+    .NavMenu .link.active p::before {
+        content: '';
+    }
 
 
 }

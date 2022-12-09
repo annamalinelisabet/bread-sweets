@@ -1,38 +1,51 @@
-.ContactView .img-div {
-    height: 70vh;
-    width: 100%;
-    position: relative;
-    margin-top: 3rem;
+.ContactView {
+    padding: 12rem 0 4rem 0;
 }
 
-.ContactView .img-div img {
-    object-fit: cover;
-    object-position: bottom 20px;
-    width: 100%;
-    height: 100%;
+/* .ContactView .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+} */
+
+
+
+
+/* ------- FORM --------- */
+
+.ContactView form {
+    width: min(80%, 500px);
+    margin: 2rem auto;
 }
 
-.ContactView .img-div:before {
-    content: '';
-    background-image: linear-gradient(to top, rgba(239,239,239,255), rgba(239,239,239,0));
-    position: absolute;
-    height: 100px;
-    right: 0;
-    bottom: 0;
-    left: 0;
-  }
+.ContactView label {
+    display: inline-block;
+    color: var(--primary-clr);
+    font-weight: bold;
+    margin: 1rem 0 .3rem 0;
+}
 
-.ContactView .img-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: var(--background-clr);
-    padding: 1rem;
-    opacity: 80%;
+.ContactView input,
+.ContactView textarea,
+.ContactView select {
+    width: 100%;
+    resize: none;
+    padding: .5rem .8rem;
     border-radius: 3px;
+    border: 1px solid var(--secondary-clr);
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--primary-clr);
+    color: var(--main-dark);
+}
+.ContactView input:focus,
+.ContactView, textarea:focus {
+    outline: 2px solid var(--primary-clr);
 }
 
-.ContactView .text-div {
-    height: 500px;
+.ContactView .btn-online {
+    width: 100%;
+    margin-top: 1rem;
 }
