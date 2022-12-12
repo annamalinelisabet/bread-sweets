@@ -1,7 +1,7 @@
 import React from 'react'
 import './Card.css'
-import { AiFillStar } from 'react-icons/ai'
-import { RxCookie } from 'react-icons/rx'
+// import { AiFillStar } from 'react-icons/ai'
+// import { RxCookie } from 'react-icons/rx'
 import { FaCookieBite } from 'react-icons/fa'
 
 
