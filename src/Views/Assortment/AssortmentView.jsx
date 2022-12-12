@@ -9,12 +9,20 @@ const AssortmentView = () => {
   // const location = useLocation()
   // const { from } = location.state
 
+  
   useEffect(() => {
-      window.scrollTo({top: 0, left: 0, behavior: 'instant'}); 
+    // console.log(from)
+    // if(from === null){
+    //   window.scrollTo({top: 0, left: 0, behavior: 'instant'}); 
+    // } else {
+    //   console.log(from)
+    //   scrollToRef(from)
+    // }
+    window.scrollTo({top: 0, left: 0, behavior: 'instant'});
   }, [])
+  
 
-
-
+  
   const pralineRef = useRef();
   const breadRef = useRef();
   const bunsRef = useRef();
@@ -26,7 +34,6 @@ const AssortmentView = () => {
   const sandwichRef = useRef();
   const packedRef = useRef();
   
-
   return (
     <div className='AssortmentView frame'>
         <div className="img-div">
@@ -95,39 +102,34 @@ const AssortmentView = () => {
             </div>
             <h1 className='header' ref={cakesRef}>TÅRTOR</h1>
             <div className="sortiment">
-              <ProductCard title={''} desc={''} img={''} price={''} />
-              <ProductCard title={''} desc={''} img={''} price={''} />
-              <ProductCard title={''} desc={''} img={''} price={''} />
-              <ProductCard title={''} desc={''} img={''} price={''} />
-              <ProductCard title={''} desc={''} img={''} price={''} />
-              <ProductCard title={''} desc={''} img={''} price={''} />
+              <ProductCard title={'prinsesstårta'} desc={'6-8 / 10-12 / 15 bitar'} img={'https://gastrogate.com/thumbs2/1000/files/32894/afJ3spcUE7SEz6N72Qs30Rq4obCj0ACFF-lsAYDCPj29NVl-hAYPdROm7PGDZfNc/original.jpg?ext=https://locousercontent.com/afJ3spcUE7SEz6N72Qs30Rq4obCj0ACFF-lsAYDCPj29NVl-hAYPdROm7PGDZfNc/original.jpg'} price={'350 / 450 / 595'} />
+              <ProductCard title={'Creme brûlée'} desc={'10-12 bitar. Chokladbotten, krispigt flarn, creme brule, mörk chokladmousse. Gluten & laktosfri'} img={'https://gastrogate.com/thumbs2/1000/files/32894/2LRDnNkPoz4p-EyWCn2BIVaT53NreIEmP3boDDjdXUY0ic7ZkCijca_StRU8YZef/original.jpg?ext=https://locousercontent.com/2LRDnNkPoz4p-EyWCn2BIVaT53NreIEmP3boDDjdXUY0ic7ZkCijca_StRU8YZef/original.jpg'} price={'525'} />
+              <ProductCard title={'Jennies vinnartårta'} desc={'5-6 / 10-12 bitar. Mandelbotten, jordgubb/rabarberkompott, vit chokladmousse med citrus'} img={'https://gastrogate.com/thumbs2/1000/files/32894/917J5CwBn4kZp_gJ1Pwx89kylNhZ9J461JAw0_hqTQ1nNZjZkWSDpvcsnHCtN43I/original.jpg?ext=https://locousercontent.com/917J5CwBn4kZp_gJ1Pwx89kylNhZ9J461JAw0_hqTQ1nNZjZkWSDpvcsnHCtN43I/original.jpg'} price={'295 / 525'} />
+              <ProductCard title={'Choklad- och passionstårta'} desc={'5-6 / 10-12 bitar. Ljus chokladmousse, passionskräm och browniebotten (nöt- och glutenfri)'} img={'https://gastrogate.com/thumbs2/1000/files/32894/y4jHY-wQ8LYo0maQqly8a5kMIViPopDvwABTFaFEXcpg511urvGicQz_4kGPgUCK/original.jpg?ext=https://locousercontent.com/y4jHY-wQ8LYo0maQqly8a5kMIViPopDvwABTFaFEXcpg511urvGicQz_4kGPgUCK/original.jpg'} price={'295 / 525'} />
+              <ProductCard title={'Budapeststubbe'} desc={'4-5 bitar. Budapeststubbe med jordgubbar'} img={'https://gastrogate.com/thumbs2/1000/files/32894/L4SL2jeQlcHCr2H9VgnqVjH-B-_kpXP0YScOJtC2sTAhq5ofL1ayUTNkFj11wYVe/original.jpg?ext=https://locousercontent.com/L4SL2jeQlcHCr2H9VgnqVjH-B-_kpXP0YScOJtC2sTAhq5ofL1ayUTNkFj11wYVe/original.jpg'} price={'210'} />
             </div>
             <h1 className='header' ref={cookieRef}>KAKOR</h1>
             <div className="sortiment">
-              <ProductCard title={''} desc={''} img={''} price={''} />
-              <ProductCard title={''} desc={''} img={''} price={''} />
-              <ProductCard title={''} desc={''} img={''} price={''} />
-              <ProductCard title={''} desc={''} img={''} price={''} />
-              <ProductCard title={''} desc={''} img={''} price={''} />
-              <ProductCard title={''} desc={''} img={''} price={''} />
+              <ProductCard title={'Kolasnitt (styckvis)'} desc={'Råsocker, dinkel, vete, smör, sirap'} img={'https://gastrogate.com/thumbs2/1000/files/32894/uoH7dnBSl_c6oQHZZ7XMyMLA_WSHj-Et75P5oybjpZEzpYksTPlU6F9qa-mZGEkv/original.jpg?ext=https://locousercontent.com/uoH7dnBSl_c6oQHZZ7XMyMLA_WSHj-Et75P5oybjpZEzpYksTPlU6F9qa-mZGEkv/original.jpg'} price={'8'} />
+              <ProductCard title={'Kolasnitt (10 st)'} desc={'10-pack kolasnittar'} img={'https://gastrogate.com/thumbs2/1000/files/32894/agw3G3HExjt-ZQqc5x-9-W3BXwIWHsBeznbgAwo7hpaRj0BC8Ey6cVqzpWjFzA3K/original.jpg?ext=https://locousercontent.com/agw3G3HExjt-ZQqc5x-9-W3BXwIWHsBeznbgAwo7hpaRj0BC8Ey6cVqzpWjFzA3K/original.jpg'} price={'65'} />
+              <ProductCard title={'Syltkaka (styckvis)'} desc={'Mördeg/sylt'} img={'https://gastrogate.com/thumbs2/1000/files/32894/NPk_PChYlMQJHzOHqr9LD9Z4hQ_jVNwl0IU4lRNEn6xkjGWb95PY8RBhww1Ff2EA/original.jpg?ext=https://locousercontent.com/NPk_PChYlMQJHzOHqr9LD9Z4hQ_jVNwl0IU4lRNEn6xkjGWb95PY8RBhww1Ff2EA/original.jpg'} price={'8'} />
+              <ProductCard title={'Syltkaka (10 st)'} desc={'10-pack syltkakor'} img={'https://gastrogate.com/thumbs2/1000/files/32894/5yIVc8Eq48HDa9uPgJFvGwfGLcdpnOFADJfbwJGunYAXsDZ6I6oBXxdcV7XjFnAn/original.jpg?ext=https://locousercontent.com/5yIVc8Eq48HDa9uPgJFvGwfGLcdpnOFADJfbwJGunYAXsDZ6I6oBXxdcV7XjFnAn/original.jpg'} price={'65'} />
             </div>
             <h1 className='header' ref={sandwichRef}>SMÖRGÅSAR</h1>
             <div className="sortiment">
-              <ProductCard title={''} desc={''} img={''} price={''} />
-              <ProductCard title={''} desc={''} img={''} price={''} />
-              <ProductCard title={''} desc={''} img={''} price={''} />
-              <ProductCard title={''} desc={''} img={''} price={''} />
-              <ProductCard title={''} desc={''} img={''} price={''} />
-              <ProductCard title={''} desc={''} img={''} price={''} />
+              <ProductCard title={'Fralla med ost & skinka'} desc={'Ost, skinka, sallad, tomat, gurka'} img={'https://gastrogate.com/thumbs2/1000/files/32894/4kbaz6ubqRtCkTD7zq0Ttg3cbzjRyPZjYALN7BnsT-kXIp52BxYru3tT6kPSifLp/original.jpg?ext=https://locousercontent.com/4kbaz6ubqRtCkTD7zq0Ttg3cbzjRyPZjYALN7BnsT-kXIp52BxYru3tT6kPSifLp/original.jpg'} price={'45'} />
+              <ProductCard title={'Baguette med ost & skinka'} desc={'Ost, skinka, sallad, tomat, gurka'} img={'https://gastrogate.com/thumbs2/1000/files/32894/rEnfK0BVLTyNWUo4C_vkWSPsKfDMgS3FPYkwd4q-utI5BlS6gjqLZxQmk8TW1g1U/original.jpg?ext=https://locousercontent.com/rEnfK0BVLTyNWUo4C_vkWSPsKfDMgS3FPYkwd4q-utI5BlS6gjqLZxQmk8TW1g1U/original.jpg'} price={'58'} />
+              <ProductCard title={'Baguette med salami & brie'} desc={'Salami, brie, sallad, paprika'} img={'https://gastrogate.com/thumbs2/1000/files/32894/7y8bwSUyORgwxCPfhwUMOrF_ms5wRepXXYft9Xx_lr1RCnTRRFLPMpeylOQuWdXX/original.jpg?ext=https://locousercontent.com/7y8bwSUyORgwxCPfhwUMOrF_ms5wRepXXYft9Xx_lr1RCnTRRFLPMpeylOQuWdXX/original.jpg'} price={'65'} />
+              <ProductCard title={'Grillsmörgås med grönsallad'} desc={'Grillsmörgås med skinka/mozzarella och grönsallad med basilikaolja.'} img={'https://gastrogate.com/thumbs2/1000/files/32894/o-5dVeH76ouOLCSqXLBnJRpsTMXCqcKey_ZMaKonl-BVJOmOQBFEyX4EKWMie21O/original.jpg?ext=https://locousercontent.com/o-5dVeH76ouOLCSqXLBnJRpsTMXCqcKey_ZMaKonl-BVJOmOQBFEyX4EKWMie21O/original.jpg'} price={'95'} />
             </div>
             <h1 className='header' ref={packedRef}>FÖRPACKAT</h1>
             <div className="sortiment">
-              <ProductCard title={''} desc={''} img={''} price={''} />
-              <ProductCard title={''} desc={''} img={''} price={''} />
-              <ProductCard title={''} desc={''} img={''} price={''} />
-              <ProductCard title={''} desc={''} img={''} price={''} />
-              <ProductCard title={''} desc={''} img={''} price={''} />
-              <ProductCard title={''} desc={''} img={''} price={''} />
+              <ProductCard title={'Granola'} desc={'Honungsrostad krispig müsli med dinkelflingor, havre, solros, linfrö, mandel, kokosflakes'} img={'https://gastrogate.com/thumbs2/1000/files/32894/FMAd3SohsY8aVEBtvsFPxd0aO-qzYeAyK3XFu_QYXzL0VLDxvXhiSE000MKeTeef/original.jpg?ext=https://locousercontent.com/FMAd3SohsY8aVEBtvsFPxd0aO-qzYeAyK3XFu_QYXzL0VLDxvXhiSE000MKeTeef/original.jpg'} price={'49'} />
+              <ProductCard title={'Granola frukt'} desc={'Honungsrostad krispig müsli med torkade blåbär, dinkelflingor, havre, solros, linfrö, mandel, kokosflakes'} img={'https://gastrogate.com/thumbs2/1000/files/32894/TtgcpPksvg6Wwm64IPU5qO2YxlnJMnnQERvQXvUO5jUB38kGJ7vHXBNqBMi2VVCj/original.jpg?ext=https://locousercontent.com/TtgcpPksvg6Wwm64IPU5qO2YxlnJMnnQERvQXvUO5jUB38kGJ7vHXBNqBMi2VVCj/original.jpg'} price={'59'} />
+              <ProductCard title={'Granola choklad & hallon'} desc={'Hallon, mörka chokladbitar, kakao, pumpa, solros, linfrö, havre, dinkel, vanilj, rapsolja, honung'} img={'https://gastrogate.com/thumbs2/1000/files/32894/ZMijp62Sf_hRtWBlUSuoq7YCfdtHFvwRbUdCtoc2Orzf5qsp6YOBqWV7Qq_JY1F4/original.jpg?ext=https://locousercontent.com/ZMijp62Sf_hRtWBlUSuoq7YCfdtHFvwRbUdCtoc2Orzf5qsp6YOBqWV7Qq_JY1F4/original.jpg'} price={'69'} />
+              <ProductCard title={'Kardemummaskorpor'} desc={'Fyllda kardemummaskorpor'} img={'https://gastrogate.com/thumbs2/1000/files/32894/7J_2beeabecgXLo3r55tkJrT7Bbvjnw2wa7eDUPMcogOTeOqTMg3iW6A4UX5bgdI/original.jpg?ext=https://locousercontent.com/7J_2beeabecgXLo3r55tkJrT7Bbvjnw2wa7eDUPMcogOTeOqTMg3iW6A4UX5bgdI/original.jpg'} price={'39'} />
+              <ProductCard title={'Björklunds Te'} desc={'Hel förpackning'} img={'https://gastrogate.com/thumbs2/1000/files/32894/7ioQcwCLFA5zW4uIQta577Wa9_DTsSAzAI8qMdbYWnWzRxJ74qAFutDRpxWZqvJz/original.jpg?ext=https://locousercontent.com/7ioQcwCLFA5zW4uIQta577Wa9_DTsSAzAI8qMdbYWnWzRxJ74qAFutDRpxWZqvJz/original.jpg'} price={'85'} />
+              <ProductCard title={'Björklunds kaffe, Svartån'} desc={'Kraftig Mörkrost paket 500 g'} img={'https://gastrogate.com/thumbs2/1000/files/32894/TgWuevN6futbyr_mbpfhJTq63d-hYzh37PTev6Dpy6WpwCMRhu2YWUxMB35Tw6-F/original.jpg?ext=https://locousercontent.com/TgWuevN6futbyr_mbpfhJTq63d-hYzh37PTev6Dpy6WpwCMRhu2YWUxMB35Tw6-F/original.jpg'} price={'95'} />
             </div>
           </div>
 

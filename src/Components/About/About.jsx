@@ -16,7 +16,7 @@ const About = () => {
     <div className='About'>
        <div className='about-wrapper'>
         <div className='bg-color'>
-            <div className='text-wrapper container padding' data-aos="fade-right" data-aos-duration="2000" data-aos-once="true">
+            <div className='text-wrapper padding' data-aos="fade-right" data-aos-duration="2000" data-aos-once="true">
                 <div className='mb'>
                     <h1>Om oss</h1>
                     <p className='mt mb'>Vi är ett modernt bageri och konditori med stort fokus på hantverket. Här hittar du allt från klassiskt fika till innovativa desserter och bröd.
