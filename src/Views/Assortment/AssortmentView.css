@@ -12,7 +12,7 @@
     height: 100%;
 }
 
-.AssortmentView .img-div:before {
+/* .AssortmentView .img-div:before {
     content: '';
     background-image: linear-gradient(to top, rgba(239,239,239,255), rgba(239, 239, 239, 0.004));
     position: absolute;
@@ -20,7 +20,7 @@
     right: 0;
     bottom: 0;
     left: 0;
-  }
+  } */
 
 .AssortmentView .img-text {
     position: absolute;

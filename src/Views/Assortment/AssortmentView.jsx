@@ -39,7 +39,7 @@ const AssortmentView = () => {
         <div className="img-div">
           <img src={Photo} alt="Cinnamon buns" />
         </div>
-        <h1 className='top-header'>sortiment</h1>
+        {/* <h1 className='top-header'>sortiment</h1> */}
       <div className="wrapper container">
         <ul className='list'>
             <li onClick={() => pralineRef.current.scrollIntoView({behavior: "smooth", block: "center"})}>Praliner</li>
