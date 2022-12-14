@@ -1,0 +1,73 @@
+.styled-scrollbars {
+    /* Foreground, Background */
+    scrollbar-color: rgb(255, 255, 255) #333;
+}
+
+.styled-scrollbars::-webkit-scrollbar {
+    height: 7px; /* Mostly for horizontal scrollbars */
+}
+
+
+.styled-scrollbars::-webkit-scrollbar-thumb { /* Foreground */
+    background: var(--primary-clr);
+    border-radius: 5px;
+}
+
+.styled-scrollbars::-webkit-scrollbar-track { /* Background */
+    background: transparent;
+}
+
+.Filter .pt{
+    padding-top: 20rem;
+}
+
+.Filter .mb-2 {
+    margin-bottom: 2rem;
+}
+
+
+.Filter .categories{
+    display: flex;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    height: 100%;
+    padding-block: 1rem;
+}
+
+.Filter li {
+    list-style: none;
+}
+
+.Filter .category {
+    background-color: #fff;
+    padding: .5rem;
+    margin-right: 1rem;
+    color: var(--primary-clr);
+    font-weight: bold;
+    border: 1px solid #fff;
+    border-radius: 2px;
+    display: inline-block;
+}
+
+.Filter .category:hover {
+    background: var(--primary-clr);
+    color: #fff;
+    border: 1px solid var(--primary-clr);
+    font-weight: 100;
+}
+
+.Filter .category:active {
+    background: var(--primary-clr);
+    color: #fff;
+    border: 1px solid var(--primary-clr);
+    font-weight: 100;
+}
+
+.Filter .snaps-inline {
+    scroll-snap-type: inline mandatory;
+    /* scroll-padding-inline: 1rem; */
+}
+
+.Filter .snaps-inline > * {
+    scroll-snap-align: start;
+}

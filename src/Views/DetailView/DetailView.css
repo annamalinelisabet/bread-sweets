@@ -7,7 +7,7 @@
 }
 
 .DetailView .pt-max {
-    padding-top: 12rem;
+    /* padding-top: 12rem; */
 }
 
 .DetailView .pb {
@@ -113,6 +113,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    font-weight: bold;
 }
 .DetailView .price-wrap p {
     color: var(--primary-clr);
@@ -131,14 +132,6 @@
     background-color: #6d522c;
 }
 
-.DetailView .btn-icon-wrap {
-   padding-top: .3rem;
-}
-
-.DetailView .btn-icon {
-    width: 15px;
-    height: 15px;
-}
 /* -- PRICE AND ADD END */
 
 /* --- INFO --- */

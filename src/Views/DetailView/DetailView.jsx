@@ -3,10 +3,10 @@ import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { FaArrowLeft } from 'react-icons/fa'
 import { ImSpoonKnife } from 'react-icons/im'
-import { RiShoppingBasket2Line } from 'react-icons/ri'
 import buns from '../../Images/buns.png'
 import ContentCard from '../../Components/ContentCard/ContentCard'
 import AllergenCard from '../../Components/AllergenCard/AllergenCard'
+import Filter from '../../Components/Filter/Filter'
 
 const DetailView = () => {
     const [showAll, setShowAll] = useState(false);
@@ -14,6 +14,7 @@ const DetailView = () => {
 
   return (
     <div className='DetailView frame'>
+        <Filter />
         <div className='pt-max container pb'>
 
             <Link>
