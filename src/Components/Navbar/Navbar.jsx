@@ -40,7 +40,7 @@ const Navbar = () => {
         <div ref={navRef} className='Navbar' onClick={handleClick}>
             <div className="container nav-content-wrapper">
                 <div className='right-nav-div'>
-                      <div className={`burger ${showMenu ? `open` : ``}`}onClick={() => setShowMenu(state => !state)}>
+                      <div className={`burger ${showMenu ? `open` : ``}`} onClick={() => setShowMenu(state => !state)}>
                         <span></span>
                         <span></span>
                         <span></span>

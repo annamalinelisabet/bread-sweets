@@ -1,0 +1,188 @@
+.DetailView {
+    height: 100%;
+}
+
+.DetailView .container {
+    width: 90%;
+}
+
+.DetailView .pt-max {
+    padding-top: 12rem;
+}
+
+.DetailView .pb {
+    padding-bottom: 5rem;
+}
+
+.DetailView .pbl-2{
+    padding-block: 1.5rem;
+}
+.DetailView .mt-1{
+    margin-top: 1rem;
+}
+
+.DetailView .mt-5 {
+    margin-top: 5rem;
+}
+
+.DetailView .ml {
+    margin-left: .5rem;
+}
+
+.DetailView .dflex {
+    display: flex;
+}
+
+.DetailView .wrapper {
+    display: block;
+}
+
+/* -- IMG --- */
+.DetailView .img-wrapper {
+    width: 100%;
+    background-color: var(--secondary-clr);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
+
+.DetailView .img-wrapper img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.DetailView .spork {
+    width: 100px;
+    height: 100px;
+    color: #fff;
+}
+/* --- IMG END --- */
+
+/* --- TEXT WRAPPER --- */
+
+.DetailView .tag {
+    background-color: #FFE18C;
+    width: 100px;
+    margin-bottom: 1rem;
+    padding: .4rem;
+}
+
+.DetailView .tag-txt {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    text-align: center;
+    
+}
+
+.DetailView .text-wrapper {
+    width: 100%;
+    background-color: #fff;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.DetailView .text-wrapper h1 {
+    font-family: var(--yeseva-header-font);
+    color: var(--primary-clr);
+}
+/* --- TEXT WRAPPER END --- */
+
+/* --- ICON --- */
+.DetailView .icon {
+    width: 30px;
+    height: 30px;
+    color: var(--primary-clr);
+}
+
+.DetailView .icon-wrap {
+    margin-bottom: 1rem;
+}
+/* --- ICON END--- */
+
+/* -- PRICE AND ADD */
+
+.DetailView .wrap {
+    justify-content: space-between;
+    margin-top: auto;
+}
+
+.DetailView .price-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.DetailView .price-wrap p {
+    color: var(--primary-clr);
+}
+.DetailView .price {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.DetailView .btn-add {
+    background-color: var(--primary-clr);
+    color: #fff;
+    font-weight: bold;
+}
+.DetailView .btn-add:hover {
+    background-color: #6d522c;
+}
+
+.DetailView .btn-icon-wrap {
+   padding-top: .3rem;
+}
+
+.DetailView .btn-icon {
+    width: 15px;
+    height: 15px;
+}
+/* -- PRICE AND ADD END */
+
+/* --- INFO --- */
+
+.DetailView .btn-info {
+    background: transparent;
+    border: none;
+    margin-top: 1.5rem;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding-right: 1.5rem;
+    color: var(--secondary-clr);
+    border-bottom: 3px solid var(--secondary-clr);
+    cursor: pointer;
+}
+
+.DetailView .active {
+    border-bottom: 3px solid var(--primary-clr);
+    color: var(--primary-clr);
+}
+
+/* --- INFO END --- */
+@media (min-width: 992px) {
+
+    .DetailView .container {
+        width: 80%;
+    }
+    .DetailView .wrapper {
+        display: flex;
+        height: 600px;
+    }
+
+    .DetailView .img-wrapper {
+        height: 100%;
+    }
+
+    .DetailView .pt-max  {
+        padding-top: 15rem;
+    }
+
+    
+    .DetailView .text-wrapper {
+        padding: 4rem;
+    }
+
+
+}
