@@ -1,4 +1,4 @@
-import {useEffect, useState} from 'react'
+import React, {useEffect, useState} from 'react'
 import NewProductCard from '../../Components/NewProductCard/NewProductCard';
 import './ProductsView.css'
 
