@@ -1,0 +1,50 @@
+[
+    {
+        "id" : 1,
+        "category": 1,
+        "Gluten" : false,
+        "Lactos" : false,
+        "Vegeterian" : false,
+        "tag" : "Populär",
+        "title" : "Prinsesstårta",
+        "desc" : "Sockerkaka, hemkokt hallonsylt & vaniljkräm, grädde, marsipan",
+        "price" : 350,
+        "img" : "https://gastrogate.com/thumbs2/1000/files/32894/afJ3spcUE7SEz6N72Qs30Rq4obCj0ACFF-lsAYDCPj29NVl-hAYPdROm7PGDZfNc/original.jpg?ext=https://locousercontent.com/afJ3spcUE7SEz6N72Qs30Rq4obCj0ACFF-lsAYDCPj29NVl-hAYPdROm7PGDZfNc/original.jpg"
+    },
+    {
+        "id" : 2,
+        "category": 1,
+        "Gluten" : false,
+        "Lactos" : false,
+        "Vegeterian" : false,
+        "tag" : "Populär",
+        "title" : "Kanelbullar",
+        "desc" : "vete, smör, mjölk, socker, kanel, kardemumma, ägg, jäst",
+        "price" : 32,
+        "img" : "https://gastrogate.com/thumbs2/1000/files/32894/9jhiyIa-vguz0hzeplKHQWF6ZZMuSkNRvLI_ZQ1OrD26DEdhX_-KukbKJiKMkkun/original.jpg?ext=https://locousercontent.com/9jhiyIa-vguz0hzeplKHQWF6ZZMuSkNRvLI_ZQ1OrD26DEdhX_-KukbKJiKMkkun/original.jpg"
+    },
+    {
+        "id" : 3,
+        "category": 1,
+        "Gluten" : false,
+        "Lactos" : false,
+        "Vegeterian" : false,
+        "tag" : "Nyhet",
+        "title" : "Pralin Kalamansi Ingefära",
+        "desc" : "Syrlig kalamansicreme (citrus) med ingefärstryffel",
+        "price" : 22,
+        "img" : "https://gastrogate.com/thumbs2/1000/files/32894/q5ib2sGat07uasmJLSkPfBZfUl3Gckchay90vuuflKqdmqmGoF_TJZ_jkqEYA220/original.jpg?ext=https://locousercontent.com/q5ib2sGat07uasmJLSkPfBZfUl3Gckchay90vuuflKqdmqmGoF_TJZ_jkqEYA220/original.jpg"
+    },
+    {
+        "id" : 4,
+        "category" : 1,
+        "Gluten" : false,
+        "Lactos" : false,
+        "Vegeterian" : false,
+        "title" : "Pralin Saltlakrits",
+        "desc" : "Syrlig kalamansicreme (citrus) med ingefärstryffel",
+        "price" : 19,
+        "img" : "https://gastrogate.com/thumbs2/1000/files/32894/RLGbhpBFHcIaXqvIU0npEnoeApKH745pe6hjDZwQYF-19R6E2eIWZq0UEu2AMq9-/original.jpg?ext=https://locousercontent.com/RLGbhpBFHcIaXqvIU0npEnoeApKH745pe6hjDZwQYF-19R6E2eIWZq0UEu2AMq9-/original.jpg"
+    }
+
+]

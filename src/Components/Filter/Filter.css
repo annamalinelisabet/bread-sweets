@@ -69,7 +69,6 @@
 
 .Filter .snaps-inline {
     scroll-snap-type: inline mandatory;
-    /* scroll-padding-inline: 1rem; */
 }
 
 .Filter .snaps-inline > * {
