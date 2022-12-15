@@ -1,0 +1,96 @@
+{
+   
+    "categories" : [
+        {
+            "id" : 1,
+            "name" : "Nyheter"
+        },
+        {
+            "id" : 2,
+            "name" : "Tårtor"
+        },
+        {
+            "id" : 3,
+            "name" : "Praliner"
+        },
+        {
+            "id" : 4,
+            "name" : "Kaffebröd"
+        },
+        {
+            "id" : 5,
+            "name" : "Bitar"
+        },
+        {
+            "id" : 6,
+            "name" : "Bakelser"
+        },
+        {
+            "id" : 7,
+            "name" : "Kakor"
+        },
+        {
+            "id" : 8,
+            "name" : "Drycker"
+        },
+        {
+            "id" : 9,
+            "name" : "Förpackat"
+        },
+        {
+            "id" : 10,
+            "name" : "Bröd och förpackat"
+        },
+        {
+            "id" : 11,
+            "name" : "Kort"
+        },
+        {
+            "id" : 12,
+            "name" : "Detta är en väldigt super lång katergori"
+        },
+        {
+            "id" : 13,
+            "name" : "Detta är en kortare lång kategori"
+        },
+        {
+            "id" : 14,
+            "name" : "Kortare"
+        },
+        {
+            "id" : 15,
+            "name" : "Medellång"
+        },
+        {
+            "id" : 16,
+            "name" : "kort igen"
+        },
+        {
+            "id" : 17,
+            "name" : "Mellan"
+        },
+        {
+            "id" : 18,
+            "name" : "Detta är ännu en extremt lång kategori"
+        },
+        {
+            "id" : 19,
+            "name" : "Kortis"
+        },
+        {
+            "id" : 20,
+            "name" : "Vi kör en liten längre igen"
+        }
+    ],
+
+   "products": [
+    {
+        "id" : 1,
+        "category" : 1, 
+        "title" : "",
+        "desc" : "",
+        "price" : 123,
+        "img-url" : ""
+    }
+   ]
+}
