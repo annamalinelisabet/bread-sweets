@@ -6,12 +6,11 @@ import { MdArrowBackIos, MdArrowForwardIos } from 'react-icons/md'
 const Filter = () => {
 
     const list = [
-        'Populär', 'Dettaärenlångkategori', 'Kort', 'Tårtor', 'Bröd', 'Bakverk', 'Kakor', 'Dettaärenlångkategori', 'Populär', 'Populär', 'Dettaärenlångkategori', 'Kort', 'Tårtor', 'Bröd', 'Bakverk', 'Kakor', 'Dettaärenlångkategori', 'Populär', 'Populär', 'Dettaärenlångkategori', 'Kort', 'Tårtor', 'Bröd', 'Bakverk', 'Kakor','Populär'
+        'Populär', 'Detta är en lång kategori', 'Kort', 'Tårtor', 'Bröd', 'Bakverk', 'Kakor', 'Detta är en lång kategori', 'Populär', 'Populär', 'Detta är en lång kategori', 'Kort', 'Tårtor', 'Bröd', 'Bakverk', 'Kakor', 'Detta är en lång kategori', 'Populär', 'Populär', 'Detta är en lång kategori', 'Kort', 'Tårtor', 'Bröd', 'Bakverk', 'Kakor','Populär'
     ]
 
   return (
     <div className='Filter'>
-        {/* <div className='filter-container pb'> */}
             <div className='container pt mb-2'>
                 {/* <button className='prev'>
                     <MdArrowBackIos />
@@ -21,7 +20,7 @@ const Filter = () => {
                         list.map((item) => (
                             <Link to="#">
                                 <li className='category'>
-                                    {item}
+                                    <span className='nobreak'>{item}</span>
                                 </li>
                             </Link>
                         ))
@@ -31,7 +30,6 @@ const Filter = () => {
                     <MdArrowForwardIos />
                 </button> */}
             </div>
-        {/* </div> */}
     </div>
   )
 }

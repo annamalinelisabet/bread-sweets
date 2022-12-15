@@ -32,10 +32,15 @@
     overscroll-behavior-inline: contain;
     height: 100%;
     padding-block: 1rem;
+    
 }
 
 .Filter li {
     list-style: none;
+}
+
+.Filter .nobreak {
+    white-space: nowrap;
 }
 
 .Filter .category {
@@ -46,7 +51,6 @@
     font-weight: bold;
     border: 1px solid #fff;
     border-radius: 2px;
-    display: inline-block;
 }
 
 .Filter .category:hover {
