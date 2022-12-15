@@ -1,0 +1,154 @@
+.NewProductCard {
+    padding: 0 1.5rem 1.5rem 1.5rem;
+    width: min(100%, 400px);
+    height: 200px;
+    background: white;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    position: relative;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.NewProductCard .top-div {
+    display: flex;
+}
+
+.NewProductCard .img-div {
+    height: 150px;
+    width: 150px;
+    background: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex: 1; */
+}
+
+.NewProductCard .img-div img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.NewProductCard .spork {
+    font-size: 5rem;
+    color: white;
+}
+
+.NewProductCard .text-div {
+    padding: 1.5rem 0 0 1rem;
+    /* flex: 1; */
+    width: 50%;
+    /* justify-self: end; */
+}
+
+.NewProductCard .title {
+    text-transform: uppercase;
+    white-space: normal;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    overflow-wrap: break-word;
+    text-overflow: ellipsis;
+}
+
+
+/* -------- TAG ---------- */
+
+.NewProductCard .tag {
+    width: 1.5rem;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.NewProductCard .popular {
+    background: #fff6dd;
+}
+
+.NewProductCard .new {
+    background: #dde9ff;
+}
+
+.NewProductCard .tag p {
+    transform: rotate(90deg) translateX(1.5rem);
+    font-size: .8rem;
+    font-weight: bold;
+}
+
+
+
+/* ------- SALDO --------- */
+
+.NewProductCard .saldo {
+    width: 150px;
+    padding-block: .2rem;
+    margin-top: .75rem;
+}
+.NewProductCard .saldo p {
+    font-weight: bold;
+    text-align: center;
+    font-size: .8rem;
+}
+
+.NewProductCard .low {
+    background: rgba(255, 166, 0, 0.274);
+}
+
+.NewProductCard .low p {
+    color: orange;
+}
+
+.NewProductCard .out {
+    background: rgba(255, 0, 0, 0.315);
+}
+
+.NewProductCard .out p {
+    color: red;
+}
+
+
+/* -------- ADD --------- */
+
+.NewProductCard .circle {
+    background: var(--primary-clr);
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 1rem;
+    right: 1.5rem;
+    cursor: pointer;
+}
+
+.NewProductCard .bag {
+    font-size: 2rem;
+    color: var(--background-clr);
+
+    transition: transform 250ms ease-out;
+}
+
+.NewProductCard .circle:hover .bag {
+    transform: scale(1.1);
+}
+
+.NewProductCard .circle.out {
+    cursor: not-allowed;
+    background: grey;
+}
+
+.NewProductCard .circle.out .bag{
+    color: #545353;
+}
+
+.NewProductCard .circle.out:hover .bag{
+    transform: none;
+}
+
+
+
+

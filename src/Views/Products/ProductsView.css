@@ -1,0 +1,24 @@
+.ProductsView .container {
+    padding-block: 15rem;
+    /* width: min(80%, 1200px);
+    margin: auto; */
+}
+
+.ProductsView .category {
+    display: flex;
+    gap: 2rem;
+    margin: 1rem 0;
+}
+
+.ProductsView .category-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.ProductsView .category h3{
+    cursor: pointer;
+}
+
+
+
