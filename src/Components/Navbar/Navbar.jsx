@@ -1,4 +1,4 @@
-import { useState, useRef } from 'react'
+import React, { useState, useRef } from 'react'
 import { NavLink, Link } from 'react-router-dom'
 import './Navbar.css'
 import Logo from '../../Images/logo.png'

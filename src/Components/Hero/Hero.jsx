@@ -1,4 +1,4 @@
-import {useState} from 'react'
+import React, {useState} from 'react'
 import './Hero.css'
 import { FaAngleRight, FaAngleLeft } from 'react-icons/fa'
 import { GiWheat } from 'react-icons/gi'
