@@ -1,4 +1,4 @@
-import { useState, useRef } from 'react'
+import React, { useState, useRef, useEffect } from 'react'
 import { NavLink, Link } from 'react-router-dom'
 import './Navbar.css'
 import Logo from '../../Images/logo.png'
@@ -16,25 +16,26 @@ const Navbar = () => {
     }
   }
 
-  const logoSize = () => {
-    if (window.scrollY >= 150) {
-      logoRef.current.classList.add('small-logo')
-      navRef.current.classList.add('shadow')
-    } else {
-      logoRef.current.classList.remove('small-logo')
-      navRef.current.classList.remove('shadow')
-    }
-  };
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if (window.scrollY >= 150) {
+        logoRef.current.classList.add('small-logo')
+        navRef.current.classList.add('shadow')
+      } else {
+        logoRef.current.classList.remove('small-logo')
+        navRef.current.classList.remove('shadow')
+      }
+    });   
+  }, [])
 
-  const closeMenu = () => {
-    if (window.scrollY >= 5) {
-      setShowMenu(false)
-    } 
-  };
-
-  window.addEventListener("scroll", logoSize);
-  window.addEventListener("scroll", closeMenu);
-
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if (window.scrollY >= 5) {
+        setShowMenu(false)
+      } 
+    });   
+  }, [])
+  
   return (
       <div className='fixed'>
         <div ref={navRef} className='Navbar' onClick={handleClick}>

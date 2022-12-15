@@ -1,4 +1,4 @@
-import {useState} from 'react'
+import React, {useState} from 'react'
 import './Hero.css'
 import { FaAngleRight, FaAngleLeft } from 'react-icons/fa'
 import { GiWheat } from 'react-icons/gi'
@@ -28,18 +28,18 @@ const Hero = () => {
                   </ul>
                   <ul className='info-list'>
                     <li className='info'></li>
-                    <li className='info'><a className='info' href="https://www.instagram.com/p/Ckq2rJkDB4t/" target="_blank" rel="noopener noreferrer">Tisdagsmunken - Äpple</a></li>
+                    <li className='info'><a className='info' href="https://www.instagram.com/p/Cl3NkQijstB/" target="_blank" rel="noopener noreferrer">Lucia</a></li>
                     <li className='info'></li>
                     <li className='info'></li>
-                    <li className='info'><a className='info' href="https://www.instagram.com/p/ClZIoqEjsq2/" target="_blank" rel="noopener noreferrer">Pepparkakans dag</a></li>
                     <li className='info'></li>
-                    <li className='info'><a className='info' href="https://www.instagram.com/p/CWva1ChrP4I/" target="_blank" rel="noopener noreferrer">Tredje advent</a></li>
+                    <li className='info'></li>
+                    <li className='info'><a className='info' href="https://www.instagram.com/p/CWva1ChrP4I/" target="_blank" rel="noopener noreferrer">Fjärde advent</a></li>
                   </ul>
 
                 </div>
               </div>
 
-              <p className='week'>vecka 49</p>
+              <p className='week'>vecka 50</p>
               <GiWheat className='wheat'/>
               <div className='open-close' onClick={() => setShowCalendar(state => !state)}>
               {/* <div className={`open-close ${showCalendar ? `light-clr` : `animate__animated animate__heartBeat animate__repeat-3 animate__ slower animate__delay-2s`}`} onClick={() => setShowCalendar(state => !state)}> */}

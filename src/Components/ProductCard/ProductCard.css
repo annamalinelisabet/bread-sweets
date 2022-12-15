@@ -1,13 +1,13 @@
 .ProductCard {
     background: var(--secondary-clr);
-    height: 285px;
+    height: 310px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 
 .ProductCard .img-wrapper {
     width: 90%;
     margin: auto;
-    height: 60%;
+    height: 50%;
     margin-top: 12px;
 }
 .ProductCard .img-wrapper img {
@@ -23,7 +23,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 32%;
+    height: 44%;
 }
 
 .ProductCard .top-text {

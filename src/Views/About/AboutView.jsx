@@ -1,4 +1,4 @@
-import { useEffect } from 'react'
+import React, { useEffect } from 'react'
 import './AboutView.css'
 import Photo from '../../Images/jennie-cake.jpg'
 import Jennie from '../../Images/jenniecolor.jpg'

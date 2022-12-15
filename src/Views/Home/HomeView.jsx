@@ -1,4 +1,4 @@
-import { useEffect } from 'react'
+import React, { useEffect } from 'react'
 import './HomeView.css'
 import Categories from '../../Components/Categories/Categories'
 import About from '../../Components/About/About'
