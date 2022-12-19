@@ -49,7 +49,6 @@ const AssortmentView = () => {
             <li onClick={() => pastryRef.current.scrollIntoView({behavior: "smooth", block: "center"})}>bakelser</li>
             <li onClick={() => cakesRef.current.scrollIntoView({behavior: "smooth", block: "center"})}>tårtor</li>
             <li onClick={() => cookieRef.current.scrollIntoView({behavior: "smooth", block: "center"})}>kakor</li>
-            {/* <li onClick={() => drinkRef.current.scrollIntoView({behavior: "smooth", block: "center"})}>dryck</li> */}
             <li onClick={() => sandwichRef.current.scrollIntoView({behavior: "smooth", block: "center"})}>smörgåsar</li>
             <li onClick={() => packedRef.current.scrollIntoView({behavior: "smooth", block: "center"})}>förpackat</li>
           </ul>

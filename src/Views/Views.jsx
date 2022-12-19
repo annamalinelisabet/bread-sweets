@@ -7,6 +7,7 @@ import OrderView from './Order/OrderView'
 import ReviewsView from './Reviews/ReviewsView'
 import ContactView from './Contact/ContactView'
 import AboutView from './About/AboutView'
+import DetailView from './DetailView/DetailView'
 
 const Views = () => {
   return (
@@ -18,6 +19,7 @@ const Views = () => {
         <Route path="/reviews" element={ <ReviewsView />} />
         <Route path="/contact" element={ <ContactView/> } />
         <Route path='/about' element={ <AboutView /> } />
+        <Route path='/detailview/:id' element={ <DetailView /> } />
     </Routes>
   )
 }

@@ -1,9 +1,12 @@
 .ProductsView .container {
-    padding-block: 15rem;
     /* width: min(80%, 1200px);
     margin: auto; */
 }
+.ProductsView {
+    padding-top: 12rem;
+    padding-bottom: 10rem;
 
+}
 .ProductsView .category {
     display: flex;
     gap: 2rem;
@@ -20,5 +23,48 @@
     cursor: pointer;
 }
 
+
+/* -- CATEGORY -- */
+
+.ProductsView .link.active {
+    background: var(--primary-clr);
+    color: #fff;
+    border: 1px solid var(--primary-clr);
+    font-weight: 100;
+}
+
+/* -- ALLERGIES --- */
+
+.ProductsView .allergies-wrap {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.ProductsView .allergies-icon {
+    margin-right: 1rem;
+    background-color: transparent;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.ProductsView .gluten {
+    background-color: #FBB117;
+}
+
+.ProductsView .lactose {
+    background-color: #187bcd;
+}
+
+.ProductsView .vegan {
+    background-color: #4c9a2a;
+}
 
 
