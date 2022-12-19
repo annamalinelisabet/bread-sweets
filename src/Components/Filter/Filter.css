@@ -1,5 +1,4 @@
 .styled-scrollbars {
-    /* Foreground, Background */
     scrollbar-color: rgb(255, 255, 255) #333;
 }
 
@@ -18,13 +17,12 @@
 }
 
 .Filter .pt{
-    padding-top: 20rem;
+    padding-top: 5rem;
 }
 
 .Filter .mb-2 {
     margin-bottom: 2rem;
 }
-
 
 .Filter .categories{
     display: flex;
@@ -60,13 +58,18 @@
     font-weight: 100;
 }
 
-.Filter .category:active {
+
+.Filter .active {
     background: var(--primary-clr);
     color: #fff;
     border: 1px solid var(--primary-clr);
     font-weight: 100;
-}
+} 
 
+.Filter .highLight {
+    background-color: var(--secondary-clr);
+    border: 1px solid var(--secondary-clr);
+}
 .Filter .snaps-inline {
     scroll-snap-type: inline mandatory;
 }

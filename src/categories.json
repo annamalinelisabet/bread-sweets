@@ -21,7 +21,8 @@
     },
     {
         "id" : 6,
-        "name" : "Bakelser"
+        "name" : "Bakelser",
+        "highlight" : true
     },
     {
         "id" : 7,
@@ -33,23 +34,23 @@
     },
     {
         "id" : 9,
-        "name" : "Förpackat"
+        "name" : "Bröd"
     },
     {
         "id" : 10,
-        "name" : "Bröd och förpackat"
+        "name" : "Färdig gjorda smörgåsar"
     },
     {
         "id" : 11,
-        "name" : "Kort"
+        "name" : "Frallor"
     },
     {
         "id" : 12,
-        "name" : "Detta är en väldigt super lång katergori"
+        "name" : "Presentförpackningar"
     },
     {
         "id" : 13,
-        "name" : "Detta är en kortare lång kategori"
+        "name" : "Detta är en väldigt super lång katergori"
     },
     {
         "id" : 14,

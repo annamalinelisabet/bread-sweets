@@ -1,48 +1,70 @@
-import React, {useEffect, useState} from 'react'
+import React, { useEffect, useState } from 'react'
 import NewProductCard from '../../Components/NewProductCard/NewProductCard';
 import './ProductsView.css'
+import Filter from '../../Components/Filter/Filter'
+import products  from '../../products.json'
+
+
 
 const ProductsView = () => {
 
+    const [gluten, setGluten] = useState(false)
+    const [lactose, setLactose] = useState(false)
+    const [vegan, setVegan] = useState(false)
+
     const [category, setCategory] = useState(1)
+
+    const [popular, setPopular] = useState([])
+    const [filtred, setFiltred] = useState([])
 
     useEffect(() => {
         window.scrollTo({top: 0, left: 0, behavior: 'instant'});
       }, [])
 
-    // !  FIXA SÅ DEN AKTUELLA BLIR MARKERAD!!! Gör en funktion med onClick??
-      
+    useEffect(() => {
+       setPopular(products.filter(product => product.tag === 'popular'))
+       setFiltred(products.filter(product => product.category === category))
+        
+       
+
+    
+    }, [category])
+    
+    
+
 
   return (
     <div className='ProductsView frame'>
         <div className="container">
-            <h1>sortiment</h1>
-            <div className="category">
-                <h3 onClick={() => setCategory(1)}>Populärt</h3>
-                <h3 onClick={() => setCategory(2)}>Bröd</h3>
-                <h3 onClick={() => setCategory(3)}>Tårtor</h3>
+            <Filter setCategory={setCategory}/>
+
+            <div className='allergies-wrap'>
+                <div className='allergies-icon gluten' onClick={() => setGluten(true)}>G</div>
+                <div className='allergies-icon lactose' onClick={() => setLactose(true)}>L</div>
+                <div className='allergies-icon vegan' onClick={() => setVegan(true)}>V</div>
             </div>
             {
-                category === 1 &&
+                category === 1 ? 
                 <div className='category-wrapper'>
-                    <NewProductCard title={'surdeg ljus'} price={'129'} popular={false} news={true} saldo={'high'} img={'https://gastrogate.com/thumbs2/1000/files/32894/sMGCGc2SUaWyX-iM0_oDfQHPDlptvgMWp-IiIenWlbAHOK89abUrmULjs5YKqvbN/original.jpg?ext=https://locousercontent.com/sMGCGc2SUaWyX-iM0_oDfQHPDlptvgMWp-IiIenWlbAHOK89abUrmULjs5YKqvbN/original.jpg'}/>
-                    <NewProductCard title={'minibrytbröd hejhej ljus'} price={'21'} popular={false} news={false} saldo={'low'} img={'https://gastrogate.com/thumbs2/1000/files/32894/OUESuGISD9WpWS0YIWRUt-KLegKS2t7gfzZDBxLjB-EFu267p09j0C2v8HYBOWZZ/original.jpg?ext=https://locousercontent.com/OUESuGISD9WpWS0YIWRUt-KLegKS2t7gfzZDBxLjB-EFu267p09j0C2v8HYBOWZZ/original.jpg'}/>
-                    <NewProductCard title={'Sesambagel'} price={'21'} popular={false} news={false} saldo={'out'} img={'https://gastrogate.com/thumbs2/1000/files/32894/vMI-PgK55XrlbYxvgRnCF4sU-tMEKoe3bnvjx-AbZxbFUx3XYhsqA_PSijk9ZOmF/original.jpg?ext=https://locousercontent.com/vMI-PgK55XrlbYxvgRnCF4sU-tMEKoe3bnvjx-AbZxbFUx3XYhsqA_PSijk9ZOmF/original.jpg'} />
-                    <NewProductCard title={'fikonråg'} price={'63'} popular={false} news={false} saldo={'high'} img={'https://gastrogate.com/thumbs2/1000/files/32894/l3YNk3FE4YWZGNTvceXlNKxEP08JrMMdkpKUMmerijVdiFem2sIRjmTqRf3c_7So/original.jpg?ext=https://locousercontent.com/l3YNk3FE4YWZGNTvceXlNKxEP08JrMMdkpKUMmerijVdiFem2sIRjmTqRf3c_7So/original.jpg'} />
+                    {/* { products.filter(product => product.tag === 'popular').map(product => 
+                        <NewProductCard key={product.id} product={product} />
+                    )
+                    } */}
+                    {  popular.map(product => 
+                        <NewProductCard key={product.id} product={product} />
+                    )
+                    }
                 </div>
-            }
-            {
-                category === 2 &&
+                :
                 <div className='category-wrapper'>
-                    <NewProductCard title={'hej hej'} price={'29'} popular={false} news={true} saldo={'high'} img={''} />
-                    <NewProductCard title={''} price={''} popular={false} news={false} saldo={'high'} img={''} />
-                    <NewProductCard title={''} price={''} popular={false} news={false} saldo={'high'} img={''} />
-                </div>
-            }
-            {
-                category === 3 &&
-                <div className='category-wrapper'>
-                    <NewProductCard title={''} price={''} popular={true} news={false} saldo={'high'} img={''} />
+                    {/* { products.filter(product => product.category === category).map(product => 
+                        <NewProductCard key={product.id} product={product}/>
+                    )
+                    } */}
+                    { filtred.map(product => 
+                        <NewProductCard key={product.id} product={product}/>
+                    )
+                    }
                 </div>
             }
         </div>
