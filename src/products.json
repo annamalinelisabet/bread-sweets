@@ -2,9 +2,7 @@
     {
         "id" : 1,
         "category": 2,
-        "gluten" : true,
-        "lactose" : false,
-        "vegan" : false,
+        "gluten" : "true",
         "tag" : "popular",
         "title" : "Prinsesstårta",
         "desc" : "Sockerkaka, hemkokt hallonsylt & vaniljkräm, grädde, marsipan",

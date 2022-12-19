@@ -22,10 +22,9 @@ const ProductsView = () => {
       }, [])
 
     useEffect(() => {
+        
        setPopular(products.filter(product => product.tag === 'popular'))
        setFiltred(products.filter(product => product.category === category))
-        
-       
 
     
     }, [category])
