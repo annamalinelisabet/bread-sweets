@@ -57,8 +57,8 @@ const ProductsView = () => {
                 </div>
             </div>
             { allergy === 'gluten' && !filtred.length && <p className='info-text'>Tyvärr har vi inget glutenfritt i denna kategori</p> }
-            { allergy === 'lactose' && !filtred.length && <p className='info-text'>Tyvärr har vi inget laktosfritt i denna kategori</p> }
-            { allergy === 'vegan' && !filtred.length && <p className='info-text'>Tyvärr har vi inget veganskt i denna kategori</p> }
+            { allergy === 'lactose' && !filtred.length  && <p className='info-text'>Tyvärr har vi inget laktosfritt i denna kategori</p> }
+            { allergy === 'vegan' && !filtred.length  && <p className='info-text'>Tyvärr har vi inget veganskt i denna kategori</p> }
             {
                 category === 1 
                 ? 
