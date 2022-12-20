@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom'
 import NewProductCard from '../../Components/NewProductCard/NewProductCard';
 import './ProductsView.css'
 import Filter from '../../Components/Filter/Filter'
@@ -67,9 +68,9 @@ const ProductsView = () => {
                     <p>{desc}</p>
                 </div>
             </div>
-            { allergy === 'gluten' && !filtred.length && <p className='info-text'>Tyvärr har vi inget glutenfritt i denna kategori</p> }
-            { allergy === 'lactose' && !filtred.length && <p className='info-text'>Tyvärr har vi inget laktosfritt i denna kategori</p> }
-            { allergy === 'vegan' && !filtred.length && <p className='info-text'>Tyvärr har vi inget veganskt i denna kategori</p> }
+            { allergy === 'gluten' && !filtred.length && <p className='info-text'>Tyvärr har vi inget glutenfritt i denna kategori. <Link to="/contact" className='all-link'>Hör gärna av dig så kanske vi kan lösa det!</Link></p> }
+            { allergy === 'lactose' && !filtred.length && <p className='info-text'>Tyvärr har vi inget laktosfritt i denna kategori. <Link to="/contact" className='all-link'>Hör gärna av dig så kanske vi kan lösa det!</Link></p> }
+            { allergy === 'vegan' && !filtred.length && <p className='info-text'>Tyvärr har vi inget veganskt i denna kategori. <Link to="/contact" className='all-link'>Hör gärna av dig så kanske vi kan lösa det!</Link></p> }
                             
             <div className='category-wrapper'>
                 { filtred.map(product => <NewProductCard key={product.id} product={product}/>) }

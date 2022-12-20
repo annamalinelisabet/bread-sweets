@@ -59,7 +59,7 @@ const DetailView = () => {
                 <div className='info-wrapper mt-1'>
                     <div className='btn-group'>
                         <button className={ !showAll ? 'btn-info active' : 'btn-info'} onClick={() => setShowAll(false)}>Innehåll</button>
-                        <button className={ !showAll ? 'btn-info' : 'btn-info active'} onClick={() => setShowAll(true)}>Allegener</button>
+                        <button className={ !showAll ? 'btn-info' : 'btn-info active'} onClick={() => setShowAll(true)}>Allergener</button>
                         <div className='line'></div>
                     </div>
 
