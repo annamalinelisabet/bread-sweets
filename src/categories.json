@@ -5,7 +5,8 @@
     },
     {
         "id" : 2,
-        "name" : "Tårtor"
+        "name" : "Tårtor",
+        "desc" : "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse, aliquid?"
     },
     {
         "id" : 3,
@@ -13,7 +14,8 @@
     },
     {
         "id" : 4,
-        "name" : "Kaffebröd"
+        "name" : "Kaffebröd",
+        "desc" : "Lorem ipsum dolor sit amet."
     },
     {
         "id" : 5,
@@ -38,7 +40,8 @@
     },
     {
         "id" : 10,
-        "name" : "Färdig gjorda smörgåsar"
+        "name" : "Färdig gjorda smörgåsar",
+        "desc" : "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores inventore ab amet neque assumenda atque molestias. Nam officiis aperiam modi."
     },
     {
         "id" : 11,

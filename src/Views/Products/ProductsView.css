@@ -39,7 +39,7 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
 }
 
 .ProductsView .allergies-icon {
@@ -53,6 +53,12 @@
     align-items: center;
     font-weight: bold;
     cursor: pointer;
+    position: relative;
+    color: #000;
+}
+
+.ProductsView .allergies-icon .active {
+    border: 1px solid #000;
 }
 
 .ProductsView .gluten {
@@ -67,4 +73,28 @@
     background-color: #4c9a2a;
 }
 
+.ProductsView .tooltiptext {
+    visibility: hidden;
+    background-color: #fff;
+    color: #000;
+    text-align: center;
+    padding: 5px;
+    border-radius: 3px;
+    font-size: 12px;
 
+    position: absolute;
+    z-index: 1;
+    top: 2.1rem;
+    left: -.5rem;
+}
+
+.ProductsView .allergies-icon:hover > .tooltiptext {
+    visibility: visible;
+}
+
+
+/* ---- HIGHLIGHT ---- */
+
+.ProductsView .highLight {
+    box-shadow: rgb(255, 255, 255) 0px 0px 0px 6px,  rgb(0, 0, 0) 0px 0px 0px 8px;
+}

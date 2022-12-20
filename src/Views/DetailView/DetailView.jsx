@@ -22,12 +22,10 @@ const DetailView = () => {
     
   }, [products])
 
-
-  
   return (
     <div className='DetailView frame'>
         <div className='pt-max container pb'>
-            <Link to="/products">
+            <Link to="/assortment">
                 <div className='icon-wrap'>
                     <FaArrowLeft className='icon '/>
                 </div>
@@ -45,7 +43,7 @@ const DetailView = () => {
                         <p className='tag-txt'>POPULÄR</p>
                     </div>
 
-                    <h1>TITLE</h1>
+                    <h1>Kanelbullar</h1>
                     <p className='pbl-2'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque, eum.</p>
 
                     <div className='dflex mt-5 wrap'>
