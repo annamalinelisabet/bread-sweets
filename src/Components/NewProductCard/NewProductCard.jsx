@@ -7,8 +7,8 @@ import {ImSpoonKnife} from 'react-icons/im'
 const NewProductCard = ({product}) => {
 
   return (
-      <Link to={'/detailview/' + product.id}>
-        <div className='NewProductCard'>
+      <Link to={`/detailview/${product.id}`}>
+        <div className={`NewProductCard ${product.highlight === true ? 'highLight' : ''}`}>
             { product.tag === "popular" && <div className='tag popular'><p>POPULÄR</p></div>}
             { product.tag === "new" && <div className='tag new'><p>NYHET</p></div>}
           <div className="top-div">

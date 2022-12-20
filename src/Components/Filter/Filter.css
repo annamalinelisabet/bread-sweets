@@ -69,6 +69,7 @@
 .Filter .highLight {
     background-color: var(--secondary-clr);
     border: 1px solid var(--secondary-clr);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
 }
 .Filter .snaps-inline {
     scroll-snap-type: inline mandatory;
