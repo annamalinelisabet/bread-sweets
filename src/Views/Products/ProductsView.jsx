@@ -3,6 +3,7 @@ import NewProductCard from '../../Components/NewProductCard/NewProductCard';
 import './ProductsView.css'
 import Filter from '../../Components/Filter/Filter'
 import products  from '../../products.json'
+// import { ImGift } from 'react-icons/im';
 
 const ProductsView = () => {
 
@@ -11,7 +12,6 @@ const ProductsView = () => {
     const [name, setName] = useState('')
     const [desc, setDesc] = useState('')
 
-    const [popular, setPopular] = useState([])
     const [filtred, setFiltred] = useState([])
 
 
@@ -19,22 +19,33 @@ const ProductsView = () => {
         window.scrollTo({top: 0, left: 0, behavior: 'instant'});
       }, [])
 
-    useEffect(() => {        
-       setPopular(products.filter(product => product.tag === 'popular'))
-       setFiltred(products.filter(product => product.category === category))    
+    useEffect(() => {  
+        if(category ===1) {
+            setFiltred(products.filter(product => product.tag === 'popular'))
+        }
+        else {
+            setFiltred(products.filter(product => product.category === category))    
+        }
+
     }, [category])
 
 
     const handleClick = (click) => {
         if(click === allergy){
             setAllergy('')
-            setFiltred(products.filter(product => product.category === category)) 
-            setPopular(products.filter(product => product.tag === 'popular'))
+            if(category === 1) {
+                setFiltred(products.filter(product => product.tag === 'popular'))
+            } else {
+                setFiltred(products.filter(product => product.category === category)) 
+            }
         }
         else {
             setAllergy(click)
-            setFiltred(products.filter(product => product.category === category && product.allergy === click))  
-            setPopular(products.filter(product => product.tag === 'popular' && product.allergy === click)) 
+            if(category === 1) {
+                setFiltred(products.filter(product => product.tag === 'popular' && product.allergy === click)) 
+            } else {
+                setFiltred(products.filter(product => product.category === category && product.allergy === click))  
+            }
         }
     }
 
@@ -57,20 +68,13 @@ const ProductsView = () => {
                 </div>
             </div>
             { allergy === 'gluten' && !filtred.length && <p className='info-text'>Tyvärr har vi inget glutenfritt i denna kategori</p> }
-            { allergy === 'lactose' && !filtred.length  && <p className='info-text'>Tyvärr har vi inget laktosfritt i denna kategori</p> }
-            { allergy === 'vegan' && !filtred.length  && <p className='info-text'>Tyvärr har vi inget veganskt i denna kategori</p> }
-            {
-                category === 1 
-                ? 
-                <div className='category-wrapper'>
-                    {  popular.map(product => <NewProductCard key={product.id} product={product} />)  }
-                </div>
-
-                :
-                <div className='category-wrapper'>
-                    { filtred.map(product => <NewProductCard key={product.id} product={product}/>) }
-                </div>
-            }
+            { allergy === 'lactose' && !filtred.length && <p className='info-text'>Tyvärr har vi inget laktosfritt i denna kategori</p> }
+            { allergy === 'vegan' && !filtred.length && <p className='info-text'>Tyvärr har vi inget veganskt i denna kategori</p> }
+                            
+            <div className='category-wrapper'>
+                { filtred.map(product => <NewProductCard key={product.id} product={product}/>) }
+            </div>            
+            
         </div>
     </div>
   )
