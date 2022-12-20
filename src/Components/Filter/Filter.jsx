@@ -5,6 +5,7 @@ import categories from '../../categories.json'
 
 const Filter = ({setCategory}) => {
     const [active, setActive] = useState('')
+    
     const handleClick = (category) => {
         console.log(category)
         setCategory(category.id)
