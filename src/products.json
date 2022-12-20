@@ -2,7 +2,7 @@
     {
         "id" : 1,
         "category": 2,
-        "allergy": "gluten",
+        "allergy": "lactose",
         "gluten" : false,
         "lactose" : true,
         "vegan" : false,
