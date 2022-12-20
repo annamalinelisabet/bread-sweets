@@ -9,10 +9,10 @@
     cursor: pointer;
 }
 
-.NewProductCard.highLight {
-    /* box-shadow: rgb(255, 255, 255) 0px 0px 0px 6px,  rgb(0, 0, 0) 0px 0px 0px 8px; */
+/* .NewProductCard.highLight {
+    box-shadow: rgb(255, 255, 255) 0px 0px 0px 6px,  rgb(0, 0, 0) 0px 0px 0px 8px;
     background: var(--secondary-clr);
-}
+} */
 
 .NewProductCard .top-div {
     display: flex;
@@ -123,7 +123,7 @@
 }
 
 .NewProductCard.highLight {
-    border: 3px solid #fcd56b;
+    border: 3.2px solid #fcd56b;
 }
 /* -------- ADD --------- */
 

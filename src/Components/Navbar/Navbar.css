@@ -191,12 +191,12 @@
         transition: all 500ms ease-out;
     }
 
-    .Navbar img.small-logo {
+    /* .Navbar img.small-logo {
         opacity: 100;
         top: 1.5rem;
         height: 120px;
         border: 5px solid var(--background-clr);  
-    }
+    } */
     
     .Navbar .menu-margin {
         display: block;
