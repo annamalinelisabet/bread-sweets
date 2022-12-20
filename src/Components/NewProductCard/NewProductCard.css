@@ -71,7 +71,8 @@
 }
 
 .NewProductCard .popular {
-    background: #FFE18C;
+    /* background: #FFE18C; */
+    background: #fcd56b;
 }
 
 .NewProductCard .new {
@@ -105,7 +106,7 @@
 }
 
 .NewProductCard .low {
-    background: rgba(255, 166, 0, 0.599);
+    background: #ff5100a6;
 }
 
 .NewProductCard .low p {
@@ -113,14 +114,17 @@
 }
 
 .NewProductCard .out {
-    background: rgba(255, 0, 0, 0.315);
+    background: #a5a5a5;
 }
 
 .NewProductCard .out p {
-    color: rgb(0, 0, 0);
+    color: #3b3b3b;
+    
 }
 
-
+.NewProductCard.highLight {
+    border: 3px solid #fcd56b;
+}
 /* -------- ADD --------- */
 
 .NewProductCard .circle {
@@ -150,11 +154,11 @@
 
 .NewProductCard .circle.out {
     cursor: not-allowed;
-    background: grey;
+    background: #a5a5a5;
 }
 
 .NewProductCard .circle.out .bag{
-    color: #545353;
+    color: #3b3b3b;
 }
 
 .NewProductCard .circle.out:hover .bag{

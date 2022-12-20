@@ -7,11 +7,12 @@
     {
         "id" : 2,
         "name" : "Tårtor",
-        "desc" : "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse, aliquid?"
+        "desc" : "Önskar du bröllopstårta ber vi att du beställa den två veckor innan."
     },
     {
         "id" : 3,
-        "name" : "Praliner"
+        "name" : "Praliner",
+        "desc" : "Vi använder choklad från några av världens främsta leverantörer - t ex Valrhona och Felchlin. Sortimentet varierar efter säsong. Våra praliner är en färskvara och bör helst ätas inom 2 veckor."
     },
     {
         "id" : 4,
@@ -25,7 +26,8 @@
     {
         "id" : 6,
         "name" : "Bakelser",
-        "highlight" : true
+        "highlight" : true,
+        "desc" : "Den här veckan har vi specialvaror från italien till våra bakelser."
     },
     {
         "id" : 7,
@@ -54,7 +56,8 @@
     },
     {
         "id" : 13,
-        "name" : "Detta är en väldigt super lång katergori"
+        "name" : "Detta är en väldigt super lång katergori, helt otroligt lång",
+        "desc" : "Detta är en väldigt super lång text om katergorin"
     },
     {
         "id" : 14,

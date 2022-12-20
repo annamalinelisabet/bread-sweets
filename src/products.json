@@ -14,19 +14,17 @@
         "img" : "https://gastrogate.com/thumbs2/1000/files/32894/afJ3spcUE7SEz6N72Qs30Rq4obCj0ACFF-lsAYDCPj29NVl-hAYPdROm7PGDZfNc/original.jpg?ext=https://locousercontent.com/afJ3spcUE7SEz6N72Qs30Rq4obCj0ACFF-lsAYDCPj29NVl-hAYPdROm7PGDZfNc/original.jpg"
     },
     {
-        "id" : 2,
-        "category": 4,
-        "allergy": "none",
+        "id" : 17,
+        "category" : 4,
         "gluten" : false,
-        "lactose" : true,
+        "lactose" : false,
         "vegan" : false,
-        "tag" : "popular",
-        "title" : "Kanelbullar",
-        "desc" : "vete, smör, mjölk, socker, kanel, kardemumma, ägg, jäst",
-        "price" : 32,
-        "saldo" : "low",
-        "img" : "https://gastrogate.com/thumbs2/1000/files/32894/9jhiyIa-vguz0hzeplKHQWF6ZZMuSkNRvLI_ZQ1OrD26DEdhX_-KukbKJiKMkkun/original.jpg?ext=https://locousercontent.com/9jhiyIa-vguz0hzeplKHQWF6ZZMuSkNRvLI_ZQ1OrD26DEdhX_-KukbKJiKMkkun/original.jpg",
-        "highlight" : true
+        "tag" : "new",
+        "title" : "Valnötscroissant",
+        "desc" : "Vete, jäst, smör, salt, socker, honung, farinsocker, valnötter",
+        "price" : 35,
+        "saldo" : "high",
+        "img" : "https://gastrogate.com/thumbs2/1000/files/32894/C9hzomWpgjajgWazfamxXRnNQqqUya_QZ_dx4SWZuz2q5jJQRbJIDVxyDDTPSuo2/original.jpg?ext=https://locousercontent.com/C9hzomWpgjajgWazfamxXRnNQqqUya_QZ_dx4SWZuz2q5jJQRbJIDVxyDDTPSuo2/original.jpg"
     },
     {
         "id" : 3,
@@ -49,7 +47,7 @@
         "gluten" : false,
         "lactose" : false,
         "vegan" : false,
-        "tag" : "",
+        "tag" : "new",
         "title" : "Pralin Saltlakrits",
         "desc" : "Syrlig kalamansicreme (citrus) med ingefärstryffel",
         "price" : 19,
@@ -99,17 +97,17 @@
         "img" : "https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=936&q=80"
     },
     {
-        "id" : 8,
+        "id" : 10,
         "category" : 6,
         "gluten" : false,
         "lactose" : false,
         "vegan" : false,
-        "tag" : "popular",
-        "title" : "Morotskaka",
-        "desc" : "Morotskaka med cream cheese frostig",
+        "tag" : "new",
+        "title" : "Vegansk bakelse",
+        "desc" : "Hallonmousse, passionskräm och krispig kokosbotten",
         "price" : 62,
         "saldo" : "high",
-        "img" : "https://gastrogate.com/thumbs2/1000/files/32894/ToXfD2PJiUiT2lf17BGJc12naTDfPQUyDd-paxbwUrG_WoAu_4mobqcDB0FEiHoz/original.jpg?ext=https://locousercontent.com/ToXfD2PJiUiT2lf17BGJc12naTDfPQUyDd-paxbwUrG_WoAu_4mobqcDB0FEiHoz/original.jpg"
+        "img" : "https://gastrogate.com/thumbs2/1000/files/32894/XZ8rozCfGF1iTke9E8KgjAzQynkiTgnDk0m9mzmA-lcUhpUdCdAJVyWevdAcQ0h5/original.jpg?ext=https://locousercontent.com/XZ8rozCfGF1iTke9E8KgjAzQynkiTgnDk0m9mzmA-lcUhpUdCdAJVyWevdAcQ0h5/original.jpg"
     },
     {
         "id" : 9,
@@ -125,17 +123,17 @@
         "img" : "https://gastrogate.com/thumbs2/1000/files/32894/oGEfYJVH-cP1oFddOeIBzTa2aYJodbp5bAMwlxKoOZf7DDP-PXbzEvjVInGEfxkK/original.jpg?ext=https://locousercontent.com/oGEfYJVH-cP1oFddOeIBzTa2aYJodbp5bAMwlxKoOZf7DDP-PXbzEvjVInGEfxkK/original.jpg"
     },
     {
-        "id" : 10,
+        "id" : 8,
         "category" : 6,
         "gluten" : false,
         "lactose" : false,
         "vegan" : false,
-        "tag" : "new",
-        "title" : "Vegansk bakelse",
-        "desc" : "Hallonmousse, passionskräm och krispig kokosbotten",
+        "tag" : "popular",
+        "title" : "Morotskaka",
+        "desc" : "Morotskaka med cream cheese frostig",
         "price" : 62,
         "saldo" : "high",
-        "img" : "https://gastrogate.com/thumbs2/1000/files/32894/XZ8rozCfGF1iTke9E8KgjAzQynkiTgnDk0m9mzmA-lcUhpUdCdAJVyWevdAcQ0h5/original.jpg?ext=https://locousercontent.com/XZ8rozCfGF1iTke9E8KgjAzQynkiTgnDk0m9mzmA-lcUhpUdCdAJVyWevdAcQ0h5/original.jpg"
+        "img" : "https://gastrogate.com/thumbs2/1000/files/32894/ToXfD2PJiUiT2lf17BGJc12naTDfPQUyDd-paxbwUrG_WoAu_4mobqcDB0FEiHoz/original.jpg?ext=https://locousercontent.com/ToXfD2PJiUiT2lf17BGJc12naTDfPQUyDd-paxbwUrG_WoAu_4mobqcDB0FEiHoz/original.jpg"
     },
     {
         "id" : 11,
@@ -216,17 +214,19 @@
         "img" : "https://gastrogate.com/thumbs2/1000/files/32894/d_h9h7_iGlfAoxAhWXqeH_hIyoZMMhh1j26xwEesraxqy9xfcn-SU8Oa_9MMbMzg/original.jpg?ext=https://locousercontent.com/d_h9h7_iGlfAoxAhWXqeH_hIyoZMMhh1j26xwEesraxqy9xfcn-SU8Oa_9MMbMzg/original.jpg"
     },
     {
-        "id" : 17,
-        "category" : 4,
+        "id" : 2,
+        "category": 4,
+        "allergy": "none",
         "gluten" : false,
-        "lactose" : false,
+        "lactose" : true,
         "vegan" : false,
-        "tag" : "new",
-        "title" : "Valnötscroissant",
-        "desc" : "Vete, jäst, smör, salt, socker, honung, farinsocker, valnötter",
-        "price" : 35,
-        "saldo" : "high",
-        "img" : "https://gastrogate.com/thumbs2/1000/files/32894/C9hzomWpgjajgWazfamxXRnNQqqUya_QZ_dx4SWZuz2q5jJQRbJIDVxyDDTPSuo2/original.jpg?ext=https://locousercontent.com/C9hzomWpgjajgWazfamxXRnNQqqUya_QZ_dx4SWZuz2q5jJQRbJIDVxyDDTPSuo2/original.jpg"
+        "tag" : "popular",
+        "title" : "Kanelbullar",
+        "desc" : "vete, smör, mjölk, socker, kanel, kardemumma, ägg, jäst",
+        "price" : 32,
+        "saldo" : "low",
+        "img" : "https://gastrogate.com/thumbs2/1000/files/32894/9jhiyIa-vguz0hzeplKHQWF6ZZMuSkNRvLI_ZQ1OrD26DEdhX_-KukbKJiKMkkun/original.jpg?ext=https://locousercontent.com/9jhiyIa-vguz0hzeplKHQWF6ZZMuSkNRvLI_ZQ1OrD26DEdhX_-KukbKJiKMkkun/original.jpg",
+        "highlight" : true
     },
     {
         "id" : 18,
@@ -322,11 +322,10 @@
     {
         "id" : 25,
         "category" : 3,
-
         "gluten" : false,
         "lactose" : false,
         "vegan" : false,
-        "tag" : "new",
+        "tag" : "n",
         "title" : "Pralin Kalamansi Ingefära",
         "desc" : "Syrlig kalamansicreme (citrus) med ingefärstryffel",
         "price" :22,
@@ -584,6 +583,32 @@
     {
         "id" : 45,
         "category" : 4,
+        "Gluten" : false,
+        "Lactos" : false,
+        "Vegeterian" : false,
+        "tag" : "",
+        "title" : "Fralla med salami & brie",
+        "desc" : "Sallad, salami, brieost, paprika",
+        "price" : 55,
+        "saldo" : "high",
+        "img" : ""
+    },
+    {
+        "id" : 46,
+        "category" : 13,
+        "Gluten" : false,
+        "Lactos" : false,
+        "Vegeterian" : false,
+        "tag" : "",
+        "title" : "Fralla med salami & brie",
+        "desc" : "Sallad, salami, brieost, paprika",
+        "price" : 55,
+        "saldo" : "high",
+        "img" : ""
+    },
+    {
+        "id" : 47,
+        "category" : 13,
         "Gluten" : false,
         "Lactos" : false,
         "Vegeterian" : false,

@@ -16,11 +16,12 @@ const DetailView = () => {
 
   const [product, setProduct] = useState('')
 
+  console.log(products)
   useEffect(() => {
     setProduct(products.filter(item => item.id === id))
     console.log(product)
     
-  }, [products])
+}, [products])
 
   return (
     <div className='DetailView frame'>
@@ -30,7 +31,9 @@ const DetailView = () => {
                     <FaArrowLeft className='icon '/>
                 </div>
             </Link>
-            <div className='wrapper'>
+            {
+                product &&
+                <div className='wrapper'>
 
                 <div className='img-wrapper'>
                     <img src={buns} alt="" />
@@ -43,8 +46,8 @@ const DetailView = () => {
                         <p className='tag-txt'>POPULÄR</p>
                     </div>
 
-                    <h1>Kanelbullar</h1>
-                    <p className='pbl-2'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque, eum.</p>
+                    <h1>{product.title}</h1>
+                    <p className='pbl-2'>{product.desc}</p>
 
                     <div className='dflex mt-5 wrap'>
                         <div className='price-wrap'>
@@ -56,10 +59,11 @@ const DetailView = () => {
                 </div>
 
             </div>
+            }
                 <div className='info-wrapper mt-1'>
                     <div className='btn-group'>
                         <button className={ !showAll ? 'btn-info active' : 'btn-info'} onClick={() => setShowAll(false)}>Innehåll</button>
-                        <button className={ !showAll ? 'btn-info' : 'btn-info active'} onClick={() => setShowAll(true)}>Allegener</button>
+                        <button className={ !showAll ? 'btn-info' : 'btn-info active'} onClick={() => setShowAll(true)}>Allergener</button>
                         <div className='line'></div>
                     </div>
 
