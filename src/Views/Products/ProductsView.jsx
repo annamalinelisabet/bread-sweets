@@ -4,8 +4,6 @@ import './ProductsView.css'
 import Filter from '../../Components/Filter/Filter'
 import products  from '../../products.json'
 
-
-
 const ProductsView = () => {
 
     const [gluten, setGluten] = useState(false)
@@ -21,15 +19,50 @@ const ProductsView = () => {
         window.scrollTo({top: 0, left: 0, behavior: 'instant'});
       }, [])
 
-    useEffect(() => {
-        
+    useEffect(() => {        
        setPopular(products.filter(product => product.tag === 'popular'))
-       setFiltred(products.filter(product => product.category === category))
-
-    
+       setFiltred(products.filter(product => product.category === category))    
     }, [category])
-    
-    
+
+
+    useEffect(() => {   
+        if(gluten) {
+            setFiltred(products.filter(product => product.category === category && product.gluten === true))  
+            setPopular(products.filter(product => product.tag === 'popular' && product.gluten === true)) 
+            setLactose(false)
+            setVegan(false)
+        }
+        else {
+            setFiltred(products.filter(product => product.category === category)) 
+            setPopular(products.filter(product => product.tag === 'popular'))
+        }
+    }, [gluten])
+
+    useEffect(() => {   
+        if(lactose) {
+            setFiltred(products.filter(product => product.category === category && product.lactose === true))
+            setPopular(products.filter(product => product.tag === 'popular' && product.lactose === true))    
+            setGluten(false)
+            setVegan(false)
+        }
+        else {
+            setFiltred(products.filter(product => product.category === category)) 
+            setPopular(products.filter(product => product.tag === 'popular'))
+        }
+    }, [lactose])
+
+    useEffect(() => {   
+        if(vegan) {
+            setFiltred(products.filter(product => product.category === category && product.vegan === true))
+            setPopular(products.filter(product => product.tag === 'popular' && product.vegan === true))    
+            setLactose(false)
+            setGluten(false)
+        }
+        else {
+            setFiltred(products.filter(product => product.category === category)) 
+            setPopular(products.filter(product => product.tag === 'popular'))
+        }
+    }, [vegan])
 
 
   return (
@@ -38,17 +71,16 @@ const ProductsView = () => {
             <Filter setCategory={setCategory}/>
 
             <div className='allergies-wrap'>
-                <div className='allergies-icon gluten' onClick={() => setGluten(true)}>G</div>
-                <div className='allergies-icon lactose' onClick={() => setLactose(true)}>L</div>
-                <div className='allergies-icon vegan' onClick={() => setVegan(true)}>V</div>
+                <div className='allergies-icon gluten' onClick={() => setGluten(state => !state)}>G</div>
+                <div className='allergies-icon lactose' onClick={() => setLactose(state => !state)}>L</div>
+                <div className='allergies-icon vegan' onClick={() => setVegan(state => !state)}>V</div>
             </div>
+            { gluten && !filtred.length && <p className='info-text'>Tyvärr har vi inget glutenfritt i denna kategori</p> }
+            { lactose && !filtred.length && <p className='info-text'>Tyvärr har vi inget laktosfritt i denna kategori</p> }
+            { vegan && !filtred.length && <p className='info-text'>Tyvärr har vi inget veganskt i denna kategori</p> }
             {
                 category === 1 ? 
                 <div className='category-wrapper'>
-                    {/* { products.filter(product => product.tag === 'popular').map(product => 
-                        <NewProductCard key={product.id} product={product} />
-                    )
-                    } */}
                     {  popular.map(product => 
                         <NewProductCard key={product.id} product={product} />
                     )
@@ -56,10 +88,6 @@ const ProductsView = () => {
                 </div>
                 :
                 <div className='category-wrapper'>
-                    {/* { products.filter(product => product.category === category).map(product => 
-                        <NewProductCard key={product.id} product={product}/>
-                    )
-                    } */}
                     { filtred.map(product => 
                         <NewProductCard key={product.id} product={product}/>
                     )
