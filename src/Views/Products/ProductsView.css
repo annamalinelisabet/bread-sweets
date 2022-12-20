@@ -1,7 +1,8 @@
-.ProductsView .container {
-    /* width: min(80%, 1200px);
-    margin: auto; */
-}
+/* .ProductsView .container {
+    width: min(80%, 1200px);
+    margin: auto;
+} */
+
 .ProductsView {
     padding-top: 12rem;
     padding-bottom: 10rem;
@@ -72,6 +73,13 @@
 .ProductsView .vegan {
     background-color: #4c9a2a;
 }
+
+
+.ProductsView .info-text {
+    text-align: center;
+    margin-top: 1rem;
+}
+
 
 .ProductsView .tooltiptext {
     visibility: hidden;
