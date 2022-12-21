@@ -162,6 +162,13 @@
     color: var(--primary-clr);
 }
 
+.DetailView .product-info {
+    border-top: 1px solid var(--primary-clr);
+    margin-top: 1rem;
+    text-align: right;
+    padding-block: 1rem;
+    font-style: italic;
+}
 /* --- INFO END --- */
 @media (min-width: 992px) {
 

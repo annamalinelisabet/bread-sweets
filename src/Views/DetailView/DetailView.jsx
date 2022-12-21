@@ -49,6 +49,10 @@ const DetailView = () => {
                         </div>
                             <button className={`btn btn-add ${product.saldo === 'out' ? `out` : ``}` }>{product.saldo === 'out' ? ' tillfälligt slut' : 'lägg till'}</button>
                     </div>
+                    {
+                        product.info &&
+                        <p className='product-info'>{product.info}</p>
+                    }
                 </div>
 
             </div>

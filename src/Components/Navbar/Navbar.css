@@ -26,12 +26,15 @@
     left: calc(50% - 70px);
     user-select: none;
     opacity: 100;
-
-    transition: opacity 250ms ease-in;
+    display: block;
+    
+    transition: all 250ms ease-in;
 }
 
 .Navbar img.small-logo {
     opacity: 0;
+    /* user-select: none; */
+    display: none;
 }
 
 .Navbar .bars,

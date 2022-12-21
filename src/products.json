@@ -38,7 +38,8 @@
         "desc" : "Syrlig kalamansicreme (citrus) med ingefärstryffel",
         "price" : 22,
         "saldo" : "out",
-        "img" : "https://gastrogate.com/thumbs2/1000/files/32894/q5ib2sGat07uasmJLSkPfBZfUl3Gckchay90vuuflKqdmqmGoF_TJZ_jkqEYA220/original.jpg?ext=https://locousercontent.com/q5ib2sGat07uasmJLSkPfBZfUl3Gckchay90vuuflKqdmqmGoF_TJZ_jkqEYA220/original.jpg"
+        "img" : "https://gastrogate.com/thumbs2/1000/files/32894/q5ib2sGat07uasmJLSkPfBZfUl3Gckchay90vuuflKqdmqmGoF_TJZ_jkqEYA220/original.jpg?ext=https://locousercontent.com/q5ib2sGat07uasmJLSkPfBZfUl3Gckchay90vuuflKqdmqmGoF_TJZ_jkqEYA220/original.jpg",
+        "info" : "Varan är tyvärr slut för dagen, förväntas vara åter på lördag"
     },
     {
         "id" : 4,
@@ -302,7 +303,8 @@
         "desc" : "Råg, vetemjöl, surdeg, salt.",
         "price" :21,
         "saldo" : "out",
-        "img" : "https://gastrogate.com/thumbs2/1000/files/32894/vMI-PgK55XrlbYxvgRnCF4sU-tMEKoe3bnvjx-AbZxbFUx3XYhsqA_PSijk9ZOmF/original.jpg?ext=https://locousercontent.com/vMI-PgK55XrlbYxvgRnCF4sU-tMEKoe3bnvjx-AbZxbFUx3XYhsqA_PSijk9ZOmF/original.jpg"
+        "img" : "https://gastrogate.com/thumbs2/1000/files/32894/vMI-PgK55XrlbYxvgRnCF4sU-tMEKoe3bnvjx-AbZxbFUx3XYhsqA_PSijk9ZOmF/original.jpg?ext=https://locousercontent.com/vMI-PgK55XrlbYxvgRnCF4sU-tMEKoe3bnvjx-AbZxbFUx3XYhsqA_PSijk9ZOmF/original.jpg",
+        "info" : "Varan är tyvärr slut för dagen, kommer åter imorgon"
     },
     {
         "id" : 24,
@@ -328,7 +330,8 @@
         "desc" : "Syrlig kalamansicreme (citrus) med ingefärstryffel",
         "price" :22,
         "saldo" : "out",
-        "img" : ""
+        "img" : "",
+        "info" : ""
     },
     {
         "id" : 26,

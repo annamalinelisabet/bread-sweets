@@ -4,6 +4,7 @@ import NewProductCard from '../../Components/NewProductCard/NewProductCard';
 import './ProductsView.css'
 import Filter from '../../Components/Filter/Filter'
 import products  from '../../products.json'
+import { BsFillFileArrowUpFill } from 'react-icons/bs'
 // import { ImGift } from 'react-icons/im';
 
 const ProductsView = () => {
@@ -21,14 +22,18 @@ const ProductsView = () => {
       }, [])
 
     useEffect(() => {  
-        if(category ===1) {
-            setFiltred(products.filter(product => product.tag === 'popular'))
-        }
-        else {
-            setFiltred(products.filter(product => product.category === category))    
-        }
+            if(category ===1) {
+                setFiltred(products.filter(product => product.tag === 'popular'))
+            }
+            else {
+                setFiltred(products.filter(product => product.category === category))    
+            }
 
     }, [category])
+
+    const scrollTop = () =>{
+        window.scrollTo({top: 0, behavior: 'smooth'});
+    };
 
 
     const handleClick = (click) => {
@@ -58,11 +63,9 @@ const ProductsView = () => {
             <Filter setCategory={setCategory} setAllergy={setAllergy} setName={setName} setDesc={setDesc}/>
             <div className="flex-div">
                 <div className='allergies-wrap'>
-
                     <div className={`allergies-icon gluten ${allergy === 'gluten' ? 'active' : ''}`} onClick={() => handleClick('gluten')}>G<p className='tooltiptext'>Gluten</p></div>
                     <div className={`allergies-icon lactose ${allergy === 'lactose' ? 'active' : ''}`} onClick={() => handleClick('lactose')}>L<p className='tooltiptext'>Laktos</p></div>
                     <div className={`allergies-icon vegan ${allergy === 'vegan' ? 'active' : ''}`} onClick={() => handleClick('vegan')}>V<p className='tooltiptext'>Vegan</p></div>
-
                 </div>
                 <div className='header-div'>
                     <h1>{name}</h1>
@@ -77,6 +80,12 @@ const ProductsView = () => {
                 { filtred.map(product => <NewProductCard key={product.id} product={product}/>) }
             </div>            
             
+            {
+                filtred.length > 4 &&
+                <div className='to-top-div'>
+                    <BsFillFileArrowUpFill className='to-top' onClick={scrollTop}/>
+                </div>
+            }
         </div>
     </div>
   )

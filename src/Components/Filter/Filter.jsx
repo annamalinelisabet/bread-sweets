@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import './Filter.css'
 import categories from '../../categories.json'
 
-const Filter = ({setCategory, setAllergy, setName, setDesc }) => {
+const Filter = ({setCategory, setAllergy, setName, setDesc}) => {
     const [active, setActive] = useState('')
     
     const handleClick = (category) => {      
@@ -17,7 +17,7 @@ const Filter = ({setCategory, setAllergy, setName, setDesc }) => {
     }
 
     useEffect(() => {
-        categories.filter(category => category.id === 1).map(category => 
+            categories.filter(category => category.id === 1).map(category => 
             document.getElementById("cat").classList.add('active'))
             setName('Populär')
             setDesc('Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse, aliquid?')
