@@ -37,6 +37,7 @@ const DetailView = () => {
 
                 <div className='img-wrapper'>
                     <img src={buns} alt="" />
+                    {/* <ImSpoonKnife className='spork' /> */}
                     {/* { img ? <img src={buns} alt="food"/> : <ImSpoonKnife className='spork'/> } */}
                 </div>
 
@@ -46,8 +47,8 @@ const DetailView = () => {
                         <p className='tag-txt'>POPULÄR</p>
                     </div>
 
-                    <h1>{product.title}</h1>
-                    <p className='pbl-2'>{product.desc}</p>
+                    <h1>Title</h1>
+                    <p className='pbl-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe illum vero voluptates, quo tempore magnam amet velit omnis voluptatum ut repellendus iure excepturi numquam aspernatur ipsam deserunt cum accusamus nulla.</p>
 
                     <div className='dflex mt-5 wrap'>
                         <div className='price-wrap'>

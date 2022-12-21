@@ -21,21 +21,21 @@ const Categories = () => {
 
         <div data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
             <div className='categories-wrapper'>
-                <Link to="/assortment" state={{ from: 'cakesRef'}}>
+                <Link to={`/assortment`}>
                     <div className='category cake'>
                             <div className='main-btn dflex center'>
                                 <h2>Tårtor</h2>
                             </div>
                     </div>
                 </Link>
-                <Link to="/assortment" state={{ from: 'breadRef'}}>
+                <Link to="/assortment">
                     <div className='category bread'>
                             <div className='main-btn dflex center'>
                                 <h2>Bröd</h2>
                             </div>
                     </div>
                 </Link>
-                <Link to="/assortment" state={{ from: 'bunsRef'}}>
+                <Link to="/assortment">
                     <div className='category pastry'>
                             <div className='main-btn dflex center'>
                                 <h2>Kaffebröd</h2>

@@ -53,6 +53,7 @@ const ProductsView = () => {
 
   return (
     <div className='ProductsView frame'>
+        <h1 className='top-header'>SORTIMENT</h1>
         <div className="container">
             <Filter setCategory={setCategory} setAllergy={setAllergy} setName={setName} setDesc={setDesc}/>
             <div className="flex-div">

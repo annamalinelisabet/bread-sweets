@@ -99,9 +99,7 @@
     {
         "id" : 10,
         "category" : 6,
-        "gluten" : false,
-        "lactose" : false,
-        "vegan" : false,
+        "allergy": "vegan",
         "tag" : "new",
         "title" : "Vegansk bakelse",
         "desc" : "Hallonmousse, passionskräm och krispig kokosbotten",

@@ -9,7 +9,7 @@ const ContactView = () => {
 
   return (
     <div className='ContactView frame'>
-          <h1 className='top-header'>kontakta oss</h1>
+          <h1 className='top-header'>KONTAKTA OSS</h1>
           <div className="wrapper">
             <form>
                 <div>

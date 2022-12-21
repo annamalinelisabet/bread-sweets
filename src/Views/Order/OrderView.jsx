@@ -14,7 +14,7 @@ const OrderView = () => {
   return (
     <div className='OrderView frame'>
 
-        <h1 className='top-header'>beställ online</h1>
+        <h1 className='top-header'>BESTÄLL ONLINE</h1>
           <div className="text-div">
             <p className='info'>Här kan du smidigt beställa direkt från vår meny. Betalt och klart när du kommer till butiken!</p>
             <a href="https://order.thelocoapp.com/restaurants/2lUtPS0dfQ?menuType=TakeAway" target="_blank" rel="noopener noreferrer"><button className='btn btn-online'>öppna beställningsvy i nytt fönster</button></a>

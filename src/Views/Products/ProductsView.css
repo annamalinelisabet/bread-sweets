@@ -3,9 +3,16 @@
     margin: auto;
 } */
 
+.ProductsView .top-header {
+    text-align: center;
+    font-family: var(--yeseva-header-font);
+    color: var(--secondary-clr);
+    margin-top: 1rem;
+}
+
 .ProductsView {
-    padding-top: 12rem;
     padding-bottom: 10rem;
+    padding-top: 16rem;
 
 }
 .ProductsView .category {

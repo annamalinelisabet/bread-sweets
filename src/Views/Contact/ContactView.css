@@ -1,5 +1,5 @@
 .ContactView {
-    padding: 12rem 0 4rem 0;
+    padding: 16rem 0 4rem 0;
 }
 
 /* .ContactView .wrapper {
@@ -47,5 +47,12 @@
 
 .ContactView .btn-online {
     width: 100%;
+    margin-top: 1rem;
+}
+
+.ContactView .top-header {
+    text-align: center;
+    font-family: var(--yeseva-header-font);
+    color: var(--secondary-clr);
     margin-top: 1rem;
 }
