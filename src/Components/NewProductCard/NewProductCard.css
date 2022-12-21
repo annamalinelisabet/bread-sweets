@@ -56,7 +56,7 @@
     overflow-wrap: break-word;
     text-overflow: ellipsis;
     color: #000;
-    font-size: 1rem;
+    font-size: .9rem;
 }
 
 
@@ -70,12 +70,12 @@
     left: 0;
 }
 
-.NewProductCard .popular {
+.popular {
     /* background: #FFE18C; */
     background: #fcd56b;
 }
 
-.NewProductCard .new {
+.new {
     background: #A8C7FF;
 }
 
