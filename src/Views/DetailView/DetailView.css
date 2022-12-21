@@ -62,13 +62,14 @@
 /* --- TEXT WRAPPER --- */
 
 .DetailView .tag {
-    background-color: #FFE18C;
-    width: 100px;
+    /* background-color: #FFE18C; */
     margin-bottom: 1rem;
-    padding: .4rem;
+    display: flex;
+    justify-content: flex-start;
 }
 
 .DetailView .tag-txt {
+    padding: .5rem 1.6rem;
     font-weight: bold;
     text-transform: uppercase;
     font-size: 14px;
@@ -130,6 +131,13 @@
 }
 .DetailView .btn-add:hover {
     background-color: #6d522c;
+}
+
+
+.DetailView .btn-add.out {
+    cursor: not-allowed;
+    background: #a5a5a5;
+    color: #3b3b3b;
 }
 
 /* -- PRICE AND ADD END */

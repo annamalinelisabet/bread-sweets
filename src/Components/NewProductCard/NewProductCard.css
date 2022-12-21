@@ -9,6 +9,11 @@
     cursor: pointer;
 }
 
+/* .NewProductCard.highLight {
+    box-shadow: rgb(255, 255, 255) 0px 0px 0px 6px,  rgb(0, 0, 0) 0px 0px 0px 8px;
+    background: var(--secondary-clr);
+} */
+
 .NewProductCard .top-div {
     display: flex;
 }
@@ -51,7 +56,7 @@
     overflow-wrap: break-word;
     text-overflow: ellipsis;
     color: #000;
-    font-size: 1rem;
+    font-size: .9rem;
 }
 
 
@@ -65,12 +70,12 @@
     left: 0;
 }
 
-.NewProductCard .popular {
+.popular {
     /* background: #FFE18C; */
     background: #fcd56b;
 }
 
-.NewProductCard .new {
+.new {
     background: #A8C7FF;
 }
 
@@ -118,7 +123,7 @@
 }
 
 .NewProductCard.highLight {
-    border: 3px solid #fcd56b;
+    border: 3.2px solid #fcd56b;
 }
 /* -------- ADD --------- */
 
