@@ -71,7 +71,6 @@
 }
 
 .popular {
-    /* background: #FFE18C; */
     background: #fcd56b;
 }
 
@@ -119,11 +118,10 @@
 
 .NewProductCard .out p {
     color: #3b3b3b;
-    
 }
 
 .NewProductCard.highLight {
-    border: 3.2px solid #fcd56b;
+    border: 4px solid #fcd56b;
 }
 /* -------- ADD --------- */
 

@@ -1,11 +1,10 @@
 import './DetailView.css'
 import React, { useState, useEffect } from 'react'
-import { Link } from 'react-router-dom'
+import { useNavigate, useLocation } from 'react-router-dom'
 import { FaArrowLeft } from 'react-icons/fa'
 import { ImSpoonKnife } from 'react-icons/im'
 import ContentCard from '../../Components/ContentCard/ContentCard'
 import AllergenCard from '../../Components/AllergenCard/AllergenCard'
-import { useLocation } from 'react-router-dom'
 
 const DetailView = () => {
   const [showAll, setShowAll] = useState(false);
@@ -17,14 +16,14 @@ const DetailView = () => {
         window.scrollTo({top: 0, left: 0, behavior: 'instant'});
     }, [])
 
+    const navigate = useNavigate()
+
   return (
     <div className='DetailView frame'>
         <div className='pt-max container pb'>
-            <Link to="/assortment">
-                <div className='icon-wrap'>
+                <div className='icon-wrap' onClick={() => navigate(-1)}>
                     <FaArrowLeft className='icon '/>
                 </div>
-            </Link>
             {
                 product &&
                 <div className='wrapper'>
@@ -40,8 +39,8 @@ const DetailView = () => {
                         { product.tag === "new" && <div className='tag-txt new'><p>NYHET</p></div>}
                     </div>
 
-                    <h1>Title</h1>
-                    <p className='pbl-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe illum vero voluptates, quo tempore magnam amet velit omnis voluptatum ut repellendus iure excepturi numquam aspernatur ipsam deserunt cum accusamus nulla.</p>
+                    <h1>{product.title}</h1>
+                    <p className='pbl-2'>{product.desc}</p>
 
                     <div className='dflex mt-5 wrap'>
                         <div className='price-wrap'>

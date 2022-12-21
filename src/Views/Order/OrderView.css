@@ -1,11 +1,11 @@
 .OrderView {
-    padding: 16rem 0 6rem 0;
+    padding: 17rem 0 6rem 0;
 }
 
 .OrderView h1 {
     text-align: center;
     font-family: var(--yeseva-header-font);
-    color: var(--secondary-clr);
+    color: var(--primary-clr);
     margin-top: 1rem;
 }
 

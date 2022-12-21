@@ -100,6 +100,7 @@
 
 .DetailView .icon-wrap {
     margin-bottom: 1rem;
+    cursor: pointer;
 }
 /* --- ICON END--- */
 

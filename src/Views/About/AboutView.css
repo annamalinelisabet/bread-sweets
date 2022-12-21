@@ -60,7 +60,6 @@
     position: absolute;
     top: -.8rem;
     left: 17%;
-    color: var(--primary-clr);
     text-transform: uppercase;
     font-weight: bold;
     font-family: var(--yeseva-header-font);
@@ -68,7 +67,6 @@
 
 .AboutView .fact p {
     margin-top: 1rem;
-    color: var(--primary-clr);
 }
 
 .AboutView .img {

@@ -53,6 +53,6 @@
 .ContactView .top-header {
     text-align: center;
     font-family: var(--yeseva-header-font);
-    color: var(--secondary-clr);
+    color: var(--primary-clr);
     margin-top: 1rem;
 }
