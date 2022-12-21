@@ -31,6 +31,7 @@ const DetailView = () => {
                 <div className='img-wrapper'>
                     { product.img ? <img src={product.img} alt="food"/> : <ImSpoonKnife className='spork'/> }
                 </div>
+                
 
                 <div className='text-wrapper'>
 
@@ -44,7 +45,6 @@ const DetailView = () => {
 
                     <div className='dflex mt-5 wrap'>
                         <div className='price-wrap'>
-                            <p>Från</p>
                             <p className='ml price'>{product.price} kr</p>
                         </div>
                             <button className={`btn btn-add ${product.saldo === 'out' ? `out` : ``}` }>{product.saldo === 'out' ? ' tillfälligt slut' : 'lägg till'}</button>

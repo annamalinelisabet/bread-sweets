@@ -1,8 +1,9 @@
+import './Navbar.css'
 import React, { useState, useRef, useEffect } from 'react'
 import { NavLink, Link } from 'react-router-dom'
-import './Navbar.css'
 import Logo from '../../Images/logo.png'
 import 'animate.css'
+import {RiShoppingBasket2Line} from 'react-icons/ri'
 
 const Navbar = () => {
 
@@ -49,10 +50,14 @@ const Navbar = () => {
 
                       <Link to='/'><img src={Logo} alt="Bread & Sweets Logo" ref={logoRef} className={ showMenu ? 'menu-margin' : ''} /></Link>
                 </div>
-                <div className={`left-nav-div ${showMenu ? `menu-hours` : ``}`}>
-                    <p className='open-hours'>Öppet idag: 8.00 - 18.00</p>
-                    <a href="https://order.thelocoapp.com/restaurants/2lUtPS0dfQ?menuType=TakeAway" target="_blank" rel="noopener noreferrer"><button className='btn btn-order'>Beställ online</button></a>
-                </div>                           
+                {/* <div className={`left-nav-div ${showMenu ? `menu-hours` : ``}`}> */}
+                    {/* <p className='open-hours'>Öppet idag: 8.00 - 18.00</p> */}
+                    {/* <a href="https://order.thelocoapp.com/restaurants/2lUtPS0dfQ?menuType=TakeAway" target="_blank" rel="noopener noreferrer"><button className='btn btn-order'>Beställ online</button></a> */}
+                    <div className='cart-wrap'>
+                      <RiShoppingBasket2Line className='cart'/>
+                      <div className='count'><p>1</p></div>
+                    </div>
+                {/* </div>                            */}
             </div>
         </div>
 

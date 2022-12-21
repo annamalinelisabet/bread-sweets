@@ -9,10 +9,9 @@
     cursor: pointer;
 }
 
-/* .NewProductCard.highLight {
-    box-shadow: rgb(255, 255, 255) 0px 0px 0px 6px,  rgb(0, 0, 0) 0px 0px 0px 8px;
-    background: var(--secondary-clr);
-} */
+.NewProductCard.p0 {
+    padding: 0;
+}
 
 .NewProductCard .top-div {
     display: flex;
@@ -163,3 +162,39 @@
     transform: none;
 }
 
+/* --- SPECIAL CARD --- */
+
+.NewProductCard .img__wrapper {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.NewProductCard .img_ {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.NewProductCard .wrap__ {
+    position: absolute;
+    top: 2.6rem;
+    width: 60%;
+    left: 1rem;    
+}
+.NewProductCard .text_ {
+    color: #fff;
+    text-align: left;
+}
+
+.NewProductCard .btn_gift_card {
+    background-color: #fff;
+    margin-top: .5rem;
+    font-weight: bold;
+    width: 100%;
+    color: var(--primary-clr);
+}
+
+.NewProductCard .btn_gift_card:hover {
+    background-color: var(--primary-clr);
+    color: #fff;
+}

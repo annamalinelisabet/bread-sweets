@@ -80,8 +80,9 @@
     position: relative;
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
-    margin-bottom: 1rem;
+    align-items: center;
+    padding-block: 1rem;
+    /* margin-bottom: 1rem; */
     /* z-index: 5; */
 }
 
@@ -162,6 +163,36 @@
 
 .NavMenu .nav-links:hover .link:not(:hover) {
     color: var(--secondary-clr);
+}
+
+/* ---- CART ---- */
+
+.Navbar .cart-wrap {
+    position: relative;
+    display: flex;
+    cursor: pointer;
+}
+
+.Navbar .cart {
+    width: 40px;
+    height: 40px;
+    color: var(--primary-clr);
+}
+
+.Navbar .count {
+    position: absolute;
+    top: -1px;
+    right: -.9rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: #000;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 12px;
 }
 
 
