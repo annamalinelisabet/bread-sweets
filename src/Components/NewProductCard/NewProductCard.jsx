@@ -20,6 +20,7 @@ const NewProductCard = ({product}) => {
                   </div>
             </div>
           :
+
           <Link to={`/detailview/${product.id}`} state={{product: product}}>
             <div className={`NewProductCard ${product.tag === 'popular' ? 'highLight' : ''}`}>
                 { product.tag === "popular" && <div className='tag popular'><p>POPULÄR</p></div>}

@@ -15,7 +15,10 @@
 }
 
 .DetailView .pbl-2{
-    padding-block: 1.5rem;
+    margin-block: 1.5rem;
+    overflow-y: auto;
+    max-height: 250px;
+    padding-right: 1rem;
 }
 .DetailView .mt-1{
     margin-top: 1rem;
@@ -91,6 +94,7 @@
     font-family: var(--yeseva-header-font);
     color: var(--primary-clr);
     text-transform: uppercase;
+    font-size: clamp(20px, 2vw, 36px);
 }
 /* --- TEXT WRAPPER END --- */
 
@@ -173,10 +177,10 @@
     font-style: italic;
 }
 
-
 .DetailView .marked {
     background-color: var(--primary-clr);
 }
+
 /* --- INFO END --- */
 @media (min-width: 992px) {
 

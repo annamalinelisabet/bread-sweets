@@ -64,14 +64,11 @@
 .ProductsView .allergies-wrap {
     display: flex;
     justify-content: space-between;
-    width: 115px;
-    /* justify-content: flex-end; */
+    width: 120px;
     align-items: center;
-    /* margin-bottom: 2rem; */
 }
 
 .ProductsView .allergies-icon {
-    /* margin-right: 1rem; */
     background-color: #fff;
     width: 30px;
     height: 30px;
@@ -128,6 +125,9 @@
 
 }
 
+.ProductsView .header-div {
+    width: 80%;
+}
 
 
 @media (min-width: 992px) {

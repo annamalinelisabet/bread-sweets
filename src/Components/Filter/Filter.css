@@ -2,18 +2,22 @@
     scrollbar-color: rgb(255, 255, 255) #333;
 }
 
-.styled-scrollbars::-webkit-scrollbar {
-    height: 7px; /* Mostly for horizontal scrollbars */
+::-webkit-scrollbar {
+    height: 5px;
+    width: 9px; 
 }
 
 
-.styled-scrollbars::-webkit-scrollbar-thumb { /* Foreground */
+::-webkit-scrollbar-thumb { /* Foreground */
     background: var(--primary-clr);
     border-radius: 5px;
 }
 
-.styled-scrollbars::-webkit-scrollbar-track { /* Background */
-    background: transparent;
+::-webkit-scrollbar-track { /* Background */
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 5px;
+
 }
 
 .Filter .pt{
