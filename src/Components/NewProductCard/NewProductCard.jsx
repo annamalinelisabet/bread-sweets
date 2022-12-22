@@ -1,8 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import './NewProductCard.css'
-import {RiShoppingBasket2Line} from 'react-icons/ri'
-import {ImSpoonKnife} from 'react-icons/im'
+import { RiShoppingBasket2Line } from 'react-icons/ri'
+import { ImSpoonKnife } from 'react-icons/im'
+import { TbMug } from 'react-icons/tb'
 
 const NewProductCard = ({product}) => {
 
@@ -26,7 +27,9 @@ const NewProductCard = ({product}) => {
               <div className="top-div">
                 <div className="left-div">
                   <div className='img-div'>                
-                    { product.img ? <img src={product.img} alt="food"/> : <ImSpoonKnife className='spork'/> }
+                    { product.img && <img src={product.img} alt="food"/>}
+                    { !product.img && product.category === 8 && <TbMug className='spork' />}
+                    { product.category !== 8 && !product.img && <ImSpoonKnife className='spork'/>}
                   </div>
                   { product.saldo === 'low' && <div className="saldo low"><p>Nästan slutsåld</p></div> }
                   { product.saldo === 'out' && <div className="saldo out"><p>Tillfälligt slut</p></div> }
