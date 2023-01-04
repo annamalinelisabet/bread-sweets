@@ -3,7 +3,9 @@ import React, { useState, useRef, useEffect } from 'react'
 import { NavLink, Link } from 'react-router-dom'
 import Logo from '../../Images/logo.png'
 import 'animate.css'
-import {RiShoppingBasket2Line} from 'react-icons/ri'
+// import {RiShoppingBasket2Line} from 'react-icons/ri'
+import { BsBagFill } from 'react-icons/bs'
+
 
 const Navbar = () => {
 
@@ -54,7 +56,7 @@ const Navbar = () => {
                     {/* <p className='open-hours'>Öppet idag: 8.00 - 18.00</p> */}
                     {/* <a href="https://order.thelocoapp.com/restaurants/2lUtPS0dfQ?menuType=TakeAway" target="_blank" rel="noopener noreferrer"><button className='btn btn-order'>Beställ online</button></a> */}
                     <div className='cart-wrap'>
-                      <RiShoppingBasket2Line className='cart'/>
+                      <BsBagFill className='cart'/>
                       <div className='count'><p>1</p></div>
                     </div>
                 {/* </div>                            */}

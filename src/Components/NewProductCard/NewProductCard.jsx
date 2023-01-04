@@ -1,7 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import './NewProductCard.css'
-import { RiShoppingBasket2Line } from 'react-icons/ri'
+// import { RiShoppingBasket2Line } from 'react-icons/ri'
+import { BsBagPlus, BsBagPlusFill } from 'react-icons/bs'
 import { ImSpoonKnife } from 'react-icons/im'
 import { TbMug } from 'react-icons/tb'
 
@@ -40,7 +41,7 @@ const NewProductCard = ({product}) => {
                     { product.price ? <p className='price'>{product.price} kr</p> : <p className='price'>Från {product.priceS} kr</p>}
                 </div>
               </div>
-                  <div className={`circle ${product.saldo === 'out' ? `out` : ``}` }><RiShoppingBasket2Line className='bag'/></div>
+                  <div className={`circle ${product.saldo === 'out' ? `out` : ``}` }><BsBagPlusFill className='bag'/></div>
               </div>
           </Link>
         }

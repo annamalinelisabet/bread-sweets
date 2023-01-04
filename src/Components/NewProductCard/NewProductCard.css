@@ -139,7 +139,7 @@
 }
 
 .NewProductCard .bag {
-    font-size: 2rem;
+    font-size: 1.6rem;
     color: var(--background-clr);
 
     transition: transform 250ms ease-out;
