@@ -37,7 +37,7 @@ const NewProductCard = ({product}) => {
                 </div>
                 <div className="text-div">
                     <h3 className='title'>{product.title}</h3>
-                    <p className='price'>{product.price} kr</p>
+                    { product.price ? <p className='price'>{product.price} kr</p> : <p className='price'>Från {product.priceS} kr</p>}
                 </div>
               </div>
                   <div className={`circle ${product.saldo === 'out' ? `out` : ``}` }><RiShoppingBasket2Line className='bag'/></div>

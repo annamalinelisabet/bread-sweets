@@ -9,7 +9,12 @@
         "tag" : "popular",
         "title" : "Prinsesstårta",
         "desc" : "Sockerkaka, hemkokt hallonsylt & vaniljkräm, grädde, marsipan",
-        "price" : "Från 350",
+        "priceS" : "350",
+        "priceM" : "450",
+        "priceL" : "595",
+        "S" : "6-8 bitar",
+        "M" : "10-12 bitar",
+        "L" : "15 bitar",
         "saldo" : "high",
         "img" : "https://gastrogate.com/thumbs2/1000/files/32894/afJ3spcUE7SEz6N72Qs30Rq4obCj0ACFF-lsAYDCPj29NVl-hAYPdROm7PGDZfNc/original.jpg?ext=https://locousercontent.com/afJ3spcUE7SEz6N72Qs30Rq4obCj0ACFF-lsAYDCPj29NVl-hAYPdROm7PGDZfNc/original.jpg"
     },
@@ -59,7 +64,7 @@
         "tag" : "",
         "title" : "Jennies vinnartårta",
         "desc" : "Vit chokladmousse, jordgubb- och rabarberkompott och mandelbotten (glutenfri)",
-        "price" : "Från 525",
+        "price" : "525",
         "saldo" : "low",
         "img" : "",
         "highlight" : true
@@ -71,7 +76,7 @@
         "tag" : "",
         "title" : "Creme brûlée",
         "desc" : "Chokladbotten, krispigt flarn, creme brule, mörk chokladmousse.",
-        "price" : "Från 520",
+        "price" : "520",
         "saldo" : "high",
         "img" : "https://gastrogate.com/thumbs2/1000/files/32894/2LRDnNkPoz4p-EyWCn2BIVaT53NreIEmP3boDDjdXUY0ic7ZkCijca_StRU8YZef/original.jpg?ext=https://locousercontent.com/2LRDnNkPoz4p-EyWCn2BIVaT53NreIEmP3boDDjdXUY0ic7ZkCijca_StRU8YZef/original.jpg"
     },
@@ -82,7 +87,7 @@
         "tag" : "popular",
         "title" : "Vinnartårtan (från årets konditor",
         "desc" : "Mandelbotten, jordgubb/rabarberkompott, vit chokladmousse med citrus",
-        "price" : "Från 295",
+        "price" : "295",
         "saldo" : "low",
         "img" : "https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=936&q=80"
     },

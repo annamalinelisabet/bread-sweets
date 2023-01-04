@@ -8,6 +8,7 @@ import AllergenCard from '../../Components/AllergenCard/AllergenCard'
 
 const DetailView = () => {
   const [showAll, setShowAll] = useState(false);
+  const [price, setPrice] = useState('')
 
   const location = useLocation()
   const { product } = location.state
@@ -17,6 +18,18 @@ const DetailView = () => {
     }, [])
 
     const navigate = useNavigate()
+
+    useEffect(() => {
+        if(!product.price) {
+            setPrice(product.priceM)
+        } else {
+            setPrice(product.price)
+        }
+    })
+
+    const onChange = e => {
+        setPrice(e.target.value)
+    }
 
   return (
     <div className='DetailView frame'>
@@ -35,19 +48,37 @@ const DetailView = () => {
 
                 <div className='text-wrapper'>
 
-                    <div className='tag'>
-                        { product.tag === "popular" && <div className='tag-txt popular'><p>POPULÄR</p></div>}
-                        { product.tag === "new" && <div className='tag-txt new'><p>NYHET</p></div>}
+                    <div className='flex-grow'>
+                        <div className='tag'>
+                            { product.tag === "popular" && <div className='tag-txt popular'><p>POPULÄR</p></div>}
+                            { product.tag === "new" && <div className='tag-txt new'><p>NYHET</p></div>}
+                        </div>
+
+                        <h1>{product.title}</h1>
+                        <p className='pbl-2'>{product.desc}</p>
+
                     </div>
-
-                    <h1>{product.title}</h1>
-                    <p className='pbl-2'>{product.desc}</p>
-
+                    { !product.price && 
+                        <div className='radio'>
+                            <div className='input-div'>
+                                <input type="radio" name='price' value={product.priceS} checked={price === product.priceS} onChange={onChange}/>
+                                <label htmlFor="price">{product.S} / {product.priceS} kr</label>
+                            </div>
+                            <div className='input-div'>
+                                <input type="radio" name='price' value={product.priceM} checked={price === product.priceM}  onChange={onChange}/>
+                                <label htmlFor="price">{product.M} / {product.priceM} kr</label>
+                            </div>
+                            <div className='input-div'>
+                                <input type="radio" name='price' value={product.priceL} checked={price === product.priceL}  onChange={onChange}/>
+                                <label htmlFor="price">{product.L} / {product.priceL} kr</label>
+                            </div>
+                        </div>
+                    }
                     <div className='dflex mt-5 wrap'>
                         <div className='price-wrap'>
-                            <p className='ml price'>{product.price} kr</p>
+                            {/* <p className='ml price'>{product.price} kr</p> */}
                         </div>
-                            <button className={`btn btn-add ${product.saldo === 'out' ? `out` : ``}` }>{product.saldo === 'out' ? ' tillfälligt slut' : 'lägg till'}</button>
+                            <button className={`btn btn-add ${product.saldo === 'out' ? `out` : ``}` }>{product.saldo === 'out' ? ' tillfälligt slut |' : 'handla |'} {price} kr</button>
                     </div>
                     {
                         product.info &&
