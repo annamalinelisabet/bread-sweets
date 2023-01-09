@@ -1,0 +1,330 @@
+.Modal33 {
+    position: fixed;
+    z-index: 2000;
+    inset: 0;
+    background: #000000b8;
+}
+
+.Modal33 .d-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Modal33 .show {
+    display: block;
+}
+
+.Modal33 .modal {
+    background-color: #fff;
+    max-width: 600px;
+    margin: auto;
+    height: 100vh;
+    position: relative;
+    overflow-y: auto;
+    border-radius: 3px;
+}
+
+.Modal33 .btn-close {
+    color: #000;
+    width: 2rem;
+    height: 2rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: fixed;
+    top: .5rem;
+    right: 1rem;
+    z-index: 5000;
+}
+
+.Modal33 .btn-close:hover {
+    background-color: rgb(235, 235, 235);
+}
+
+/* -- IMG -- */
+.Modal33 .img-wrap {
+    width: 100%;
+    height: 180px;
+}
+
+.Modal33 .img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* -- MIDDLE TITLE -- */
+
+.Modal33 .box {
+    padding: 2rem 2rem;
+}
+
+.Modal33 .rec-head-title {
+    color: var(--primary-clr);
+    font-family: var(--yeseva-header-font);
+    text-transform: uppercase;
+    margin-bottom: .3rem;
+    
+}
+
+.Modal33 .rec-head-txt {
+    margin-bottom: 2rem;
+}
+
+/* -- HEADER-- */
+
+.Modal33 .header {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 4px 6px -2px;
+    padding-inline: 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 4000;
+    background-color: #fff;
+}
+
+.Modal33 .head-title h2{
+    padding-top: 1rem;
+}
+
+.Modal33 .head-title {
+    display: flex;
+}
+
+.Modal33 .info {
+    margin-top: 1.4rem;
+    margin-left: .5rem;
+    cursor: pointer;
+}
+
+.Modal33 .header p {
+    padding-bottom: 1rem;
+    padding-top: .5rem;
+    font-size: 20px;
+    font-weight: 100;
+}
+
+/* -- REQUIRED BOX --*/
+
+.Modal33 .radio-div {
+    display: flex;
+    padding-bottom: 1rem;
+    
+}
+
+.Modal33 .rec-title {
+    margin-bottom: 2rem;
+    font-weight: bold;
+} 
+
+.Modal33 .rec {
+    background-color: var(--secondary-clr);
+    margin: auto;
+    width: 100%;
+    padding: 1rem 2rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;  
+    border-radius: 3px;
+    position: relative;
+}
+
+.Modal33 .radio-div input {
+    cursor: pointer;
+    appearance: none;
+    width: 1.55em;
+    height: 1.55em;
+    border: none;
+    border-radius: 50%;
+    background: white;
+    place-content: center;
+    margin-right: .5rem;
+    display: grid;
+}
+
+.Modal33 .radio-div input:before {
+    content: '';
+    width: 0.8em;
+    height: 0.8em;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: 120ms ease-in-out;
+    box-shadow: inset 1em 1em #fff;
+}
+
+.Modal33 .radio-div input:checked {
+    background: var(--primary-clr);
+}
+
+.Modal33 .radio-div input:checked:before {
+    transform: scale(1);
+}
+
+.Modal33 .check-mark:after {
+    position: absolute;
+    content: "";
+    height: 76px;
+    width: 38px;
+    border-right: 20px solid #856c483e;
+    border-top: 20px solid #856c483e;
+
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+    bottom: 1.5rem;
+    right: 2.5rem;
+    transform: scaleX(-1) rotate(135deg);
+    animation: checked 2s ease;
+}
+
+@keyframes checked {
+    0%{
+        height: 0;
+        width: 0;
+        opacity: 1;
+    }
+    20%{
+        height: 0;
+        width: 38px;
+        opacity: 1;
+    }
+    40%{
+        height: 76px;
+        width: 38px;
+        opacity: 1;
+    }
+    100%{
+        height: 76px;
+        width: 38px;
+        opacity: 1;
+    }
+}
+
+.Modal33 .radio-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* -- REC END -- */
+
+
+/* -- OPTIONAL -- */
+
+.Modal33 .info-wrap {
+    padding-bottom: 2rem;
+}
+
+.Modal33 .info-wrap h3 {
+    color: var(--primary-clr);
+    font-weight: bold;
+}
+
+.Modal33 .adapt-wrapper {
+    margin-top: 2rem;
+}
+
+.Modal33 .add-txt {
+    margin-top: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+.Modal33 .add-txt p {
+    font-size: 14px;
+} 
+
+.Modal33 .adapt {
+    background-color: #fff;
+    margin: auto;
+    width: 100%;
+    padding: 1rem 2rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;  
+    border-radius: 3px;
+}
+
+.Modal33 .op-title {
+    font-weight: bold;
+}
+
+.Modal33 .input {
+    margin-right: .5rem;
+}
+
+.Modal33 .form-control input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.Modal33 .newCheck {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #fff;
+    border: 1px solid #000;
+}
+
+.Modal33 .form-control {
+   display: block;
+   position: relative;
+   padding-left: 1.9rem;
+   margin-bottom: 15px;
+   cursor: pointer;
+   -webkit-user-select: none;
+   -moz-user-select: none;
+   -moz-user-select: none;
+   user-select: none;
+}
+
+.Modal33 .newCheck:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.Modal33 .form-control .input:checked + .newCheck:after {
+   display: block;
+}
+
+.Modal33 .remove:checked .struck-out {
+    text-decoration: none;
+}
+
+.Modal33 .struck-out {
+    text-decoration: line-through;
+}
+
+.Modal33 .newCheck:after {
+    left: 5px;
+    top: 1px;
+    width: 5px;
+    height: 10px;
+    border: solid rgb(0, 0, 0);
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+
+
+@media (min-width: 600px) {
+    .Modal33 .modal {
+        margin: 8vh auto;
+        max-height: 85vh;
+        height: inherit;
+    }
+
+    .Modal33 .box {
+        padding: 3rem 2rem;
+    }
+
+    .Modal33 .btn-close {
+        top: 6rem;
+        right: 41rem;
+    }
+    
+}

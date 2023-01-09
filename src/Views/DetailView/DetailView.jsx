@@ -5,10 +5,14 @@ import { FaArrowLeft } from 'react-icons/fa'
 import { ImSpoonKnife } from 'react-icons/im'
 import ContentCard from '../../Components/ContentCard/ContentCard'
 import AllergenCard from '../../Components/AllergenCard/AllergenCard'
+import Modal33 from '../../Components/Modal33/Modal33'
 
 const DetailView = () => {
   const [showAll, setShowAll] = useState(false);
   const [price, setPrice] = useState('')
+
+  const [modal14, setModal14] = useState(false)
+  const [modal33, setModal33] = useState(false)
 
   const location = useLocation()
   const { product } = location.state
@@ -29,6 +33,18 @@ const DetailView = () => {
 
     const onChange = e => {
         setPrice(e.target.value)
+    }
+
+    const handleClick = (id) => {
+        if(id === 14){
+            setModal14(true)
+        }
+        if(id === 33){
+            setModal33(true)
+        }
+        if(typeof window != 'undefined' && window.document) {
+            document.body.style.overflow = 'hidden';
+        }
     }
 
   return (
@@ -76,9 +92,9 @@ const DetailView = () => {
                     }
                     <div className='dflex mt-5 wrap'>
                         <div className='price-wrap'>
-                            {/* <p className='ml price'>{product.price} kr</p> */}
+                            <p className='ml price'>{product.price} kr</p>
                         </div>
-                            <button className={`btn btn-add ${product.saldo === 'out' ? `out` : ``}` }>{product.saldo === 'out' ? ' tillfälligt slut |' : 'handla |'} {price} kr</button>
+                            <button onClick={() => handleClick(product.id)} className={`btn btn-add ${product.saldo === 'out' ? `out` : ``}` }>{product.saldo === 'out' ? ' tillfälligt slut |' : 'handla'}</button>
                     </div>
                     {
                         product.info &&
@@ -98,6 +114,8 @@ const DetailView = () => {
                     { showAll ? <AllergenCard /> : <ContentCard />}
                 </div>
         </div>
+        { modal33 && <Modal33 setModal33={setModal33} /> }
+        {/* { modal14 && <Modal14 /> } */}
     </div>
   )
 }

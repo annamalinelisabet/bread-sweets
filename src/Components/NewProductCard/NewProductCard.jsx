@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import './NewProductCard.css'
 // import { RiShoppingBasket2Line } from 'react-icons/ri'
-import { BsBagPlus, BsBagPlusFill } from 'react-icons/bs'
+import { BsBagPlusFill } from 'react-icons/bs'
 import { ImSpoonKnife } from 'react-icons/im'
 import { TbMug } from 'react-icons/tb'
 
