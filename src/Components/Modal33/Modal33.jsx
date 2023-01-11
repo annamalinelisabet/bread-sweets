@@ -8,12 +8,28 @@ import 'animate.css';
 
 const Modal33 = ({setModal33}) => {
 
-//   const hamRef = useRef()
-//   const cheeseRef = useRef()
-//   const salladRef = useRef()
-//   const tomatoRef = useRef()
-//   const cucumberRef = useRef()
-//   const optionsRef = useRef()
+  const hamRef = useRef()
+  const cheeseRef = useRef()
+  const salladRef = useRef()
+  const tomatoRef = useRef()
+  const cucumberRef = useRef()
+  const optionsRef = useRef()
+
+const location = useLocation()
+const { product } = location.state
+
+
+const [all, setAll] = useState({bread: '', seed: ''})
+
+const [ham, setHam] = useState('')
+const [sallad, setSallad] = useState('')
+const [tomato, setTomato] = useState('')
+const [cheese, setCheese] = useState('')
+const [cucumber, setCucumber] = useState('')
+
+
+const [show, setShow] = useState(true);
+const [visable, setVisable] = useState(false)
 
 
 const checkboxData = {
@@ -24,40 +40,45 @@ const checkboxData = {
     cucumber: { state: cucumber, ref: cucumberRef}
 }
 
+
 const handleCheckboxChange = (e, type) => {
     const checkbox = checkboxData[type]
     const newState = checkbox.state === '' ? type : '';
-    setState(checkbox.state, newState)
+    switch(type) {
+        case 'ham':
+            setHam(newState)
+            break;
+        case 'cheese':
+            setCheese(newState)
+            break;
+        case 'sallad':
+            setSallad(newState)
+            break;
+        case 'tomato':
+            setTomato(newState)
+            break;
+        case 'cucumber':
+            setCucumber(newState)
+            break;
+        default:
+            break;
+    }
     checkbox.ref.current.classList.toggle('struckOut', newState !== '')
 }
-
-
-  const location = useLocation()
-  const { product } = location.state
-
-//   const [bread, setBread] = useState('')
-//   const [seed, setSeed] = useState('')
-
-  const [all, setAll] = useState({bread: '', seed: ''})
-
-  const [show, setShow] = useState(true);
-
-//   const [ham, setHam] = useState('')
-//   const [sallad, setSallad] = useState('')
-//   const [tomato, setTomato] = useState('')
-//   const [cheese, setCheese] = useState('')
-//   const [cucumber, setCucumber] = useState('')
-
-
-  const [visable, setVisable] = useState(false)
   
   
   useEffect(() => {
     if(all.bread !== '' && all.seed !== ''){
         setVisable(true)
-        // optionsRef.current.scrollIntoView({behavior: "smooth", block: "center"})
     }
   }, [all])
+
+  useEffect(() => {
+    if(visable){
+        optionsRef.current.scrollIntoView({behavior: "smooth", block: "center"})
+    }
+  }, [visable])
+  
   
   const onClick = () => {
     setModal33(false)
@@ -75,51 +96,6 @@ const handleCheckboxChange = (e, type) => {
     })
   }
 
-//   const onChange1 = () => {
-//     if(ham === ''){
-//         setHam('ham')
-//         hamRef.current.classList.add('struckOut')
-//     }else {
-//         setHam('')
-//         hamRef.current.classList.remove('struckOut')
-//     }
-//   }
-//   const onChange2 = () => {
-//     if(cheese === ''){
-//         setCheese('cheese')
-//         cheeseRef.current.classList.add('struckOut')
-//     }else {
-//         setCheese('')
-//         cheeseRef.current.classList.remove('struckOut')
-//     }
-//   }
-//   const onChange3 = () => {
-//     if(sallad === ''){
-//         setSallad('sallad')
-//         salladRef.current.classList.add('struckOut')
-//     }else {
-//         setSallad('')
-//         salladRef.current.classList.remove('struckOut')
-//     }
-//   }
-//   const onChange4 = () => {
-//     if(tomato === ''){
-//         setTomato('tomato')
-//         tomatoRef.current.classList.add('struckOut')
-//     }else {
-//         setTomato('')
-//         tomatoRef.current.classList.remove('struckOut')
-//     }
-//   }
-//   const onChange5 = () => {
-//     if(cucumber === ''){
-//         setCucumber('cucumber')
-//         cucumberRef.current.classList.add('struckOut')
-//     }else {
-//         setCucumber('')
-//         cucumberRef.current.classList.remove('struckOut')
-//     }
-//   }
 
   return (
     <div className='Modal33'>
@@ -177,7 +153,7 @@ const handleCheckboxChange = (e, type) => {
                         <label htmlFor="seed" className='radio-title'>Solrosfrön</label>
                     </div>
 
-                    <div className='radio-div'>
+                    <div className='radio-div' >
                         <input id='2' value={'dark'} onChange={onChange} type="radio" name='seed' className='radio-btn' checked={all.seed === 'dark'}/>
                         <label htmlFor="seed" className='radio-title'>Linfrön</label>
                     </div>
@@ -188,15 +164,14 @@ const handleCheckboxChange = (e, type) => {
                     }
                 </div>
 
-
                 { visable && 
-                    <div className='adapt-wrapper animate__animated animate__fadeInUp' id='sec-section'>
-
-                        <div className='info-wrap'>
+                        <>
+                        <div className='info-wrap' ref={optionsRef}>
                             <h3>Något extra?</h3>
                             <p>Anpassa din produkt och/eller lägg till något extra</p>
                         </div>
                         
+                        <div className='adapt-wrapper animate__animated animate__fadeInUp' id='sec-section'>
                         <div className='adapt'>
                             <div className='title-wrapper'>
                                 <h3>Anpassa din order</h3>
@@ -244,40 +219,42 @@ const handleCheckboxChange = (e, type) => {
                                         <p>Klicka ur de tillbehören du inte vill ha</p>
                                     </div>
 
-                                        {/* <label className='form-control' ref={hamRef}>Skinka */}
-                                        <label className='form-control'>Skinka
+                                        <label className='form-control' ref={hamRef}>Skinka
+                                        {/* <label className='form-control'>Skinka */}
                                             {/* <input type="checkbox" name='remove' className='input' value={"ham"} checked={ham === ''} onChange={onChange1}/> */}
-                                            <input type="checkbox" name='remove' className='input' value={"ham"} onChange={(e) => handleCheckboxChange(e, 'ham')}/>
+                                            <input type="checkbox" name='remove' className='input' value={"ham"} checked={ham === ''} onChange={(e) => handleCheckboxChange(e, 'ham')}/>
                                             <span className='newCheck'></span>
                                         </label>
 
-                                            {/* <label className='form-control' ref={cheeseRef}>Ost
-                                                <input type="checkbox" name='remove' className='input remove' value={"cheese"} checked={cheese === ''} onChange={onChange2}/>
+                                            <label className='form-control' ref={cheeseRef}>Ost
+                                                <input type="checkbox" name='remove' className='input remove' value={"cheese"} checked={cheese === ''} onChange={(e) => handleCheckboxChange(e, 'cheese')}/>
                                                 <span className='newCheck'></span>
                                             </label>
 
 
                                         <label className='form-control' ref={salladRef}>Sallad
-                                            <input type="checkbox" name='remove' className='input' value={"sallad"} checked={sallad === ''} onChange={onChange3}/>
+                                            <input type="checkbox" name='remove' className='input' value={"sallad"} checked={sallad === ''} onChange={(e) => handleCheckboxChange(e, 'sallad')}/>
                                             <span className='newCheck'></span>
                                         </label>
 
                                         <label className='form-control struck-out' ref={tomatoRef}>Tomat
-                                            <input type="checkbox" name='remove' className='input' value={"tomato"} checked={tomato === ''} onChange={onChange4}/>
+                                            <input type="checkbox" name='remove' className='input' value={"tomato"} checked={tomato === ''} onChange={(e) => handleCheckboxChange(e, 'tomato')}/>
                                             <span className='newCheck'></span>
                                         </label>
 
                                         <label className='form-control struck-out' ref={cucumberRef}>Gurka
-                                            <input type="checkbox" name='remove' className='input' value={"cucumber"} checked={cucumber === ''} onChange={onChange5}/>
+                                            <input type="checkbox" name='remove' className='input' value={"cucumber"} checked={cucumber === ''} onChange={(e) => handleCheckboxChange(e, 'cucumber')}/>
                                             <span className='newCheck'></span>
-                                        </label> */}
+                                        </label>
 
                                 </div>
 
                             </div>
+                            
                             }
                         </div>
                     </div>
+                    </>
                 }
             </div>
         </div>

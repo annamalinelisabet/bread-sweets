@@ -234,6 +234,7 @@
 
 .Modal33 .info-wrap {
     padding-bottom: 2rem;
+    margin-top: 3rem;
 }
 
 .Modal33 .info-wrap h3 {
@@ -241,9 +242,9 @@
     font-weight: bold;
 }
 
-.Modal33 .adapt-wrapper {
+/* .Modal33 .adapt-wrapper {
     margin-top: 2rem;
-}
+} */
 
 .Modal33 .add-txt {
     margin-top: 2.5rem;
