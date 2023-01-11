@@ -249,7 +249,7 @@
     margin-right: .5rem;
 }
 
-.Modal33 .form-control input {
+.Modal33 .input {
     position: absolute;
     opacity: 0;
     cursor: pointer;
@@ -285,16 +285,16 @@
     display: none;
 }
 
-.Modal33 .form-control .input:checked + .newCheck:after {
+.Modal33 .input:checked + .newCheck:after {
    display: block;
 }
 
-.Modal33 .remove:checked .struck-out {
-    text-decoration: none;
+.Modal33 .checkbox-title {
+    text-decoration: line-through;
 }
 
-.Modal33 .struck-out {
-    text-decoration: line-through;
+.Modal33 .input:checked .checkbox-title {
+    text-decoration: none;
 }
 
 .Modal33 .newCheck:after {

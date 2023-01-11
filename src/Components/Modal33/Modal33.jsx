@@ -156,15 +156,17 @@ const Modal33 = ({setModal33}) => {
                             <p>Klicka ur de tillbehören du inte vill ha</p>
                         </div>
 
-                            <label className='form-control struck-out'>Skinka
+                            <label className='form-control'>
+                                <p className='checkbox-title'>Skinka</p>
                                 <input type="checkbox" name='remove' className='input' value={"ham"} checked={ham === ''} onChange={onChange1}/>
                                 <span className='newCheck'></span>
                             </label>
 
-                            <label className='form-control struck-out'>Ost
+                            <div className='form-control'>
+                                <label className='checkbox-title'>Ost/funkar ej</label>
                                 <input type="checkbox" name='remove' className='input remove' value={"cheese"} checked={cheese === ''} onChange={onChange2}/>
                                 <span className='newCheck'></span>
-                            </label>
+                            </div>
 
                             <label className='form-control struck-out'>Sallad
                                 <input type="checkbox" name='remove' className='input' value={"sallad"} checked={sallad === ''} onChange={onChange3}/>
