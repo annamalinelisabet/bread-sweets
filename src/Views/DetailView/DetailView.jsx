@@ -5,6 +5,7 @@ import { FaArrowLeft } from 'react-icons/fa'
 import { ImSpoonKnife } from 'react-icons/im'
 import ContentCard from '../../Components/ContentCard/ContentCard'
 import AllergenCard from '../../Components/AllergenCard/AllergenCard'
+import Modal14 from '../../Components/Modal14/Modal14'
 
 const DetailView = () => {
   const [showAll, setShowAll] = useState(false);
@@ -114,7 +115,7 @@ const DetailView = () => {
                 </div>
         </div>
         {/* { modal33 && <Modal33 setModal33={setModal33} />} */}
-        {/* { modal14 && <Modal14 setModal14={setModal14} />} */}
+        { modal14 && <Modal14 setModal14={setModal14} />}
     </div>
   )
 }

@@ -1,0 +1,234 @@
+.Modal14 {
+    position: fixed;
+    inset: 0;
+    background: #000000a3;
+    z-index: 5000;
+    user-select: none;
+}
+
+.Modal14 .modal {
+    background: white;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    height: 100vh;
+    position: relative;
+    /* overflow-y: auto; */
+}
+
+.Modal14 .top-div {
+    padding: 1rem 2rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 4px 6px -2px;
+    height: 12vh;
+}
+
+.Modal14 .title-div {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.Modal14 .title-close {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Modal14 .close {
+    color: black;
+    width: 2rem;
+    height: 2rem;
+    background: white;
+    border-radius: 50%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    cursor: pointer;
+}
+
+
+
+
+.Modal14 .box-wrapper {
+    /* width: min(90%, 600px);
+    margin: 2rem auto; */
+    padding: 2rem;
+    height: 78vh;
+    overflow-y: auto;
+}
+
+.Modal14 .box-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Modal14 .arrow {
+    color: var(--primary-clr);
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.Modal14 .choose-title {
+    color: var(--primary-clr);
+    font-family: var(--yeseva-header-font);
+}
+
+.Modal14 .choose-subtitle {
+    font-size: .8rem;
+    margin-bottom: 1rem;
+}
+
+.Modal14 .box {
+    background: var(--secondary-clr);
+    width: 100%;
+    padding: 1rem;
+    border-radius: 3px;
+}
+
+.Modal14 .box2,
+.Modal14 .box3 {
+    margin-top: 2rem;
+}
+
+
+.Modal14 .choice{
+    font-weight: bold;
+}
+
+.Modal14 .topping {
+    margin-left: 1.3rem;
+    font-size: .7rem;
+    color: rgb(79, 79, 79);
+    font-weight: bold;
+}
+
+.Modal14 .flex-modal {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Modal14 .modal-price {
+    font-size: .7rem;
+}
+
+
+.Modal14 .radio-hej {
+    width: 100%;
+    border-top: 1px solid var(--secondary-clr);
+    padding-top: 1rem;
+}
+
+.Modal14 .input-div-modal {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    margin-bottom: 1rem;
+}
+
+.Modal14 .input-div-modal label {
+    font-size: .8rem;
+}
+
+.Modal14 .input-div-modal input {
+    cursor: pointer;
+    appearance: none;
+    width: 1.55em;
+    height: 1.55em;
+    /* border: 2px solid var(--primary-clr); */
+    border-radius: 50%;
+    background: white;
+    display: grid;
+    place-content: center;
+}
+
+.Modal14 .input-div-modal input:before {
+    content: '';
+    width: .8em;
+    height: .8em;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: 120ms ease-in-out;
+    box-shadow: inset 1em 1em #fff;
+}
+
+.Modal14 .input-div-modal input:checked:before {
+    transform: scale(1);
+}
+
+.Modal14 .input-div-modal input:checked{
+    background: var(--primary-clr);
+}
+
+
+
+
+.Modal14 .bottom-div {
+    width: 100%;
+    height: 10vh;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px -2px 6px -2px;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    background: white;
+}
+
+.Modal14 .plus-minus {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* gap: 1rem; */
+    width: 150px;
+}
+
+.Modal14 .plus {
+    color: var(--primary-clr);
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.Modal14 .minus {
+    color: grey;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.Modal14 .minus.minus-active {
+    color: var(--primary-clr);
+}
+
+.Modal14 .quantity {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.Modal14 .add-to-cart {
+    background: grey;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+    /* font-size: clamp(10px, 1vw, 28px); */
+}
+
+.Modal14 .btn-price {
+    font-size: .7rem;
+}
+
+
+@media (min-width: 600px) {
+    .Modal14 .modal {
+        margin: 10vh auto;
+        height: 85vh;
+        padding-bottom: 72px;
+    }
+
+    .Modal14 .bottom-div {
+        position: absolute;
+    }
+
+    .Modal14 .box-wrapper {
+        height: 65vh;
+    }
+
+}
