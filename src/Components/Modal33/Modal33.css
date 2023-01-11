@@ -21,7 +21,16 @@
 }
 
 /* -- ANIMATION -- */
-.animate__animated.animate_fadeInUp {
+.Modal33 .animate__animated.animate_fadeInUp {
+    --animation-duration: .5s;
+    --animation-delay: .5s;
+}
+
+.Modal33 .animate__animated.animate_slideInUp {
+    --animation-duration: .5s;
+    --animation-delay: .5s;
+}
+.Modal33 .animate__animated.animate_slideInDown {
     --animation-duration: .5s;
     --animation-delay: .5s;
 }
@@ -136,6 +145,7 @@
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;  
     border-radius: 3px;
     position: relative;
+    margin-bottom: 2rem;
 }
 
 .Modal33 .radio-div input {

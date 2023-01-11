@@ -1,4 +1,4 @@
-import React, { useState, useRef }from 'react'
+import React, { useState, useRef, useEffect }from 'react'
 import { useLocation} from 'react-router-dom'
 import './Modal33.css'
 import { IoIosClose } from 'react-icons/io'
@@ -13,12 +13,16 @@ const Modal33 = ({setModal33}) => {
   const salladRef = useRef()
   const tomatoRef = useRef()
   const cucumberRef = useRef()
+  const optionsRef = useRef()
 
 
   const location = useLocation()
   const { product } = location.state
 
-  const [bread, setBread] = useState('')
+//   const [bread, setBread] = useState('')
+//   const [seed, setSeed] = useState('')
+
+  const [all, setAll] = useState({bread: '', seed: ''})
 
   const [show, setShow] = useState(true);
 
@@ -29,30 +33,16 @@ const Modal33 = ({setModal33}) => {
   const [cucumber, setCucumber] = useState('')
 
 
-  // if required is checked show 
-//   const showHideFunction = () => {
-        
-//   }
   const [visable, setVisable] = useState(false)
   
-  const handleClickScroll = () => {
-    const light = document.getElementById('ligth');
-    const dark = document.getElementById('dark');
-    const element = document.getElementById('sec-section');
-
-      if(light.checked || dark.checked){
-          setVisable(true)
-          element.scrollIntoView({ behavior: 'smooth'})
-      }
-
-
-    // Scrollar ner till det elementet 
-    // const element = document.getElementById('sec-section');
-    // if(element) {
-    //     element.scrollIntoView({ behavior: 'smooth'})
-    // }
-  };
-
+  
+  useEffect(() => {
+    if(all.bread !== '' && all.seed !== ''){
+        setVisable(true)
+        // optionsRef.current.scrollIntoView({behavior: "smooth", block: "center"})
+    }
+  }, [all])
+  
   const onClick = () => {
     setModal33(false)
 
@@ -61,8 +51,12 @@ const Modal33 = ({setModal33}) => {
     // ner på rutan
   }
 
-  const onChange = (option) => {
-    setBread(option)
+  const onChange = (e) => {
+    const{name, value} = e.target;
+    setAll({
+        ...all,
+        [name]: value
+    })
   }
 
   const onChange1 = () => {
@@ -141,21 +135,44 @@ const Modal33 = ({setModal33}) => {
                     </div>
 
                     <div className='radio-div'>
-                        <input id='1' value={'light'} onChange={onChange} type="radio" name='bread' className='radio-btn' onClick={() => setVisable(true)}/>
+                        <input id='1' value={'light'} onChange={onChange} type="radio" name='bread' className='radio-btn' checked={all.bread === 'light'}/>
                         <label htmlFor="bread" className='radio-title'>Ljust</label>
                     </div>
 
                     <div className='radio-div'>
-                        {/* <input value={'dark'} onChange={onChange} type="radio" name='bread' className='radio-btn' onClick={handleClickScroll()}/> */}
-                        <input id='2' value={'dark'} onChange={onChange} type="radio" name='bread' className='radio-btn' onClick={handleClickScroll()}/>
+                        <input id='2' value={'dark'} onChange={onChange} type="radio" name='bread' className='radio-btn' checked={all.bread === 'dark'}/>
                         <label htmlFor="bread" className='radio-title'>Mörkt</label>
                     </div>
 
-                   { bread !== '' &&
+                   { all.bread !== '' &&
                    
                         <div className='check-mark'></div>
                     }
                 </div>
+
+                <div className='rec'>
+
+                    <div className='rec-title'>
+                        <p>2. Välj Frön</p>
+                    </div>
+
+                    <div className='radio-div'>
+                        {/* <input id='1' value={'light'} onChange={onChange} type="radio" name='seed' className='radio-btn' checked={seed === 'light'}/> */}
+                        <input id='1' value={'light'} onChange={onChange} type="radio" name='seed' className='radio-btn' checked={all.seed === 'light'}/>
+                        <label htmlFor="seed" className='radio-title'>Solrosfrön</label>
+                    </div>
+
+                    <div className='radio-div'>
+                        <input id='2' value={'dark'} onChange={onChange} type="radio" name='seed' className='radio-btn' checked={all.seed === 'dark'}/>
+                        <label htmlFor="seed" className='radio-title'>Linfrön</label>
+                    </div>
+
+                   { all.seed !== '' &&
+                   
+                        <div className='check-mark'></div>
+                    }
+                </div>
+
 
                 { visable && 
                     <div className='adapt-wrapper animate__animated animate__fadeInUp' id='sec-section'>
@@ -169,7 +186,7 @@ const Modal33 = ({setModal33}) => {
                             <div className='title-wrapper'>
                                 <h3>Anpassa din order</h3>
                                 <button onClick={() => setShow(!show)} className="close-btn">
-                                    { show === true ? <MdKeyboardArrowDown className='close-icon' /> :  <MdKeyboardArrowUp className='close-icon'/> }
+                                    { show === true ? <MdKeyboardArrowDown className='close-icon animate__animated animate__slideInDown' /> :  <MdKeyboardArrowUp className='close-icon animate__animated animate__slideInUp'/> }
                                 </button>
                             </div>
 
@@ -244,7 +261,6 @@ const Modal33 = ({setModal33}) => {
                             }
                         </div>
                     </div>
-                
                 }
             </div>
         </div>
