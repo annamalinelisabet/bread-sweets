@@ -22,9 +22,12 @@ const { product } = location.state
 const [all, setAll] = useState({bread: '', seed: ''})
 
 
-const [salami, setSalami] = useState(localStorage.getItem('salami') || 'unchecked');
-const [turkey, setTurkey] = useState(localStorage.getItem('turkey') || 'unchecked');
-const [brie, setBrie] = useState(localStorage.getItem('brie') || 'unchecked');
+// const [salami, setSalami] = useState(localStorage.getItem('salami') || 'unchecked');
+// const [turkey, setTurkey] = useState(localStorage.getItem('turkey') || 'unchecked');
+// const [brie, setBrie] = useState(localStorage.getItem('brie') || 'unchecked');
+const [salami, setSalami] = useState(localStorage.getItem('ham') || '');
+const [turkey, setTurkey] = useState(localStorage.getItem('turkey') || '');
+const [brie, setBrie] = useState(localStorage.getItem('brie') || '');
 
 const [ham, setHam] = useState(localStorage.getItem('ham') || '');
 const [sallad, setSallad] = useState(localStorage.getItem('sallad') || '')
@@ -48,6 +51,88 @@ useEffect(() => {
     }
   }, [visable])
 
+// useEffect(() => {
+//   const salamiValue = localStorage.getItem('salami' || '');
+//   setSalami(salamiValue);
+// }, [])
+
+// useEffect(() => {
+//   const turkeyValue = localStorage.getItem('turkey' || '');
+//   setTurkey(turkeyValue);
+// }, [])
+
+// useEffect(() => {
+//   const brieValue = localStorage.getItem('brie' || '');
+//   setBrie(brieValue);
+// }, [])
+
+
+const handleChange = (e, type) => {
+    if(e.target.checked){
+        switch(type) {
+            case 'salami':
+                setSalami('salami')
+                break;
+            case 'turkey':
+                setTurkey('turkey')
+                break;
+            case 'brie':
+                setBrie('brie')
+                break;
+            default:
+                break;
+    }
+} else {
+      switch(type) {
+            case 'salami':
+                setSalami('')
+                break;
+            case 'turkey':
+                setTurkey('')
+                break;
+            case 'brie':
+                setBrie('')
+                break;
+            default:
+                break;
+}
+
+
+    // if(e.target.checked){
+    //     if(type === 'salami'){
+    //         setSalami('salami');
+    //         localStorage.setItem("salami", salami);
+    //     }
+    //     else if(type === 'turkey'){
+    //         setTurkey('turkey');
+    //         localStorage.setItem("turkey", turkey);
+    //     }
+    //     else if(type === 'brie'){
+    //         setBrie('brie');
+    //         localStorage.setItem("brie", brie);
+    //     }
+    
+    //     else {
+    //         if(type === 'salami'){
+    //             setSalami('');
+    //             localStorage.setItem("salami", '')
+    //         }
+    //         else if(type === 'turkey'){
+    //             setTurkey('');
+    //             localStorage.setItem("turkey", '');
+    //         }
+    //         else if(type === 'brie'){
+    //             setBrie('');
+    //             localStorage.setItem("brie", '');
+    //         }
+            
+    //     }
+    // }
+}
+}
+
+
+
 const checkboxData = {
     salami : { state: salami},
     turkey : { state: turkey},
@@ -60,52 +145,10 @@ const checkboxData = {
     cucumber: { state: cucumber, ref: cucumberRef}
 }
 
-const handleChange = (e, type) => {
-    if(e.target.checked){
-        if(type === 'salami'){
-            setSalami('');
-            localStorage.setItem("salami", '');
-        }
-        else if(type === 'turkey'){
-            setTurkey('');
-            localStorage.setItem("turkey", '');
-        }
-        else if(type === 'brie'){
-            setBrie('');
-            localStorage.setItem("brie", '');
-        }
-    
-        else {
-            if(type === 'salami'){
-                setSalami('unchecked');
-                localStorage.setItem("salami", 'unchecked')
-            }
-            else if(type === 'turkey'){
-                setTurkey('unchecked');
-                localStorage.setItem("turkey", 'unchecked');
-            }
-            else if(type === 'brie'){
-                setBrie('unchecked');
-                localStorage.setItem("brie", 'unchecked');
-            }
-            
-        }
-    }
-}
-
 const handleCheckboxChange = (e, type) => {
     const checkbox = checkboxData[type]
     const newState = checkbox.state === '' ? type : '';
     switch(type) {
-        // case 'salami':
-        //     setSalami('')
-        //      break;
-        case 'turkey':
-            setTurkey('')
-            break;
-        case 'brie':
-            setBrie('')
-            break;
         case 'ham':
             setHam(newState)
             break;
@@ -128,9 +171,9 @@ const handleCheckboxChange = (e, type) => {
 }
 
 useEffect(() => {
-    localStorage.setItem('salami', '')
-    localStorage.setItem('turkey', '')
-    localStorage.setItem('brie', '')
+    localStorage.setItem("salami", salami)
+    localStorage.setItem("turkey", turkey)
+    localStorage.setItem("brie", brie)
   
     localStorage.setItem('ham', ham)
     localStorage.setItem('cheese', cheese)
@@ -139,7 +182,7 @@ useEffect(() => {
     localStorage.setItem('cucmber', cucumber)
   
    
-  }, [salami, turkey, brie, ham, cheese, sallad, tomato, cucumber])
+  }, [ham, cheese, sallad, tomato, cucumber])
   
   
   const onClick = () => {
@@ -252,7 +295,7 @@ useEffect(() => {
                                 <div className='d-flex'>
                                     <label className='form-control'>
                                         Salami
-                                        <input type="checkbox" name='add' className='input' value={"salami"} checked={salami === '' }  onChange={(e) => handleChange(e, 'salami')}/>
+                                        <input type="checkbox" name='add' className='input' value={"salami"} checked={salami === 'salami' }  onChange={(e) => handleChange(e, 'salami')}/>
                                         <span className='newCheck'></span>
                                     </label>
                                     <p>+10kr</p>
@@ -260,7 +303,7 @@ useEffect(() => {
 
                                 <div className='d-flex'>
                                     <label className='form-control d-flex'>Kalkon
-                                        <input type="checkbox" name='add' className='input' value={"turkey"} checked={turkey === ''}  onChange={(e) => handleCheckboxChange(e, 'turkey')}/>
+                                        <input type="checkbox" name='add' className='input' value={"turkey"} checked={turkey === 'turkey'}  onChange={(e) => handleChange(e, 'turkey')}/>
                                         <span className='newCheck'></span>
                                     </label>
                                     <p>+10kr</p>
@@ -268,7 +311,7 @@ useEffect(() => {
 
                                 <div className='d-flex'>
                                     <label className='form-control'>Brie
-                                        <input type="checkbox" name='add' className='input' value={"brie"} checked={brie === ''} onChange={(e) => handleCheckboxChange(e, 'brie')}/>
+                                        <input type="checkbox" name='add' className='input' value={"brie"} checked={brie === 'brie'} onChange={(e) => handleChange(e, 'brie')}/>
                                         <span className='newCheck'></span>
                                     </label>
                                     <p>+10kr</p>
