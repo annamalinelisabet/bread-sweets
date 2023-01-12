@@ -106,7 +106,8 @@ const handleCheckboxChange = (e, type) => {
                 <img src={product.img} alt="food" className='img'/> 
             </div>
 
-                <button onClick={onClick} className='btn'><IoIosClose className='btn-close'/></button>
+            {/* <button className='btn'><IoIosClose onClick={onClick} className='btn-close'/></button> */}
+            <IoIosClose onClick={onClick} className='btn-close'/>
 
             <div className='header'>
                 <div className='head-title'>
